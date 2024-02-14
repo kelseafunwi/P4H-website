@@ -26,5 +26,13 @@ export const navbarLinks = [
     {
         label: "Contact",
         link: "/contact",
+    },
+    {
+        label: "ENG",
+        link: "/eng",
+        dropdownMenu: [
+            "English",
+            "French"
+        ]
     }
 ]

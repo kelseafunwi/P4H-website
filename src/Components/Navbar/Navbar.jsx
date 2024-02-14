@@ -1,6 +1,6 @@
 import logoImage from '/logo.png';
 import { useState} from "react";
-import {AlignJustify} from "lucide-react";
+import {AlignJustify, ChevronDown} from "lucide-react";
 import {MobileMenu} from "./MobileMenu.jsx";
 import { navbarLinks } from "../../constants/constant.js";
 import { NavLink} from "react-router-dom";
@@ -42,8 +42,13 @@ export default function Navbar() {
                                     navbarLinks.map((item, index) => (
                                         <li key={index} className={"px-4"}>
                                             <NavLink to={item.link}
-                                               className={`font-bold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
+                                               className={`relative flex items-center font-bold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
+
                                                 {item.label}
+                                                {
+                                                    item.dropdownMenu &&
+                                                    <ChevronDown size={35} className={"px-2 text-black"}/>
+                                                }
                                             </NavLink>
                                         </li>
                                     ))

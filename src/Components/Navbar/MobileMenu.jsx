@@ -19,7 +19,7 @@ export const MobileMenu = ({toggleMenuState}) => {
                 width: 0,
                 rotate: '20deg',
             }}
-            className={"fixed top-0 bottom-0 text-white right-0 z-50 shadow-sm border-l-2 bg-primary w-[300px]"}>
+            className={" fixed md:hidden top-0 bottom-0 text-white right-0 z-50 shadow-sm border-l-2 bg-primary w-[300px]"}>
             <div className={"absolute top-10 right-0"}>
                 <button onClick={toggleMenuState}
                         className={" flex items-center justify-center pe-4 md:hidden"}>
@@ -31,7 +31,7 @@ export const MobileMenu = ({toggleMenuState}) => {
                 {
                     navbarLinks.map((item, index) => (
                         <NavLink key={index} className={`block py-2 text-lg ps-3 text-dark`} to={item.link}>
-                                {item.label}
+                            {item.label}
                         </NavLink>
                     ))
                 }
