@@ -1,12 +1,9 @@
 import './App.css'
-import Navbar from "./Components/Navbar/Navbar.jsx"
-import {Hero} from "./Components/Hero/Hero.jsx";
+import {RouterProvider} from "react-router-dom";
+import router from './Components/router.jsx'
 
 export default function App() {
     return (
-        <>
-            <Navbar />
-            <Hero />
-        </>
+        <RouterProvider router={router} />
     );
 }

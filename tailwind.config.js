@@ -8,11 +8,16 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      'barlow': ['Barlow'],
+      'barlow': ['Barlow', 'serif'],
     },
     backgroundColor:  {
       'primary' : '#026BCF',
-      'secondary': '#E4E4E4'
+      'secondary': '#FF9719',
+      'white': '#E4E4E4'
+    },
+    textColor:  {
+      'primary' : '#026BCF',
+      'secondary': '#FF9719'
     }
   },
   plugins: [],
