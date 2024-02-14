@@ -42,7 +42,7 @@ export default function Navbar() {
                                     navbarLinks.map((item, index) => (
                                         <li key={index} className={"px-2"}>
                                             <NavLink to={item.link}
-                                               className={`relative whitespace-nowrap flex items-center font-bold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
+                                               className={`relative whitespace-nowrap flex items-center font-semibold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
                                                 {item.eng && <Globe size={24} className={"pe-1"} />}
                                                 {item.label}
                                                 {

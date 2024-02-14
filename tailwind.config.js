@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      'barlow': ['Barlow', 'serif'],
+      // 'barlow': ['Barlow', 'serif'],
     },
     backgroundColor:  {
       'primary' : '#026BCF',
@@ -16,6 +16,7 @@ export default {
       'white': '#E4E4E4'
     },
     textColor:  {
+      'white': '#fff',
       'dark': '#212121',
       'primary' : '#026BCF',
       'secondary': '#FF9719'
