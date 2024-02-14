@@ -1,4 +1,4 @@
-import {X} from "lucide-react";
+import {ChevronDown, Globe, X} from "lucide-react";
 import PropTypes from "prop-types";
 import {motion} from "framer-motion";
 import {navbarLinks} from "../../constants/constant.js";
@@ -30,8 +30,13 @@ export const MobileMenu = ({toggleMenuState}) => {
             <div className={"px-4 pt-24 w-full"}>
                 {
                     navbarLinks.map((item, index) => (
-                        <NavLink key={index} className={`block py-2 text-lg ps-3 text-dark`} to={item.link}>
+                        <NavLink key={index} className={`flex items-center hover:bg-white rounded-[20px] hover:text-secondary py-2 text-lg ps-5 text-dark`} to={item.link}>
+                            {item.eng && <Globe size={24} className={"pe-2"} />}
                             {item.label}
+                            {
+                                item.dropdownMenu &&
+                                <ChevronDown size={35} className={"px-2 text-black"}/>
+                            }
                         </NavLink>
                     ))
                 }

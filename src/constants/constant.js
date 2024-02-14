@@ -1,3 +1,5 @@
+import {Globe} from "lucide-react";
+
 export const navbarLinks = [
     {
         label: "For Workers",
@@ -16,7 +18,9 @@ export const navbarLinks = [
         label: "About",
         link: "/about",
         dropdownMenu: [
-            'first item',
+            'Us',
+            'Worker',
+            'Another thing'
         ]
     },
     {
@@ -28,6 +32,7 @@ export const navbarLinks = [
         link: "/contact",
     },
     {
+        eng: true,
         label: "ENG",
         link: "/eng",
         dropdownMenu: [
