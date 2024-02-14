@@ -27,18 +27,14 @@ export const MobileMenu = ({toggleMenuState}) => {
                 </button>
             </div>
 
-            <div className={"px-4 pt-24"}>
-                <ul>
-                    {
-                        navbarLinks.map((item, index) => (
-                            <div className={`py-2 hover:text-secondary hover:bg-white duration-75 cursor-pointer`} key={index}>
-                                <NavLink className={`text-xl ps-2`} to={item.link}>
-                                    {item.label}
-                                </NavLink>
-                            </div>
-                        ))
-                    }
-                </ul>
+            <div className={"px-4 pt-24 w-full"}>
+                {
+                    navbarLinks.map((item, index) => (
+                        <NavLink key={index} className={`block py-2 text-xl ps-3`} to={item.link}>
+                                {item.label}
+                        </NavLink>
+                    ))
+                }
             </div>
         </motion.div>
     )

@@ -4,4 +4,6 @@ body {
 
 .active {
     color: #FF9719;
+    background: rgba(255, 255, 255, 0.64);
+    border-radius: 20px;
 }
