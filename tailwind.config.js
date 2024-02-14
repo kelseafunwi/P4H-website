@@ -16,6 +16,7 @@ export default {
       'white': '#E4E4E4'
     },
     textColor:  {
+      'dark': '#212121',
       'primary' : '#026BCF',
       'secondary': '#FF9719'
     }

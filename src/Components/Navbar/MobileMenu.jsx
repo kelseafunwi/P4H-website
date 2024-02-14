@@ -30,7 +30,7 @@ export const MobileMenu = ({toggleMenuState}) => {
             <div className={"px-4 pt-24 w-full"}>
                 {
                     navbarLinks.map((item, index) => (
-                        <NavLink key={index} className={`block py-2 text-xl ps-3`} to={item.link}>
+                        <NavLink key={index} className={`block py-2 text-lg ps-3 text-dark`} to={item.link}>
                                 {item.label}
                         </NavLink>
                     ))

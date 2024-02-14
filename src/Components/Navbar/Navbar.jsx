@@ -42,7 +42,7 @@ export default function Navbar() {
                                     navbarLinks.map((item, index) => (
                                         <li key={index} className={"px-4"}>
                                             <NavLink to={item.link}
-                                               className={`font-bold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7`}>
+                                               className={`font-bold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
                                                 {item.label}
                                             </NavLink>
                                         </li>
