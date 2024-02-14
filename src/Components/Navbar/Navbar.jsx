@@ -1,6 +1,7 @@
 import logoImage from '/logo.png';
-import { Link } from 'react-router-dom';
-import {useState} from "react";
+import {useRef, useState} from "react";
+import {AlignJustify, X} from "lucide-react";
+import {motion} from "framer-motion";
 
 const navbarLinks = [
     {
@@ -36,6 +37,9 @@ export default function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const openButton = useRef(null);
+    const closeButton = useRef(null);
+
     const toggleMenuState = () => {
         setMenuOpen(!menuOpen);
     }
@@ -47,38 +51,76 @@ export default function Navbar() {
     return (
         <header className={"border-b-[1px] flex items-center justify-center"}>
             <div className={"max-w-6xl w-full h-20"}>
-                <nav className={"block md:flex w-full justify-between items-center"}>
+                <nav className={"flex w-full justify-between items-center"}>
                     <div className={"logo"}>
-                       <a href={"/"} className={"flex items-center"}>
-                           {logoImage && <img
-                               alt={"Logo image"} src={logoImage}
-                               className={"md:h-[93px] h-[85px]"}
-                           />}
-                       </a>
+                        <a href={"/"} className={"flex items-center"}>
+                            {logoImage && <img
+                                alt={"Logo image"} src={logoImage}
+                                className={"md:h-[93px] h-[85px]"}
+                            />}
+                        </a>
                     </div>
                     <div className={"flex items-center"}>
-                        <ul className={"hidden md:flex items-center justify-between gap-x-2"}>
+                        {
+                            !menuOpen &&
+                            <button onClick={toggleMenuState} ref={openButton}
+                                    className={"flex items-center justify-center pe-4 md:hidden"}>
+                                <AlignJustify/>
+                            </button>
+                        }
+                        {
+                            menuOpen &&
+                            <button onClick={toggleMenuState} ref={closeButton}
+                                    className={" flex items-center justify-center pe-4 md:hidden"}>
+                                <X/>
+                            </button>
+                        }
+                    </div>
+                    <div className={"hidden md:flex items-center"}>
+                        <ul className={"flex items-center justify-between gap-x-2"}>
                             {
                                 navbarLinks.map((item, index) => (
                                     <li key={index} className={"px-4"}>
-                                        <a href={item.link} className={"font-bold font-barlow p-0 text-[16px] leading-7"}>
+                                        <a href={item.link}
+                                           className={"font-bold font-barlow p-0 text-[16px] leading-7"}>
                                             {item.label}
                                         </a>
                                     </li>
                                 ))
                             }
                         </ul>
-                        <div className={"flex items-center"}>
-                            <button className={"flex items-center justify-center md:hidden"}>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                     strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-                                </svg>
-                            </button>
-                        </div>
                     </div>
+
                 </nav>
+                {
+                    menuOpen &&
+                    <motion.div
+                        initial={{
+                            height: 0,
+                            scale: 0,
+                        }}
+                        animate={{
+                            height: 1,
+                            scale: 1,
+                        }}
+                        transition={{
+                            duration: 0.3,
+                        }}
+                        className={"md:hidden items-center border-1 border-black pb-2 shadow-lg z-50"}>
+                        <ul className={"block"}>
+                            {
+                                navbarLinks.map((item, index) => (
+                                    <li key={index} className={"px-4"}>
+                                        <a href={item.link}
+                                           className={"font-bold font-barlow p-0 text-[16px] leading-7"}>
+                                            {item.label}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </motion.div>
+                }
             </div>
         </header>
     );

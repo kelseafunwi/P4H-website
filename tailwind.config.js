@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,8 +9,11 @@ export default {
     extend: {},
     fontFamily: {
       'barlow': ['Barlow'],
+    },
+    backgroundColor:  {
+      'primary' : '#026BCF',
+      'secondary': '#E4E4E4'
     }
   },
   plugins: [],
 }
-
