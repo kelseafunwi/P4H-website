@@ -1,5 +1,6 @@
 import HeroImage from '/hero.png';
 import {motion} from "framer-motion";
+import playStoreIcon from '/Google_Play-Icon-Logo.wine.svg'
 
 export const Hero = () => {
     return (
@@ -54,30 +55,30 @@ export const Hero = () => {
                                     <linearGradient id="paint0_linear_261_21466" x1="12.068" y1="2.16266" x2="16.8647"
                                                     y2="23.16"
                                                     gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#35AB4A"/>
-                                    <stop offset="0.297" stop-color="#31A145"/>
-                                    <stop offset="0.798" stop-color="#288739"/>
-                                    <stop offset="1" stop-color="#237A33"/>
+                                    <stop stopColor="#35AB4A"/>
+                                    <stop offset="0.297" stopColor="#31A145"/>
+                                    <stop offset="0.798" stopColor="#288739"/>
+                                    <stop offset="1" stopColor="#237A33"/>
                                     </linearGradient>
                                     <linearGradient id="paint1_linear_261_21466" x1="12.772" y1="15.908" x2="14.1294"
                                                     y2="44.6207"
                                                     gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#F14E5D"/>
-                                    <stop offset="0.499" stop-color="#EA3D4F"/>
-                                    <stop offset="1" stop-color="#E12138"/>
+                                    <stop stopColor="#F14E5D"/>
+                                    <stop offset="0.499" stopColor="#EA3D4F"/>
+                                    <stop offset="1" stopColor="#E12138"/>
                                     </linearGradient>
                                     <linearGradient id="paint2_linear_261_21466" x1="21.962" y1="9.93266" x2="24.3607"
                                                     y2="29.0747"
                                                     gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FFD844"/>
-                                    <stop offset="0.519" stop-color="#FFC63F"/>
-                                    <stop offset="1" stop-color="#FFB03A"/>
+                                    <stop stopColor="#FFD844"/>
+                                    <stop offset="0.519" stopColor="#FFC63F"/>
+                                    <stop offset="1" stopColor="#FFB03A"/>
                                     </linearGradient>
                                     <linearGradient id="paint3_linear_261_21466" x1="9.23533" y1="3.934" x2="10.3813"
                                                     y2="28.5407"
                                                     gradientUnits="userSpaceOnUse">
-                                    <stop offset="0.003" stop-color="#0090E6"/>
-                                    <stop offset="1" stop-color="#0065A0"/>
+                                    <stop offset="0.003" stopColor="#0090E6"/>
+                                    <stop offset="1" stopColor="#0065A0"/>
                                     </linearGradient>
                                     </defs>
                                 </svg>

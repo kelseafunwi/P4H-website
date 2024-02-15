@@ -1,5 +1,6 @@
 import search1 from '/search1.png';
 import search2 from '/search2.png';
+// import {motion} from 'framer-motion'
 
 export const Search = () => {
     return (

@@ -24,8 +24,10 @@ export default {
     textColor:  {
       'white': '#fff',
       'dark': '#212121',
+      'lightGray': '#424242',
+      'black': '#000',
       'primary' : '#026BCF',
-      'secondary': '#FF9719'
+      'secondary': '#FF9719',
     }
   },
   plugins: [],
