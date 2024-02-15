@@ -1,6 +1,6 @@
 import {createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
 import {MainLayout} from "./Layouts/MainLayout.jsx";
-import {Worker} from "../pages/Worker.jsx";
+import {Worker} from "../pages/Worker/Worker.jsx";
 import {Features} from "../pages/Features.jsx";
 import {Faqs} from "../pages/Faqs.jsx";
 import {Download} from "../pages/Download.jsx";
