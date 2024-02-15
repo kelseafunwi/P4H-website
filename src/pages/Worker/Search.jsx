@@ -45,6 +45,9 @@ export const Search = () => {
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
                         </p>
+                        <button className={"bg-primary text-white mt-8 py-4 rounded-2xl font-bold px-5 hover:opacity-90"}>
+                            Discover More Features
+                        </button>
                     </div>
 
                     <div className={"pl-5 relative w-fit flex justify-center items-center order-1 md:order-2"}>
