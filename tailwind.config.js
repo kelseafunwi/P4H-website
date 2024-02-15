@@ -13,7 +13,9 @@ export default {
     backgroundColor:  {
       'primary' : '#026BCF',
       'secondary': '#FF9719',
-      'white': '#E4E4E4'
+      'lightDark': '#E4E4E4',
+      'white': '#fff',
+      'dark' : '#212121',
     },
     textColor:  {
       'white': '#fff',
