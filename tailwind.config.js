@@ -6,7 +6,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      'primary' : '#026BCF',
+      'secondary': '#FF9719',
+    },
     fontFamily: {
       // 'barlow': ['Barlow', 'serif'],
     },
@@ -16,6 +19,7 @@ export default {
       'lightDark': '#E4E4E4',
       'white': '#fff',
       'dark' : '#212121',
+      'grey': '#E1F1FB',
     },
     textColor:  {
       'white': '#fff',
