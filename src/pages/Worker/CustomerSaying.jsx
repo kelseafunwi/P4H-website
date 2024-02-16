@@ -12,7 +12,7 @@ export const CustomerSaying = () => {
                      backgroundSize: 'cover',
                 }}
             >
-                <div className={"w-[80%] md:w-[60%] py-10 md:py-6"}>
+                <div className={"w-[80%] md:w-[60%] ps-4 md:ps-0 py-10 md:py-6"}>
                     <h1 className={"font-bold text-4xl text-start relative before:absolute before:bg-secondary before:left-[0] before:w-[72px] before:h-1 before:-bottom-3"}>What
                         Our Customers Saying
                     </h1>
