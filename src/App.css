@@ -9,3 +9,35 @@ body {
     background: rgba(255, 255, 255, 0.64);
     border-radius: 20px;
 }
+
+.hero-image-container img {
+    z-index:3;
+}
+
+@media (max-width: 574px) {
+    .hero-image-container::before,
+    .hero-image-container::after {
+        display: none;
+    }
+}
+
+.hero-image-container::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #4FACE7;
+    border-radius: 50%;
+    height: 410px;
+    width: 370px;
+    left: 15%;
+}
+
+.hero-image-container::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #4FACE7;
+    border-radius: 50%;
+    height: 503px;
+    width: 500px;
+    left: 4%;
+    overflow: visible;
+}

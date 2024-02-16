@@ -16,7 +16,7 @@ export default function Navbar() {
 
     return (
         <>
-            <header className={"border-b-[1px] md:flex items-center h-fit z-50 bg-white justify-center fixed left-0 right-0 top-0"}>
+            <header className={"border-b-[1px] border-[#E4E4E4] md:flex items-center h-fit z-50 bg-white justify-center fixed left-0 right-0 top-0"}>
                 <div className={"max-w-6xl w-full"}>
                     <nav className={"flex w-full justify-between items-center"}>
                         <div>

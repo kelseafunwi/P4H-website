@@ -11,8 +11,8 @@ export const HowItWorks = () => {
 
     return (
         <div className={"flex items-center justify-center"}>
-            <div className={"w-full justify-center md:w-[97%] bg-white  mb-5 mt-2 flex flex-col items-center"}>
-                <h1 className={"w-fit text-3xl relative text-dark font-bold before:absolute before:bg-secondary before:left-[30%] before:w-[72px] before:h-1 before:-bottom-2"}>
+            <div className={"w-full justify-center md:w-[97%] bg-white  my-7 mt-7 flex flex-col items-center"}>
+                <h1 className={"how-it-works w-fit text-3xl relative text-dark font-bold before:absolute before:bg-secondary before:left-[30%] before:w-[72px] before:h-1 before:-bottom-2"}>
                     How it Works
                 </h1>
 
@@ -59,7 +59,7 @@ export const HowItWorks = () => {
                                                 once: true
                                             }}
                                         >
-                                            <img src={installIcon} alt={"install icon"}/>
+                                            <img src={step.icon} alt={"install icon"}/>
                                             <h5 className={"font-bold text-dark  mt-2"}>Step {step.number}</h5>
                                             <h5 className={"font-bold mt-3 md:text-xl text-dark"}>{step.title}</h5>
                                             <p className={"text-sm pt-4 text-lightGray max-w-sm"}>{step.paragraph}</p>
@@ -68,6 +68,7 @@ export const HowItWorks = () => {
                                 }
                             </div>
                         }
+
                         {
                             tabState === CLIENT &&
                             <div className={"gap-x-5 w-full gap-y-6 grid grid-cols-1 sm:grid-cols-2"}>
@@ -89,7 +90,7 @@ export const HowItWorks = () => {
                                                 once: true
                                             }}
                                         >
-                                            <img src={installIcon} alt={"install icon"}/>
+                                            <img src={step.icon} alt={"install icon"}/>
                                             <h5 className={"font-bold text-dark  mt-2"}>Step {step.number}</h5>
                                             <h5 className={"font-bold mt-3 md:text-xl text-dark"}>{step.title}</h5>
                                             <p className={"text-sm pt-4 text-lightGray max-w-sm"}>{step.paragraph}</p>

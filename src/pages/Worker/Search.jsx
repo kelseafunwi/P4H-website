@@ -24,8 +24,8 @@ export const Search = () => {
                     </div>
                     <div className={"mt-6 md:mt-0 md:w-[500px] px-10 mb-10 md:mb-0"}>
                         <h3 className={"text-secondary font-bold"}>Feature</h3>
-                        <h1 className={'font-bold text-3xl'}>Our Search Feature to Filter Professionals</h1>
-                        <p className={"font-normal mt-4 text-sm"}>
+                        <h1 className={'font-bold text-dark text-3xl'}>Our Search Feature to Filter Professionals</h1>
+                        <p className={"font-normal mt-4 text-sm text-lightGray"}>
                             Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
@@ -40,8 +40,8 @@ export const Search = () => {
 
                     <div className={"mt-6 md:mt-0 md:w-[500px] px-10 mb-10 md:mb-0 order-2 md:order-1"}>
                         <h3 className={"text-secondary font-bold"}>Feature</h3>
-                        <h1 className={'font-bold text-3xl'}>Our Search Feature to Filter Professionals</h1>
-                        <p className={"font-normal mt-4 text-sm"}>
+                        <h1 className={'font-bold text-dark text-3xl'}>Our Search Feature to Filter Professionals</h1>
+                        <p className={"font-normal text-lightGray mt-4 text-sm"}>
                             Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
