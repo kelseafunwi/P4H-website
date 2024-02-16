@@ -1,9 +1,5 @@
 import {useState} from "react";
-import imageBgHome from '/img-home.png'
 import installIcon from '/downloadIcon.svg';
-import contactIcon from '/contactIcon.svg';
-import getHiredIcon from '/getHiredIcon.svg';
-import setupProfileIcon from '/setupProfileIcon.svg';
 import {motion} from 'framer-motion';
 import {workerRegistrationSteps, clientRegistrationSteps} from "../../constants/constant.js";
 
@@ -16,7 +12,7 @@ export const HowItWorks = () => {
     return (
         <div className={"flex items-center justify-center"}>
             <div className={"w-full justify-center md:w-[97%] bg-white  mb-5 mt-2 flex flex-col items-center"}>
-                <h1 className={"how-it-works w-fit text-3xl relative text-dark font-bold before:absolute before:bg-secondary before:left-[30%] before:w-[72px] before:h-1 before:-bottom-2"}>
+                <h1 className={"w-fit text-3xl relative text-dark font-bold before:absolute before:bg-secondary before:left-[30%] before:w-[72px] before:h-1 before:-bottom-2"}>
                     How it Works
                 </h1>
 
@@ -35,7 +31,7 @@ export const HowItWorks = () => {
                         For Clients
                     </button>
                 </div>
-                <div className={"w-full py-10 mt-0 px-4 flex justify-center gap-x-3 items-center mb-10"}
+                <div className={"w-full py-10 mt-0 px-4 flex justify-center gap-x-3 items-center mb-5"}
                     style={{
                         backgroundImage: "url('/img-home.png')",
                         backgroundRepeat: 'no-repeat',
@@ -72,7 +68,6 @@ export const HowItWorks = () => {
                                 }
                             </div>
                         }
-
                         {
                             tabState === CLIENT &&
                             <div className={"gap-x-5 w-full gap-y-6 grid grid-cols-1 sm:grid-cols-2"}>
