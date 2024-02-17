@@ -1,9 +1,9 @@
 import {createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
 import {MainLayout} from "./Layouts/MainLayout.jsx";
 import {Home} from "../pages/Home/Home.jsx";
-import {Features} from "../pages/Features.jsx";
+import {Features} from "../pages/Features/Features.jsx";
 import {Faqs} from "../pages/Faqs.jsx";
-import {Download} from "../pages/Download.jsx";
+import {Download} from "../pages/Download/Download.jsx";
 import {About} from "../pages/About.jsx";
 import {Contact} from "../pages/Contact.jsx";
 import {Worker} from "../pages/Worker/Worker.jsx";
