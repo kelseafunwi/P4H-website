@@ -64,7 +64,7 @@ export const Footer = () => {
                     </div>
 
                     <div className={"md:px-6 md:py-5 md:border-s-[1px] border-white2"}>
-                        <h3 className={"text-primary2  text-lg font-bold"}>Download Pro<span
+                        <h3 className={"text-primary2 text-nowrap text-lg font-bold"}>Download Pro<span
                             className={"text-secondary"}>4</span>Home</h3>
 
                         <div className={"flex py-5 flex-col gap-y-4 md:items-center"}>

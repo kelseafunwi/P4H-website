@@ -31,12 +31,12 @@ export default function Navbar() {
                             {
                                 !menuOpen &&
                                 <button onClick={toggleMenuState}
-                                        className={"flex items-center justify-center pe-4 md:hidden"}>
+                                        className={"flex items-center justify-center pe-4 lg:hidden"}>
                                     <AlignJustify size={32} color={'#026BCF'}/>
                                 </button>
                             }
                         </div>
-                        <div className={"hidden md:flex items-center"}>
+                        <div className={"hidden lg:flex items-center"}>
                             <ul className={"flex items-center justify-between gap-x-2"}>
                                 {
                                     navbarLinks.map((item, index) => (

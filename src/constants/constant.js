@@ -8,9 +8,12 @@ import chooseHireIcon from '/chooseHireIcon.svg';
 
 export const navbarLinks = [
     {
-        label: "For Workers",
+        label: "Home",
         link: "/",
-        active: true,
+    },
+    {
+        label: "For Workers",
+        link: "/worker",
     },
     {
         label: "Download",

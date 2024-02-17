@@ -19,10 +19,10 @@ export const MobileMenu = ({toggleMenuState}) => {
                 width: 0,
                 rotate: '20deg',
             }}
-            className={" fixed md:hidden top-0 bottom-0 text-white right-0 z-50 shadow-sm border-l-2 bg-primary w-[300px]"}>
+            className={" fixed lg:hidden top-0 bottom-0 text-white right-0 z-50 shadow-sm border-l-2 bg-primary w-[300px]"}>
             <div className={"absolute top-10 right-0"}>
                 <button onClick={toggleMenuState}
-                        className={" flex items-center justify-center pe-4 md:hidden"}>
+                        className={" flex items-center justify-center pe-4 lg:hidden"}>
                     <X size={32} color={'#E4E4E4'}/>
                 </button>
             </div>

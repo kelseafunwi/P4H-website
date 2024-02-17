@@ -1,13 +1,15 @@
 import HeroImage from '/hero.png';
 import {motion} from "framer-motion";
 import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
+import workerHeroImage from '/img-for-workers-hero.png';
+import tick from '/ticks.png';
 
 export const Hero = () => {
     return (
         <>
-            <div className={"w-full  bg-primary flex justify-center h-fit text-white py-4  sm:py-11"}>
-                <div className={"md:flex max-w-7xl overflow-hidden justify-between items-center py-9 gap-3"}>
-                    <div className={"ps-5 md:ps-2 pt-4 max-w-[500px] pe-1 gap-y-4 flex flex-col justify-between"}>
+            <div className={"w-full pt-5  md:py-0 mb-2 bg-secondary flex justify-center h-fit text-white "}>
+                <div className={"grid grid-cols-1 gap-y-10 sm:grid-cols-2 justify-between items-center"}>
+                    <div className={"ps-2 sm:ps-[13%] py-6 gap-y-4 flex flex-col max-w-[600px] justify-center"}>
                         <h2 className={"font-bold text-4xl md:text-4xl leading-10"}>
                             We Help You Find and Hire the right professionals
                         </h2>
@@ -16,7 +18,7 @@ export const Hero = () => {
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
                         </p>
-                        <div className={"flex items-center gap-x-5 mb-3"}>
+                        <div className={"flex items-center gap-x-2"}>
                             <PlayStoreButton />
                             <AppStoreButton />
                         </div>
@@ -31,8 +33,28 @@ export const Hero = () => {
                         transition={{
                             duration: 1
                         }}
-                        className={"hero-image-container mt-10 md:mt-0 relative flex items-center justify-end"}>
-                        <img src={HeroImage} className={"max-w-[550px] relative"} alt={"Hero Image"}/>
+                        className={"relative flex items-center justify-end"}>
+                        <img src={workerHeroImage} className={"h-[30%]"} alt={"Hero Image"}/>
+                        <div className={"absolute md:-left-9  flex gap-y-2 flex-col bottom-0 md:bottom-10 bg-white py-4 px-5"}>
+                            <div className={"text-dark gap-x-4 flex items-center text-[13px]"}>
+                                <span className={"text-dark"}>
+                                    <img src={tick} className={"w-4"} alt={"Tick Icon"}/>
+                                </span>
+                                Send Request
+                            </div>
+                            <div className={"text-dark gap-x-4 flex items-center text-[13px]"}>
+                                <span className={"text-dark"}>
+                                    <img src={tick} className={"w-4"} alt={"Tick Icon"}/>
+                                </span>
+                                We contact and connect you to a professional
+                            </div>
+                            <div className={"text-dark gap-x-4 flex items-center text-[13px]"}>
+                                <span className={"text-dark"}>
+                                    <img src={tick} className={"w-4"} alt={"Tick Icon"}/>
+                                </span>
+                                We take care negotiations
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
             </div>

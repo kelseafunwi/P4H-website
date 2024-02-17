@@ -1,18 +1,16 @@
-import {Hero} from "./Hero.jsx";
-import {Search} from "./Search.jsx";
-import {HowItWorks} from "./HowItWorks.jsx";
-import {CustomerSaying} from "./CustomerSaying.jsx";
-import {Getting} from "./Getting.jsx";
+import {Hero} from './Hero.jsx';
 import {Footer} from "../../Components/Footer.jsx";
+import {GetStarted} from "./GetStarted.jsx";
+import {JoinUs} from "./JoinUs.jsx";
+import {WorkWithUs} from "./WorkWithUs.jsx";
 
 export const Worker = () => {
     return (
         <>
             <Hero />
-            <Search />
-            <HowItWorks />
-            <CustomerSaying />
-            <Getting />
+            <GetStarted />
+            <JoinUs />
+            <WorkWithUs />
             <Footer />
         </>
     )
