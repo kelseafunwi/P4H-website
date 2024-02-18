@@ -38,6 +38,8 @@ export default {
     borderColor: {
       'white2': '#B4DBF5',
       'primary': '#4FACE7',
+      'primary2': '#0488DD',
+      'secondary': '#FF9719',
     }
   },
   plugins: [],

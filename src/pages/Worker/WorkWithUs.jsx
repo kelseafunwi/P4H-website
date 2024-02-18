@@ -1,7 +1,7 @@
 import workWithUsImage from '/img-for-workers-why-work-with-us.png';
 import thumbsUpIcon from '/thumbsUpIcon.svg'
-import sellIcon from '/public/sellIcon.svg'
-import sell1Icon from '/public/sell1Icon.png';
+import sellIcon from '/sellIcon.svg'
+import sell1Icon from '/sell1Icon.png';
 import imgWorkerPhoneIcon from '/img-for-workers-why-work-with-us-phone.png';
 
 export const WorkWithUs = () => {

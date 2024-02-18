@@ -32,7 +32,7 @@ export const Hero = () => {
                             duration: 1
                         }}
                         className={"hero-image-container mt-10 md:mt-0 relative flex items-center justify-end"}>
-                        <img src={HeroImage} className={"max-w-[550px] relative"} alt={"Hero Image"}/>
+                        <img loading={'lazy'} src={HeroImage} className={"max-w-[550px] relative"} alt={"Hero Image"}/>
                     </motion.div>
                 </div>
             </div>
