@@ -16,6 +16,7 @@ export default {
     backgroundColor:  {
       'primary' : '#026BCF',
       'primary2': '#0488DD',
+      'primary3': '#2A9AE2',
       'secondary': '#FF9719',
       'secondary2': '#FFF3E3',
       'lightDark': '#E4E4E4',
@@ -33,6 +34,7 @@ export default {
       'black': '#000',
       'primary' : '#026BCF',
       'primary2': '#0488DD',
+      'primary3': '#2A9AE2',
       'secondary': '#FF9719',
     },
     borderColor: {
@@ -40,6 +42,7 @@ export default {
       'primary': '#4FACE7',
       'primary2': '#0488DD',
       'secondary': '#FF9719',
+      'dark': '#BCBCBC',
     }
   },
   plugins: [],

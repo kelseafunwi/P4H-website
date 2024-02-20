@@ -27,9 +27,19 @@ export const navbarLinks = [
         label: "About",
         link: "/about",
         dropdownMenu: [
-            'Us',
-            'Worker',
-            'Another thing'
+            {
+                label: "About Pro4Home",
+                link: "/about/us"
+            },
+            {
+                label: "Team",
+                link: "/about/team"
+            },
+            {
+                label: "Our Blog",
+                link: "/about/blog"
+            },
+
         ]
     },
     {
