@@ -36,7 +36,7 @@ export const navbarLinks = [
                 link: "/about/team"
             },
             {
-                label: "Our Blog",
+                label: "Our Blogs",
                 link: "/about/blog"
             },
 
@@ -55,9 +55,16 @@ export const navbarLinks = [
         label: "ENG",
         link: "/eng",
         dropdownMenu: [
-            "English",
-            "French"
-        ]
+            {
+                label: "English",
+                link: '/eng'
+            },
+            {
+                label: "French",
+                link: 'fre'
+            }
+        ],
+        fromRight: true,
     }
 ]
 

@@ -1,8 +1,8 @@
-import logo1 from '/logo-dumm1.png';
-import logo2 from '/logo-dummy2.png';
-import logo3 from '/logo-dummy3.png';
-import logo4 from '/logo-dummy4.png';
-import logo5 from '/logo-dummy5.png';
+import logo1 from '/dummy/logo-dumm1.png';
+import logo2 from '/dummy/logo-dummy2.png';
+import logo3 from '/dummy/logo-dummy3.png';
+import logo4 from '/dummy/logo-dummy4.png';
+import logo5 from '/dummy/logo-dummy5.png';
 
 export const JoinUs = () => {
     return (

@@ -23,6 +23,7 @@ export default {
       'lightGray': '#F6F6F6',
       'white': '#fff',
       'dark' : '#212121',
+      'dark1': '#BCBCBC',
       'grey': '#E1F1FB',
     },
     textColor:  {
@@ -32,6 +33,7 @@ export default {
       'lightGray': '#424242',
       'lightDark': '#646464',
       'black': '#000',
+      'black2': '#110F24',
       'primary' : '#026BCF',
       'primary2': '#0488DD',
       'primary3': '#2A9AE2',

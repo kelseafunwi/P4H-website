@@ -13,11 +13,20 @@ body {
 }
 
 .link-item .dropdown {
-    display: none;
+    display: none !important;
+    border-radius: 0 !important;
 }
 
 .link-item:hover .dropdown {
-    display: block;
+    display: block !important;
+}
+
+.list-item .dropdown a {
+    border-radius: 0 !important;
+}
+
+.list-item:hover .dropdown a {
+    border-radius: 0 !important;
 }
 
 .hero-image-container img {

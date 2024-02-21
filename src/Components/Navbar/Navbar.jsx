@@ -41,36 +41,36 @@ export default function Navbar() {
                             <ul className={"flex items-center justify-between gap-x-2"}>
                                 {
                                     navbarLinks.map((item, index) => (
-                                        <li key={index} className={"relative px-2"}>
+                                        <li key={index} className={"relative link-item px-2"}>
                                             <NavLink to={item.link}
-                                               className={`relative link-item whitespace-nowrap flex items-center font-semibold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
+                                               className={`relative whitespace-nowrap flex items-center font-semibold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
                                                 {item.eng && <Globe size={24} className={"pe-1"} />}
                                                 {item.label}
                                                 {
                                                     item.dropdownMenu &&
                                                     <ChevronDown size={35}  className={"px-2 text-black"}/>
                                                 }
-                                                {
-                                                    item.dropdownMenu &&
-                                                    <motion.div className={"dropdown hidden  absolute left-0 px-4 top-[110%] bg-white py-4 w-[200px] z-50 shadow-md overflow-hidden"}
-                                                        initial={{
-                                                            height: 0,
-                                                        }}
-                                                        animate={{
-                                                            height: 'fit-content'
-                                                        }}
-                                                    >
-                                                        {
-                                                            item.dropdownMenu &&
-                                                            item.dropdownMenu.map((item, index) => (
-                                                                <NavLink to={item.link} key={index} className={"flex py-2 last-of-type:border-none text-sm px-2 border-b-2 border-b-dark text-dark hover:text-secondary"}>
-                                                                    {item.label}
-                                                                </NavLink>
-                                                            ))
-                                                        }
-                                                    </motion.div>
-                                                }
                                             </NavLink>
+                                            {
+                                                item.dropdownMenu &&
+                                                <motion.div className={`dropdown  ${item.fromRight ? 'right-0' : 'left-0'} absolute  px-4 top-[100%] bg-white py-4 w-[200px] z-[200] shadow-md overflow-hidden`}
+                                                            initial={{
+                                                                height: 0,
+                                                            }}
+                                                            animate={{
+                                                                height: 'fit-content'
+                                                            }}
+                                                >
+                                                    {
+                                                        item.dropdownMenu &&
+                                                        item.dropdownMenu.map((item, index) => (
+                                                            <NavLink to={item.link} key={index} className={"flex py-2 last-of-type:border-none text-sm px-2 border-b-2 border-b-dark text-dark hover:text-secondary"}>
+                                                                {item.label}
+                                                            </NavLink>
+                                                        ))
+                                                    }
+                                                </motion.div>
+                                            }
                                         </li>
                                     ))
                                 }

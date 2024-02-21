@@ -1,6 +1,6 @@
-import facebook from '/facebook.png';
-import twitter from '/twitter.png';
-import youtube from '/youtube.png';
+import facebook from '/socialIcons/facebook.png';
+import twitter from '/socialIcons/twitter.png';
+import youtube from '/socialIcons/youtube.png';
 import {AppStoreButton, PlayStoreButton} from "./GetButtons.jsx";
 
 export const Footer = () => {

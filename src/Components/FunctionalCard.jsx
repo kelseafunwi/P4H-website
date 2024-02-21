@@ -65,6 +65,6 @@ FunctionalCard.propTypes = {
     title: PropTypes.string,
     header: PropTypes.string,
     list: PropTypes.array,
-    styling: 'dark' | 'light',
+    styling: PropTypes.string,
     appendHeader: PropTypes.node
 }
