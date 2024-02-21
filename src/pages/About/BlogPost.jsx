@@ -5,8 +5,9 @@ import blog1 from "/Blog/img-about-blog-1.png";
 import blog2 from "/Blog/img-about-blog-2.png";
 import blog3 from "/Blog/img-about-blog-3.png";
 import {Footer} from "../../Components/Footer.jsx";
-import {useEffect} from "react";
+import {useEffect, useRef} from "react";
 import {Comment} from '../../Components/Comment.jsx';
+import axios  from 'axios'
 
 const articles = [
     {
@@ -31,7 +32,29 @@ const articles = [
 
 export const BlogPost = () => {
 
+    const nameRef = useRef(null);
+    const emailRef = useRef(null);
+    const bodyRef = useRef(null);
+
+
     const {id} = useParams();
+
+
+    const submitComment = (e) => {
+        e.preventDefault();
+        console.log("name ", nameRef.current.value)
+
+        axios.post(`/blog/${id}`, {
+            name: nameRef.current.value,
+            email: emailRef.current.value,
+            body: bodyRef.current.value
+        }).then((res) => {
+            console.log(res);
+        }).catch((error) => {
+            console.log("Error occured in sending the data");
+        })
+
+    }
 
     useEffect(() => {
         console.log(id);
@@ -150,58 +173,65 @@ export const BlogPost = () => {
                                 </button>
                             </div>
 
-                            <div
-                                className={"md:px-16 my-16 py-10 flex flex-col gap-y-3 border-t-[1px] border-dark"}> {/* Form box begins here */}
-                                <h1 className={"text-dark font-[900] text-[28px]"}>Leave a Comment</h1>
+                            <form onSubmit={(e) => submitComment(e)}>
+                                <div
+                                    className={"md:px-16 my-16 py-10 flex flex-col gap-y-3 border-t-[1px] border-dark"}> {/* Form box begins here */}
+                                    <h1 className={"text-dark font-[900] text-[28px]"}>Leave a Comment</h1>
 
-                                <div className={"grid grid-cols-1 md:grid-cols-2 gap-3"}>
-                                    <div className={"flex flex-col"}>
-                                        <h4 className={"font-bold text-[16px] text-dark"}>
-                                            Name
-                                        </h4>
-                                        <div>
-                                            <input
-                                                type={"text"}
-                                                className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
+                                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-3"}>
+                                        <div className={"flex flex-col"}>
+                                            <h4 className={"font-bold text-[16px] text-dark"}>
+                                                Name
+                                            </h4>
+                                            <div>
+                                                <input
+                                                    ref={nameRef}
+                                                    type={"text"}
+                                                    className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
+                                            </div>
+                                        </div>
+
+                                        <div className={"flex flex-col"}>
+                                            <h4 className={"font-bold text-[16px] text-dark"}>
+                                                Email
+                                            </h4>
+                                            <div>
+                                                <input
+                                                    ref={emailRef}
+                                                    type={"email"}
+                                                    className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div className={"flex flex-col"}>
                                         <h4 className={"font-bold text-[16px] text-dark"}>
-                                            Email
+                                            Comment
                                         </h4>
                                         <div>
-                                            <input
-                                                type={"email"}
-                                                className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className={"flex flex-col"}>
-                                    <h4 className={"font-bold text-[16px] text-dark"}>
-                                        Comment
-                                    </h4>
-                                    <div>
                                         <textarea
+                                            ref={bodyRef}
                                             className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
+                                        </div>
+                                    </div>
+
+                                    <div className={"flex items-center"}>
+                                        <button
+                                            type={'submit'}
+                                            className={"text-white text-center  bg-primary2 hover:bg-primary3 rounded-md py-2 px-2 font-bold text-sm"}>
+                                            Post Comment
+                                        </button>
                                     </div>
                                 </div>
-
-                                <div className={"flex items-center"}>
-                                    <button
-                                        className={"text-white text-center  bg-primary2 hover:bg-primary3 rounded-md py-2 px-2 font-bold text-sm"}>
-                                        Post Comment
-                                    </button>
-                                </div>
-                            </div>
+                            </form>
 
                             <div className={"w-full my-16"}>
                                 <div className={"flex items-center justify-between"}>
                                     <h1 className={"w-fit text-dark font-bold text-[33px]"}>All Articles</h1>
 
                                     <div className={"pe-2 flex items-center"}>
-                                        <a className={"text-primary2 font-bold text-end text-[16px]"} href={"#"}>See More Articles</a>
+                                        <a className={"text-primary2 font-bold text-end text-[16px]"} href={"#"}>See
+                                            More Articles</a>
                                     </div>
                                 </div>
 

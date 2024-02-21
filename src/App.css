@@ -12,6 +12,10 @@ body {
     border-radius: 20px;
 }
 
+.active svg {
+    color: #FF9719 !important;
+}
+
 .link-item .dropdown {
     display: none !important;
     border-radius: 0 !important;

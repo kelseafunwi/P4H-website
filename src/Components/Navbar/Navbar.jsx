@@ -41,7 +41,7 @@ export default function Navbar() {
                             <ul className={"flex items-center justify-between gap-x-2"}>
                                 {
                                     navbarLinks.map((item, index) => (
-                                        <li key={index} className={"relative link-item px-2"}>
+                                        <li key={index} className={"relative link-item  px-2"}>
                                             <NavLink to={item.link}
                                                className={`relative whitespace-nowrap flex items-center font-semibold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
                                                 {item.eng && <Globe size={24} className={"pe-1"} />}
