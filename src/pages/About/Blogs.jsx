@@ -12,6 +12,7 @@ import blog6 from '/Blog/img-about-blog-6.png';
 import blog7 from '/Blog/img-about-blog-7.png';
 import blog8 from '/Blog/img-about-blog-8.png';
 import blog9 from '/Blog/img-about-blog-9.png';
+import {Link} from "react-router-dom";
 
 const articles = [
     {
@@ -155,7 +156,7 @@ export const Blogs = () => {
                                             once: true,
                                         }}
                                         key={index}>
-                                        <a href={`/about/blog/${index}`}>
+                                        <Link to={`/about/blog/${index}`}>
                                             <img className={"scale-95  hover:scale-100 duration-200"}
                                                  src={article.image} alt={"Article Image"}/>
                                             <div className={"px-5 py-4 flex flex-col gap-y-2"}>
@@ -175,7 +176,7 @@ export const Blogs = () => {
                                                     </span>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </motion.div>
                                 ))
                             }
