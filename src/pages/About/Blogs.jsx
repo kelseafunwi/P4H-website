@@ -3,15 +3,15 @@ import aboutBlogHero from '/aboutBlogHero.png';
 import searchIcon from '/searchIcon.png'
 import {motion} from 'framer-motion'
 import {Footer} from "../../Components/Footer.jsx";
-import blog1 from '/public/Blog/img-about-blog-1.png';
-import blog2 from '/public/Blog/img-about-blog-2.png';
-import blog3 from '/public/Blog/img-about-blog-3.png';
-import blog4 from '/public/Blog/img-about-blog-4.png';
-import blog5 from '/public/Blog/img-about-blog-5.png';
-import blog6 from '/public/Blog/img-about-blog-6.png';
-import blog7 from '/public/Blog/img-about-blog-7.png';
-import blog8 from '/public/Blog/img-about-blog-8.png';
-import blog9 from '/public/Blog/img-about-blog-9.png';
+import blog1 from '/Blog/img-about-blog-1.png';
+import blog2 from '/Blog/img-about-blog-2.png';
+import blog3 from '/Blog/img-about-blog-3.png';
+import blog4 from '/Blog/img-about-blog-4.png';
+import blog5 from '/Blog/img-about-blog-5.png';
+import blog6 from '/Blog/img-about-blog-6.png';
+import blog7 from '/Blog/img-about-blog-7.png';
+import blog8 from '/Blog/img-about-blog-8.png';
+import blog9 from '/Blog/img-about-blog-9.png';
 
 const articles = [
     {

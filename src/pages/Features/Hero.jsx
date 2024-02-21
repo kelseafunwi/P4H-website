@@ -2,7 +2,7 @@ import heroImage from '/img-features-hero.png';
 
 export const Hero = () => {
     return (
-        <div className={"md:px-16 py-5 flex flex-col md:flex-row items-center justify-center bg-cover bg-top lg:bg-bottom bg-[url('/public/featureHeroBg.svg')]"}>
+        <div className={"md:px-16 py-5 flex flex-col md:flex-row items-center justify-center bg-cover bg-top lg:bg-bottom bg-[url('/featureHeroBg.svg')]"}>
             <div className={"w-[70%] order-2 md:order-1"}>
                 <img src={heroImage} className={"w-full"} alt={"Hero Image"}/>
             </div>

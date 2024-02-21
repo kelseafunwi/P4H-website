@@ -1,13 +1,13 @@
 import {Header} from "./Header.jsx";
 import {Footer} from "../../Components/Footer.jsx";
-import team1 from '/public/Team/1.png';
-import team2 from '/public/Team/2.png';
-import team3 from '/public/Team/3.png';
-import team4 from '/public/Team/4.png';
-import team5 from '/public/Team/5.png';
-import team6 from '/public/Team/6.png';
-import team7 from '/public/Team/7.png';
-import team8 from '/public/Team/2.png';
+import team1 from '/Team/1.png';
+import team2 from '/Team/2.png';
+import team3 from '/Team/3.png';
+import team4 from '/Team/4.png';
+import team5 from '/Team/5.png';
+import team6 from '/Team/6.png';
+import team7 from '/Team/7.png';
+import team8 from '/Team/2.png';
 
 import {motion} from 'framer-motion';
 
