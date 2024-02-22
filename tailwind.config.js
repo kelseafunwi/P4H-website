@@ -45,6 +45,10 @@ export default {
       'primary2': '#0488DD',
       'secondary': '#FF9719',
       'dark': '#BCBCBC',
+      'dark3': '#E4E4E4',
+    },
+    shadowColor: {
+      'primary2': '#0488DD',
     }
   },
   plugins: [],

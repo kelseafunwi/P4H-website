@@ -6,6 +6,7 @@ body {
 
 /*Navigation bar section */
 
+
 .active {
     color: #FF9719 !important;
     background: rgba(255, 255, 255, 0.64);
@@ -63,4 +64,8 @@ body {
     width: 500px;
     left: 4%;
     overflow: visible;
+}
+
+.header-text:before {
+    left: calc(50% - 36px);
 }

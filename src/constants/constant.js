@@ -5,6 +5,14 @@ import getHiredIcon from '/getHiredIcon.svg';
 import setupProfileIcon from '/setupProfileIcon.svg';
 import searchProfessionalIcon from '/searchProfileicon.svg';
 import chooseHireIcon from '/chooseHireIcon.svg';
+import team1 from '/Team/1.png';
+import team2 from '/Team/2.png';
+import team3 from '/Team/3.png';
+import team4 from '/Team/4.png';
+import team5 from '/Team/5.png';
+import team6 from '/Team/6.png';
+import team7 from '/Team/7.png';
+import team8 from '/Team/8.png';
 
 export const navbarLinks = [
     {
@@ -101,6 +109,50 @@ export const workerRegistrationSteps = [
     }
 ]
 
+export const team = [
+    {
+        image: team1,
+        name: "Chelsea Larson-Howe",
+        position: "Direct Web Coordinator",
+    },
+    {
+        image: team2,
+        name: "Direct Web Coordinator",
+        position: "Direct Web Coordinator",
+    },
+    {
+        image: team3,
+        name: "Jay Schumm",
+        position: "Internal Brand Planner",
+    },
+    {
+        image: team4,
+        name: "Internal Brand Planner",
+        position: "Internal Brand Planner",
+    },
+    {
+        image: team5,
+        name: "David Franey",
+        position: "Principal Response Technician",
+    },
+    {
+        image: team6,
+        name: "Jean Baumbach",
+        position: "Lead Data Supervisor",
+    },
+    {
+        image: team7,
+        name: "Al Pfannerstill",
+        position: "Dynamic Identity Technician",
+    },
+    {
+        image: team8,
+        name: "Alison Johnson",
+        position: "Human Solutions Specialist",
+    },
+
+]
+
 export const clientRegistrationSteps = [
     {
         icon: installIcon,
@@ -126,4 +178,65 @@ export const clientRegistrationSteps = [
         title: 'Choose and Hire !',
         paragraph: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis. "
     },
+]
+
+export const categories = [
+    {
+        title: "All Questions",
+        identifier: 'all',
+    },
+    {
+        title: "For Workers",
+        identifier: 'worker',
+    },
+    {
+        title: "Managing your Account",
+        identifier: 'account'
+    },
+    {
+        title: "Payments",
+        identifier: "payment",
+    }
+]
+
+export const questionsAndAnswers = [
+    {
+        question: "What is pro4home?",
+        answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
+    },
+    {
+        question: "What kind of support does Pro4Home provide? ",
+        answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
+    },
+    {
+        question: "How do you find different criteria in your process?",
+        answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
+    },
+    {
+        question: "Do you recommend pro4home ?",
+        answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
+    },
+    {
+        question: "How do I get help from your team?",
+        answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
+    },
+
+
+    // For worker section
+    {
+        identifier: "worker",
+        question: "How to create my pro4home workers/professionals account",
+        answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
+    },
+    {
+        identifier: "worker",
+        question: "What documents do i need to register?",
+        answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
+    },
+    {
+        identifier: "worker",
+        question: "How to  add my services",
+        answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
+    },
+
 ]
