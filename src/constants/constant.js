@@ -58,22 +58,6 @@ export const navbarLinks = [
         label: "Contact",
         link: "/contact",
     },
-    {
-        eng: true,
-        label: "ENG",
-        link: "/eng",
-        dropdownMenu: [
-            {
-                label: "English",
-                link: '/eng'
-            },
-            {
-                label: "French",
-                link: 'fre'
-            }
-        ],
-        fromRight: true,
-    }
 ]
 
 export const workerRegistrationSteps = [

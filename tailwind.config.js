@@ -18,6 +18,7 @@ export default {
       'primary2': '#0488DD',
       'primary3': '#2A9AE2',
       'primary4': '#007CD4',
+      'primary5': '#009CE3',
       'secondary': '#FF9719',
       'secondary2': '#FFF3E3',
       'lightDark': '#E4E4E4',

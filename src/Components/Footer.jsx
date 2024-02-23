@@ -24,9 +24,9 @@ export const Footer = () => {
                         <h3 className={"text-primary2 text-lg font-bold"}>ABOUT US</h3>
 
                         <div className={"flex flex-col mt-3  gap-y-3"}>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about"}>About Pro4Home</a>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about"}>Our Team</a>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about"}>Terms of Use</a>
+                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about/us"}>About Pro4Home</a>
+                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about/team"}>Our Team</a>
+                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/terms-of-service"}>Terms of Use</a>
                             <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about"}>Privacy Policy</a>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ export const Footer = () => {
                         <h3 className={"text-primary2 text-lg font-bold"}>Support</h3>
 
                         <div className={"flex flex-col mt-3  gap-y-3"}>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/faq"}>FAQ</a>
+                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/faqs"}>FAQ</a>
                             <a className={"text-lightDark hover:font-semibold text-sm"} href={"/contact"}>Contact</a>
                         </div>
 
