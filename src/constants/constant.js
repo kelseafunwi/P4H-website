@@ -183,7 +183,6 @@ export const clientRegistrationSteps = [
 export const categories = [
     {
         title: "All Questions",
-        identifier: 'all',
     },
     {
         title: "For Workers",
@@ -201,39 +200,47 @@ export const categories = [
 
 export const questionsAndAnswers = [
     {
+        key: 0,
+        identifier: 'account',
         question: "What is pro4home?",
         answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
     },
     {
+        key: 1,
         question: "What kind of support does Pro4Home provide? ",
         answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
     },
     {
+        key: 2,
         question: "How do you find different criteria in your process?",
         answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
     },
     {
+        key: 3,
         question: "Do you recommend pro4home ?",
         answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
     },
     {
+        key: 4,
+        identifier: 'payment',
         question: "How do I get help from your team?",
         answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
     },
-
-
     // For worker section
     {
+        key: 5,
         identifier: "worker",
         question: "How to create my pro4home workers/professionals account",
         answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
     },
     {
+        key: 6,
         identifier: "worker",
         question: "What documents do i need to register?",
         answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."
     },
     {
+        key: 7,
         identifier: "worker",
         question: "How to  add my services",
         answer: "Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque. Integer aliquet egestas malesuada velit est ullamcorper. Tincidunt proin amet sem nisl. Sit aliquam dictum egestas consectetur. Quis ultrices augue sollicitudin velit amet sed. Nunc egestas id sit vitae. Rhoncus cras sollicitudin volutpat feugiat vulputate. Faucibus nisi ultrices lorem a aliquet consectetur sed orci eget. Et ac pharetra eu mauris orci sed purus dignissim neque. Duis pretium cursus at a elit lectus eu aliquet tempus. Odio pellentesque ut maecenas facilisis. Scelerisque in morbi sed vitae nisi integer egestas arcu malesuada."

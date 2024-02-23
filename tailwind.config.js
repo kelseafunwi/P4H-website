@@ -47,7 +47,7 @@ export default {
       'dark': '#BCBCBC',
       'dark3': '#E4E4E4',
     },
-    shadowColor: {
+    boxShadowColor: {
       'primary2': '#0488DD',
     }
   },
