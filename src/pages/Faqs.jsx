@@ -65,7 +65,6 @@ const FilterCategory = ({categoryString}) => {
 
 export const Faqs = () => {
     const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
-    const [activeElements, setActiveElements] = useState([0]);
 
     return (
         <>
@@ -75,7 +74,7 @@ export const Faqs = () => {
                 <div className={"md:flex gap-x-5 lg:px-20 w-full"}> {/* Container Element */}
                     <div className={"w-full  md:w-4/12 flex flex-col gap-y-5 "}> {/* Left Section */}
                         <div
-                            className={"rounded-xl bg-cover bg-left-bottom bg-[url('/faqsBackground.jpg')] px-10 py-10"}>
+                            className={"order-2 md:order-1 rounded-xl bg-cover bg-left-bottom bg-[url('/faqsBackground.jpg')] px-10 py-10"}>
                             {
                                 categories.map((category, index) => (
                                     <div key={index}
@@ -90,7 +89,7 @@ export const Faqs = () => {
                                 ))
                             }
                         </div>
-                        <div className={"w-full rounded-xl bg-cover bg-left-bottom bg-[url('/faqBackground2.jpg')]"}>
+                        <div className={"order-1 md:order-2 w-full rounded-xl bg-cover bg-left-bottom bg-[url('/faqBackground2.jpg')]"}>
                             <div className={"bg-white w-fit mx-2 md:mx-10 my-10 py-10 px-4"}>
                                 <h1 className={"font-bold text-dark text-3xl"}>Do you have More Questions?</h1>
 
@@ -104,7 +103,7 @@ export const Faqs = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"w-full md:w-8/12"}>
+                    <div className={"w-full py-3 md:w-8/12"}>
                         <div className={"px-4"}>
                             {
                                 activeCategoryIndex === 0 &&
