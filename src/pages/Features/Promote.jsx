@@ -1,5 +1,6 @@
 import {FunctionalCard} from "../../Components/FunctionalCard.jsx";
 import featureWorker3 from '/img-features-worker-3.png';
+import {motion} from 'framer-motion';
 
 export const Promote = () => {
 
@@ -25,9 +26,19 @@ export const Promote = () => {
                 />
             </div>
 
-            <div>
+            <motion.div
+                initial={{
+                    scale: 0,
+                }}
+                whileInView={{
+                    scale: 1,
+                }}
+                transition={{
+                    duration: 0.7
+                }}
+            >
                 <img className={"w-full"} src={featureWorker3} alt={"Feature Worker"}/>
-            </div>
+            </motion.div>
         </div>
     )
 }

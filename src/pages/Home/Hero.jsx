@@ -7,8 +7,19 @@ export const Hero = () => {
         <>
             <div className={"w-full  bg-primary flex justify-center h-fit text-white py-4  sm:py-11"}>
                 <div className={"md:flex max-w-7xl overflow-hidden justify-between items-center py-9 gap-3"}>
-                    <div className={"ps-5 md:ps-2 pt-4 max-w-[500px] pe-1 gap-y-4 flex flex-col justify-between"}>
-                        <h2 className={"font-bold text-4xl md:text-4xl leading-10"}>
+                    <motion.div
+                        initial={{
+                            y: 200,
+                        }}
+                        animate={{
+                            y: 0,
+                        }}
+                        transition={{
+                            duration: 0.6,
+                        }}
+                        className={"ps-5 md:ps-2 pt-4 max-w-[500px] pe-1 gap-y-4 flex flex-col justify-between"}>
+                        <h2
+                            className={"font-bold text-4xl md:text-4xl leading-10"}>
                             We Help You Find and Hire the right professionals
                         </h2>
                         <p className={"text-sm"}>
@@ -20,7 +31,7 @@ export const Hero = () => {
                             <PlayStoreButton />
                             <AppStoreButton />
                         </div>
-                    </div>
+                    </motion.div>
                     <motion.div
                         initial={{
                             scale: 0,

@@ -9,7 +9,17 @@ export const Hero = () => {
         <>
             <div className={"w-full pt-5  md:py-0 mb-2 bg-secondary flex justify-center h-fit text-white "}>
                 <div className={"grid grid-cols-1 gap-y-10 sm:grid-cols-2 justify-between items-center"}>
-                    <div className={"ps-2 sm:ps-[13%] py-6 gap-y-4 flex flex-col max-w-[600px] justify-center"}>
+                    <motion.div
+                        initial={{
+                            y: 200,
+                        }}
+                        animate={{
+                            y: 0,
+                        }}
+                        transition={{
+                            duration: 0.6,
+                        }}
+                        className={"ps-2 sm:ps-[13%] py-6 gap-y-4 flex flex-col max-w-[600px] justify-center"}>
                         <h2 className={"font-bold text-4xl md:text-4xl leading-10"}>
                             We Help You Find and Hire the right professionals
                         </h2>
@@ -22,7 +32,7 @@ export const Hero = () => {
                             <PlayStoreButton />
                             <AppStoreButton />
                         </div>
-                    </div>
+                    </motion.div>
                     <motion.div
                         initial={{
                             scale: 0,

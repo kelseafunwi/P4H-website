@@ -1,6 +1,6 @@
 import featureWorkerImage from '/img-features-workers.png'
 import {FunctionalCard} from "../../Components/FunctionalCard.jsx";
-
+import {motion} from 'framer-motion';
 
 export const Client = () => {
 
@@ -17,18 +17,41 @@ export const Client = () => {
     return (
         <div className={"grid px-5 grid-cols-1 md:grid-cols-2 bg-lightGray gap-x-4"}>
 
-            <div className={"flex flex-col py-8 items-center justify-center gap-y-5"}>
+            <motion.div
+                initial={{
+                    y: 200,
+                }}
+                whileInView={{
+                    y: 0,
+                }}
+                transition={{
+                    duration: 0.7
+                }}
+                className={"flex flex-col py-8 items-center justify-center gap-y-5"}>
                <FunctionalCard
                    title={"Workers"}
                    header={"Clients Find You on Pro4Home"}
                    list={cardList}
                    appendHeader={<span className='text-secondary'>Make more Money</span>}
                />
-            </div>
+            </motion.div>
 
-            <div>
+            <motion.div
+                initial={{
+                    x: 300,
+                }}
+                whileInView={{
+                    x: 0
+                }}
+                transition={{
+                    duration: 0.8
+                }}
+                viewport={{
+                    once: true,
+                }}
+            >
                 <img className={"w-full"} src={featureWorkerImage} alt={"Feature Worker"}/>
-            </div>
+            </motion.div>
 
         </div>
     )

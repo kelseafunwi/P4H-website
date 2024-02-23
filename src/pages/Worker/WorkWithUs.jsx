@@ -3,8 +3,27 @@ import thumbsUpIcon from '/thumbsUpIcon.svg'
 import sellIcon from '/sellIcon.svg'
 import sell1Icon from '/sell1Icon.png';
 import imgWorkerPhoneIcon from '/img-for-workers-why-work-with-us-phone.png';
+import {motion} from 'framer-motion';
 
 export const WorkWithUs = () => {
+    const whyWorkWithUsArray = [
+        {
+            icon: thumbsUpIcon,
+            title: "Quality Service",
+            paragraph: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis."
+        },
+        {
+            icon: sellIcon,
+            title: "Sell your business",
+            paragraph: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis."
+        },
+        {
+            icon: sell1Icon,
+            title: "Endless profits",
+            paragraph: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis."
+        },
+    ]
+
     return (
         <div className={"flex items-center py-8 pb-16 justify-center"}>
             <div className={"py-5 sm:w-[90%]"}>
@@ -22,41 +41,33 @@ export const WorkWithUs = () => {
                             <p className={"text-lightGray"}>Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis</p>
 
                             <div className={"flex flex-col gap-y-6"}>
-                                <div className={"flex items-center py-6  gap-x-7 shadow-sm rounded-2xl"}>
-                                    <div className={"h-[60px] w-[60px] flex rounded-[50%]"}>
-                                        <img src={thumbsUpIcon} alt={"thumps Icon"}/>
-                                    </div>
-                                    <div className={"max-w-[360px]"}>
-                                        <h3 className={"font-bold text-dark"}>Quality Service</h3>
-                                        <p className={"text-lightGray text-[14px]"}>Lorem ipsum dolor sit amet
-                                            consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl
-                                            turpis laoreet neque quis. </p>
-                                    </div>
-                                </div>
-
-                                <div className={"flex items-center py-6  gap-x-7 shadow-sm rounded-2xl"}>
-                                    <div className={"h-[60px] w-[60px] flex rounded-[50%]"}>
-                                        <img src={sellIcon} alt={"thumps Icon"}/>
-                                    </div>
-                                    <div className={"max-w-[360px]"}>
-                                        <h3 className={"font-bold text-dark"}>Sell your business</h3>
-                                        <p className={"text-lightGray text-[14px]"}>Lorem ipsum dolor sit amet
-                                            consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl
-                                            turpis laoreet neque quis. </p>
-                                    </div>
-                                </div>
-
-                                <div className={"flex items-center py-6  gap-x-7 shadow-sm rounded-2xl"}>
-                                    <div className={"h-[60px] w-[60px] flex rounded-[50%]"}>
-                                        <img src={sell1Icon} alt={"thumps Icon"}/>
-                                    </div>
-                                    <div className={"max-w-[360px]"}>
-                                        <h3 className={"font-bold text-dark"}>Endless profits</h3>
-                                        <p className={"text-lightGray text-[14px]"}>Lorem ipsum dolor sit amet
-                                            consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl
-                                            turpis laoreet neque quis. </p>
-                                    </div>
-                                </div>
+                                {
+                                    whyWorkWithUsArray.map((item, index) => (
+                                        <motion.div
+                                            initial={{
+                                                x: 200,
+                                            }}
+                                            whileInView={{
+                                                x: 0
+                                            }}
+                                            transition={{
+                                                delay: index * 0.1,
+                                                transition: 0.5,
+                                            }}
+                                            viewport={{
+                                                once: true,
+                                            }}
+                                            key={index} className={"flex items-center py-6  gap-x-7 shadow-sm rounded-2xl"}>
+                                            <div className={"h-[60px] w-[60px] flex rounded-[50%]"}>
+                                                <img src={item.icon} alt={item.alt}/>
+                                            </div>
+                                            <div className={"max-w-[360px]"}>
+                                                <h3 className={"font-bold text-dark"}>{item.title}</h3>
+                                                <p className={"text-lightGray text-[14px]"}>{item.paragraph}</p>
+                                            </div>
+                                        </motion.div>
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>
