@@ -17,6 +17,7 @@ export default {
       'primary' : '#026BCF',
       'primary2': '#0488DD',
       'primary3': '#2A9AE2',
+      'primary4': '#007CD4',
       'secondary': '#FF9719',
       'secondary2': '#FFF3E3',
       'lightDark': '#E4E4E4',
@@ -31,6 +32,7 @@ export default {
       'white2': '#B4DBF5',
       'dark': '#212121',
       'lightGray': '#424242',
+      'lightGray2': '#F6F6F6',
       'lightDark': '#646464',
       'black': '#000',
       'black2': '#110F24',
@@ -49,7 +51,10 @@ export default {
     },
     boxShadowColor: {
       'primary2': '#0488DD',
-    }
+    },
+  },
+  textShadow: {
+    'black': '#000000',
   },
   plugins: [],
 }

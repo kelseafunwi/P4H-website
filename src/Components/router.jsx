@@ -11,6 +11,8 @@ import {Worker} from "../pages/Worker/Worker.jsx";
 import {Blogs} from "../pages/About/Blogs.jsx";
 import {Team} from "../pages/About/Team.jsx";
 import {BlogPost} from "../pages/About/BlogPost.jsx";
+import {NotFound} from "../pages/NotFound.jsx";
+import {TermsOfService} from "../pages/TermsOfService.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -29,7 +31,8 @@ const router = createBrowserRouter(
                 <Route path="/features2" element={<Features2 />} />
                 <Route path="/worker" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
-                {/*<Route path="/*" element={<NotFound />} />*/}
+                <Route path="/terms-of-service" element={<TermsOfService/>} />
+                <Route path="/*" element={<NotFound />} />
             </Route>
         </Route>
     )
