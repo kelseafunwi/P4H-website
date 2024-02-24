@@ -1,4 +1,3 @@
-import Footer from "../../Components/Footer.jsx";
 import Getting from "../Home/Getting.jsx";
 import Hero from './Hero.jsx';
 import Client from "./Client.jsx";
@@ -15,7 +14,6 @@ export default function Features (){
             <Promote />
             <CardsSection />
             <Getting />
-            <Footer />
         </div>
     )
 }

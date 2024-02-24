@@ -35,7 +35,7 @@ export default function Customize () {
                         once: true,
                     }}
                     className={"mx-auto md:max-w-[70%] lg:max-w-[100%]"}>
-                    <img src={imgFeatureWorker2} alt={"Worker Details"}/>
+                    <img loading={"lazy"} src={imgFeatureWorker2} alt={"Worker Details"}/>
                 </motion.div>
                 <div className={"flex flex-col py-8 items-center justify-center gap-y-5"}>
                     <div className={"lg:max-w-[420px]"}>

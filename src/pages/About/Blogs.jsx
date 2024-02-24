@@ -2,7 +2,7 @@ import Header from "./Header.jsx";
 import aboutBlogHero from '/aboutBlogHero.png';
 import searchIcon from '/searchIcon.png'
 import {motion} from 'framer-motion'
-import Footer from "../../Components/Footer.jsx";import blog1 from '/Blog/img-about-blog-1.png';
+import blog1 from '/Blog/img-about-blog-1.png';
 import blog2 from '/Blog/img-about-blog-2.png';
 import blog3 from '/Blog/img-about-blog-3.png';
 import blog4 from '/Blog/img-about-blog-4.png';
@@ -91,7 +91,7 @@ export default function Blogs (){
                                 delay: 0.5
                             }}
                             className={"w-full items-start"}>
-                            <img src={aboutBlogHero} className={"md:h-full"} alt={"Blogs Image"}/>
+                            <img loading={"lazy"} src={aboutBlogHero} className={"md:h-full"} alt={"Blogs Image"}/>
                         </motion.div>
 
                         <div className={"flex items-center py-5"}>
@@ -134,7 +134,7 @@ export default function Blogs (){
 
                             <div className={"pe-2 flex items-center border-dark border-[1px] "}>
                                 <input type={"text"} className={"py-2 px-3 font-bold text-lightGray text-[14px] focus-visible:outline-0  "} placeholder={"Search articles here......"}/>
-                                <img src={searchIcon} alt={"Search Icon"} />
+                                <img loading={"lazy"} src={searchIcon} alt={"Search Icon"} />
                             </div>
                         </div>
 
@@ -156,7 +156,7 @@ export default function Blogs (){
                                         }}
                                         key={index}>
                                         <Link to={`/about/blog/${index}`}>
-                                            <img className={"scale-95  hover:scale-100 duration-200"}
+                                            <img loading={"lazy"} className={"scale-95  hover:scale-100 duration-200"}
                                                  src={article.image} alt={"Article Image"}/>
                                             <div className={"px-5 py-4 flex flex-col gap-y-2"}>
                                                 <h1 className={"font-bold text-xl text-lightGray"}>
@@ -191,7 +191,6 @@ export default function Blogs (){
                 </div>
 
             </div>
-            <Footer/>
         </>
     )
 }

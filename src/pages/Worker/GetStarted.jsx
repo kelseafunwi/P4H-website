@@ -33,7 +33,7 @@ export default function GetStarted () {
                                 once: true
                             }}
                         >
-                            <img src={setAccountIcon} alt={"install icon"}/>
+                            <img loading={"lazy"} src={setAccountIcon} alt={"install icon"}/>
                             <h5 className={"font-bold md:text-xl pt-4 text-primary2"}>Set up your account</h5>
                             <p className={"text-sm pt-4 text-lightGray max-w-[340px]"}>Lorem ipsum dolor sit amet
                                 consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet
@@ -57,7 +57,7 @@ export default function GetStarted () {
                                 once: true
                             }}
                         >
-                            <img src={verifiedAccountIcon} alt={"install icon"}/>
+                            <img loading={"lazy"} src={verifiedAccountIcon} alt={"install icon"}/>
                             <h5 className={"font-bold pt-4 md:text-xl text-dark"}>Get Verified</h5>
                             <p className={"text-sm pt-4 text-lightGray max-w-[340px]"}>Lorem ipsum dolor sit amet
                                 consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet
@@ -81,7 +81,7 @@ export default function GetStarted () {
                                 once: true
                             }}
                         >
-                            <img src={commercialIcon} alt={"install icon"}/>
+                            <img loading={"lazy"} src={commercialIcon} alt={"install icon"}/>
 
                             <h5 className={"font-bold md:text-xl text-primary2 "}>Advertise your Service</h5>
                             <p className={"text-sm pt-4 text-lightGray  max-w-[340px]"}>Lorem ipsum dolor sit amet

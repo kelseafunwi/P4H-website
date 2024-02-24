@@ -50,7 +50,7 @@ export default function Client () {
                     once: true,
                 }}
             >
-                <img className={"w-full"} src={featureWorkerImage} alt={"Feature Worker"}/>
+                <img loading={"lazy"} className={"w-full"} src={featureWorkerImage} alt={"Feature Worker"}/>
             </motion.div>
 
         </div>

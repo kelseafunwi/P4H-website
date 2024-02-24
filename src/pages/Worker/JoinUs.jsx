@@ -14,11 +14,11 @@ export default function JoinUs() {
                     </h2>
                 </div>
                 <div className={"grid grid-cols-3 gap-y-5 sm:grid-cols-5 mt-4 pb-5  items-center gap-x-9"}>
-                    <img className={"w-[150px] h-auto"} src={logo1} alt={"First Logo Item"} />
-                    <img className={"w-[150px] h-auto"} src={logo2} alt={"First Logo Item"} />
-                    <img className={"w-[150px] h-auto"} src={logo3} alt={"First Logo Item"} />
-                    <img className={"w-[150px] h-auto"} src={logo4} alt={"First Logo Item"} />
-                    <img className={"w-[150px] h-auto"} src={logo5} alt={"First Logo Item"} />
+                    <img loading={"lazy"} className={"w-[150px] h-auto"} src={logo1} alt={"First Logo Item"} />
+                    <img loading={"lazy"} className={"w-[150px] h-auto"} src={logo2} alt={"First Logo Item"} />
+                    <img loading={"lazy"} className={"w-[150px] h-auto"} src={logo3} alt={"First Logo Item"} />
+                    <img loading={"lazy"} className={"w-[150px] h-auto"} src={logo4} alt={"First Logo Item"} />
+                    <img loading={"lazy"} className={"w-[150px] h-auto"} src={logo5} alt={"First Logo Item"} />
                 </div>
             </div>
         </div>

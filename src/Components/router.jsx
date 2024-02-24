@@ -16,26 +16,23 @@ import TermsOfService from "../pages/TermsOfService.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route>
-            <Route path="/" element={<MainLayout />}>
-                <Route path="/" element={<Home />} />
-                <Route path="/worker" element={<Worker />} />
-                <Route path={'/about'} element={<Us />} />
-                <Route path={'/about/us'} element={<Us />} />
-                <Route path={'/about/team'} element={<Team />} />
-                <Route path={'/about/blog'} element={<Blogs />} />
-                <Route path={'/about/blog/:id'} element={<BlogPost />} />
-                <Route path="/download" element={<Download />} />
-                <Route path="/faqs" element={<Faqs />} />
-                <Route path="/features" element={<Features />} />
-                <Route path="/features2" element={<Features2 />} />
-                <Route path="/worker" element={<Home />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/terms-of-service" element={<TermsOfService/>} />
-                <Route path="/*" element={<NotFound />} />
-            </Route>
+        <Route path="/" element={<MainLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/worker" element={<Worker />} />
+            <Route path={'/about'} element={<Us />} />
+            <Route path={'/about/us'} element={<Us />} />
+            <Route path={'/about/team'} element={<Team />} />
+            <Route path={'/about/blog'} element={<Blogs />} />
+            <Route path={'/about/blog/:id'} element={<BlogPost />} />
+            <Route path="/download" element={<Download />} />
+            <Route path="/faqs" element={<Faqs />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/features2" element={<Features2 />} />
+            <Route path="/worker" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/terms-of-service" element={<TermsOfService/>} />
+            <Route path="/*" element={<NotFound />} />
         </Route>
     )
 )
-
 export default router

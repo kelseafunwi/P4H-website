@@ -127,8 +127,6 @@ export default function Faqs () {
                     </div>
                 </div>
             </div>
-
-            <Footer/>
         </>
     )
 }

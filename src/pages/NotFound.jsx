@@ -1,5 +1,3 @@
-import Header from "./About/Header.jsx";
-import Footer from "../Components/Footer.jsx";
 import {Link} from "react-router-dom";
 
 export default function NotFound () {
@@ -20,8 +18,6 @@ export default function NotFound () {
                     </Link>
                 </div>
             </div>
-
-            <Footer />
         </>
     )
 }

@@ -15,7 +15,7 @@ export default function Hero () {
                     duration: 0.8
                 }}
                 className={"w-[70%] order-2 md:order-1"}>
-                <img src={heroImage} className={"w-full"} alt={"Hero Image"}/>
+                <img loading={"lazy"} src={heroImage} className={"w-full"} alt={"Hero Image"}/>
             </motion.div>
             <div className={"flex order-1 md:order-2 text-white items-center px-5"}>
                 <motion.div

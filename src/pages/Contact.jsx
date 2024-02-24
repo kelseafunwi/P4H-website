@@ -1,5 +1,4 @@
 import Header from "./About/Header.jsx";
-import Footer from "../Components/Footer.jsx";
 import locationIcon from '/icon-location.svg';
 import phoneIcon from '/icon-phone.svg';
 import sendEmailIcon from '/icon-send-email.svg';
@@ -21,7 +20,7 @@ export default function Contact() {
                         <div className={"flex flex-col items-center gap-y-4 border-[1px] border-dark3 rounded-xl p-5 text-center"}>
                             <div
                                 className={"flex items-center bg-primary2 w-fit p-5 rounded-[50%] justify-center"}>  {/** Icon */}
-                                <img src={locationIcon} alt={"Location Icon "}/>
+                                <img loading={"lazy"} src={locationIcon} alt={"Location Icon "}/>
                             </div>
 
                             <h1 className={"font-bold text-dark text-[27px]"}>
@@ -37,7 +36,7 @@ export default function Contact() {
                         <div className={"flex flex-col items-center gap-y-4 border-[1px] border-dark3 rounded-xl p-5 text-center"}>
                             <div
                                 className={"flex items-center bg-primary2 w-fit p-5 rounded-[50%] justify-center"}>  {/** Icon */}
-                                <img src={sendEmailIcon} alt={"Location Icon "}/>
+                                <img loading={'lazy'} src={sendEmailIcon} alt={"Location Icon "}/>
                             </div>
 
                             <h1 className={"font-bold text-dark text-[27px]"}>
@@ -53,7 +52,7 @@ export default function Contact() {
                         <div className={"flex flex-col items-center gap-y-4 border-[1px] border-dark3 rounded-xl p-5 text-center"}>
                             <div
                                 className={"flex items-center bg-primary2 w-fit p-5 rounded-[50%] justify-center"}>  {/** Icon */}
-                                <img src={phoneIcon} alt={"Location Icon "}/>
+                                <img loading={"lazy"} src={phoneIcon} alt={"Location Icon "}/>
                             </div>
 
                             <h1 className={"font-bold text-dark text-[27px]"}>
@@ -115,8 +114,6 @@ export default function Contact() {
             </form>
 
            <Map />
-
-            <Footer/>
         </>
     )
 }

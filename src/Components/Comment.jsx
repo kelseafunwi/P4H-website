@@ -2,7 +2,7 @@ import aboutBlogContact from "/aboutBlogContact.png";
 import replyIcon from "/icon-reply.svg";
 import PropTypes from "prop-types";
 
-export const Comment = ({name, last_seen, body, mine}) => {
+export default function Comment ({name, last_seen, body, mine}) {
     return (
         <div className={` ${mine && 'w-[90%] ms-auto'} flex flex-col  gap-y-5 py-2`}>
             <div className={"flex justify-between"}>

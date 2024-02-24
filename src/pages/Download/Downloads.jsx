@@ -72,7 +72,7 @@ export default function Downloads () {
                         duration: 0.7,
                     }}
                     className={"order-1 md:order-2 flex mt-7 md:mt-0 items-center justify-center"}>
-                    <img src={downloadHero} alt={"Download Hero"} className={"w-full"}/>
+                    <img loading={"lazy"} src={downloadHero} alt={"Download Hero"} className={"w-full"}/>
                 </motion.div>
             </div>
         </div>

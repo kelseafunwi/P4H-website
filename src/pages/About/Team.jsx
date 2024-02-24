@@ -1,5 +1,4 @@
 import Header from "./Header.jsx";
-import Footer from "../../Components/Footer.jsx";
 import {team} from '../../constants/constant.js'
 
 import {motion} from 'framer-motion';
@@ -40,8 +39,6 @@ export default function Team() {
 
                 </div>
             </div>
-
-            <Footer/>
         </div>
     )
 }

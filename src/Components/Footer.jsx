@@ -2,6 +2,7 @@ import facebook from '/socialIcons/facebook.png';
 import twitter from '/socialIcons/twitter.png';
 import youtube from '/socialIcons/youtube.png';
 import {AppStoreButton, PlayStoreButton} from "./GetButtons.jsx";
+import {Link} from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -24,10 +25,10 @@ export default function Footer() {
                         <h3 className={"text-primary2 text-lg font-bold"}>ABOUT US</h3>
 
                         <div className={"flex flex-col mt-3  gap-y-3"}>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about/us"}>About Pro4Home</a>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about/team"}>Our Team</a>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/terms-of-service"}>Terms of Use</a>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/about"}>Privacy Policy</a>
+                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/about/us"}>About Pro4Home</Link>
+                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/about/team"}>Our Team</Link>
+                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/terms-of-service"}>Terms of Use</Link>
+                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/about"}>Privacy Policy</Link>
                         </div>
                     </div>
 
@@ -35,8 +36,8 @@ export default function Footer() {
                         <h3 className={"text-primary2 text-lg font-bold"}>Support</h3>
 
                         <div className={"flex flex-col mt-3  gap-y-3"}>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/faqs"}>FAQ</a>
-                            <a className={"text-lightDark hover:font-semibold text-sm"} href={"/contact"}>Contact</a>
+                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/faqs"}>FAQ</Link>
+                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/contact"}>Contact</Link>
                         </div>
 
                         <h3 className={"text-primary2 mt-3 text-lg font-bold"}>Connect with Us</h3>
@@ -45,19 +46,19 @@ export default function Footer() {
                             <a href={"facebook.com"}>
                                 <div
                                     className={"w-[30px] h-[30px] shadow-md rounded-2xl flex justify-center items-center"}>
-                                    <img src={facebook} className={""} alt={"Facebook image"}/>
+                                    <img src={facebook} loading={'lazy'} alt={"Facebook image"}/>
                                 </div>
                             </a>
                             <a href={"twitter.com"}>
                                 <div
                                     className={"w-[30px] h-[30px] shadow-md rounded-2xl flex justify-center items-center"}>
-                                    <img src={twitter} className={""} alt={"Facebook image"}/>
+                                    <img src={twitter} loading={'lazy'} alt={"Facebook image"}/>
                                 </div>
                             </a>
                             <a href={"youtube.com"}>
                                 <div
                                     className={"w-[30px] h-[30px] shadow-md rounded-2xl flex justify-center items-center"}>
-                                    <img src={youtube} className={""} alt={"Facebook image"}/>
+                                    <img src={youtube} loading={'lazy'}  alt={"Facebook image"}/>
                                 </div>
                             </a>
                         </div>

@@ -4,8 +4,8 @@ import blogMainImage from '/Blog/blog-detail-mainImg.png';
 import blog1 from "/Blog/img-about-blog-1.png";
 import blog2 from "/Blog/img-about-blog-2.png";
 import blog3 from "/Blog/img-about-blog-3.png";
-import Footer from "../../Components/Footer.jsx";import {useEffect, useRef} from "react";
-import {Comment} from '../../Components/Comment.jsx';
+import {useEffect, useRef} from "react";
+import Comment from '../../Components/Comment.jsx';
 import axios  from 'axios'
 
 const articles = [
@@ -105,7 +105,7 @@ export default function BlogPost () {
                                     delay: 0.5
                                 }}
                                 className={"w-full py-4 md:py-0 items-start"}>
-                                <img src={blogMainImage} className={"md:h-full"} alt={"Blogs Image"}/>
+                                <img loading={"lazy"} src={blogMainImage} className={"md:h-full"} alt={"Blogs Image"}/>
                             </motion.div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@ export default function BlogPost () {
                                                 }}
                                                 key={index}>
                                                 <a href={`/about/blog/${index}`}>
-                                                    <img className={"scale-95  hover:scale-100 duration-200"}
+                                                    <img loading={"lazy"} className={"scale-95  hover:scale-100 duration-200"}
                                                          src={article.image} alt={"Article Image"}/>
                                                     <div className={"px-5 py-4 flex flex-col gap-y-2"}>
                                                         <h1 className={"font-bold text-xl text-lightGray"}>
@@ -281,7 +281,6 @@ export default function BlogPost () {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

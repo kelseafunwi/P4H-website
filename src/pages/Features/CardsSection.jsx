@@ -8,7 +8,7 @@ export default function CardsSection () {
                 <div className={"bg-white z-10 rounded-xl  shadow-md border-b-4 border-primary2   px-6 py-10  relative"}>
                     <div
                         className={"p-4 absolute z-20 shadow-lg  flex items-center justify-center w-[80px] h-[80px] bg-white rounded-[50%] -top-[40px] left-[calc(43%)]"}>
-                        <img src={featurePortfolioIcon} alt={"image"}/>
+                        <img loading={"lazy"} src={featurePortfolioIcon} alt={"image"}/>
                     </div>
                     <h1 className={"font-bold text-3xl"}>
                         Display a portfolio of your past work and <span
@@ -26,7 +26,7 @@ export default function CardsSection () {
                 <div className={"bg-white z-10 rounded-xl  shadow-md border-b-4 border-secondary      px-6 py-10  relative"}>
                     <div
                         className={"p-5 absolute z-20 shadow-lg  flex items-center justify-center w-[80px] h-[80px] bg-white rounded-[50%] -top-[40px] left-[calc(42%)]"}>
-                        <img src={featuresUserIcon} alt={"image"}/>
+                        <img loading={"lazy"} src={featuresUserIcon} alt={"image"}/>
                     </div>
                     <h1 className={"font-bold text-3xl"}>
                         Outsource some of your tasks to other professionals

@@ -1,5 +1,4 @@
 import {useState} from "react";
-import installIcon from '/downloadIcon.svg';
 import {motion} from 'framer-motion';
 import {workerRegistrationSteps, clientRegistrationSteps} from "../../constants/constant.js";
 
@@ -59,7 +58,7 @@ export default function HowItWorks () {
                                                 once: true
                                             }}
                                         >
-                                            <img src={step.icon} alt={"install icon"}/>
+                                            <img loading={"lazy"} src={step.icon} alt={"install icon"}/>
                                             <h5 className={"font-bold text-dark  mt-2"}>Step {step.number}</h5>
                                             <h5 className={"font-bold mt-3 md:text-xl text-dark"}>{step.title}</h5>
                                             <p className={"text-sm pt-4 text-lightGray max-w-sm"}>{step.paragraph}</p>
@@ -90,7 +89,7 @@ export default function HowItWorks () {
                                                 once: true
                                             }}
                                         >
-                                            <img src={step.icon} alt={"install icon"}/>
+                                            <img loading={"lazy"} src={step.icon} alt={"install icon"}/>
                                             <h5 className={"font-bold text-dark  mt-2"}>Step {step.number}</h5>
                                             <h5 className={"font-bold mt-3 md:text-xl text-dark"}>{step.title}</h5>
                                             <p className={"text-sm pt-4 text-lightGray max-w-sm"}>{step.paragraph}</p>

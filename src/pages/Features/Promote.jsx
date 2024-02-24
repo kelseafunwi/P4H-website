@@ -37,7 +37,7 @@ export default function Promote() {
                     duration: 0.7
                 }}
             >
-                <img className={"w-full"} src={featureWorker3} alt={"Feature Worker"}/>
+                <img  loading={"lazy"} className={"w-full"} src={featureWorker3} alt={"Feature Worker"}/>
             </motion.div>
         </div>
     )

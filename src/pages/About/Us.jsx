@@ -1,4 +1,3 @@
-import Footer from "../../Components/Footer.jsx";
 import aboutImage from '/aboutImage.png';
 import aboutUsBlogImage from '/aboutUsBlogImage.png';
 import Header from "./Header.jsx";
@@ -123,7 +122,7 @@ export default function Us () {
                             once: true,
                         }}
                     >
-                        <img alt={"The about image."} src={aboutImage}/>
+                        <img loading={"lazy"} alt={"The about image."} src={aboutImage}/>
                     </motion.div>
                 </div>
             </div>
@@ -133,27 +132,25 @@ export default function Us () {
                 <div className={"md:max-w-5xl w-full md:flex justify-center"}>
                     <div className={"grid sm:grid-cols-2 gap-y-3 md:grid-cols-3 gap-x-4"}>
                         <div className={"overflow-hidden flex justify-center"}>
-                            <img alt={"about image"}
+                            <img loading={"lazy"} alt={"about image"}
                                  className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
                                  src={aboutUsBlogImage}/>
                         </div>
 
                         <div className={"overflow-hidden flex justify-center"}>
-                            <img alt={"about image"}
+                            <img loading={"lazy"} alt={"about image"}
                                  className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
                                  src={aboutUsBlogImage}/>
                         </div>
 
                         <div className={"overflow-hidden flex justify-center"}>
-                            <img alt={"about image"}
+                            <img loading={"lazy"} alt={"about image"}
                                  className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
                                  src={aboutUsBlogImage}/>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <Footer/>
         </>
     )
 }

@@ -1,11 +1,10 @@
 import homeTestimonial from '/homeTestimonial.png';
-import uniformImage from '/uniformImage.png'
 import quoteIcon from '/quoteIcon.png'
 
 export default function CustomerSaying () {
     return (
         <div className={" md:flex mb-5 text-white "}>
-            <img src={homeTestimonial} alt={"Testimonial image"} className={"w-[80%] md:w-[40%] z-10"}/>
+            <img src={homeTestimonial} loading={"lazy"} alt={"Testimonial image"} className={"w-[80%] md:w-[40%] z-10"}/>
             <div className={"flex flex-col items-center justify-center z-40 -ml-12 "}
                  style={{
                     backgroundImage: "url('/uniformImage.png')",
@@ -35,7 +34,7 @@ export default function CustomerSaying () {
                             <h5 className={"text-secondary text-lg  font-semibold"}>Hermann - Ratke</h5>
                         </div>
                         <div>
-                            <img src={quoteIcon} alt={"Quote Icon"} width={80} />
+                            <img loading={"lazy"} src={quoteIcon} alt={"Quote Icon"} width={80} />
                         </div>
                     </div>
                 </div>

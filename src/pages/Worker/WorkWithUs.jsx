@@ -29,9 +29,9 @@ export default function WorkWithUs () {
             <div className={"py-5 sm:w-[90%]"}>
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-20 justify-between "}>
                     <div className={"relative "}>
-                        <img src={workWithUsImage} className={"max-h-[780px]"} alt={"Work with us image"}/>
+                        <img loading={"lazy"} src={workWithUsImage} className={"max-h-[780px]"} alt={"Work with us image"}/>
                         <div className={"absolute -left-[18%] -bottom-[20%] md:-bottom-[15%]"}>
-                            <img className={"w-[51%]"} src={imgWorkerPhoneIcon} alt={"Worker Phone Icon"} />
+                            <img loading={"lazy"} className={"w-[51%]"} src={imgWorkerPhoneIcon} alt={"Worker Phone Icon"} />
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@ export default function WorkWithUs () {
                                             }}
                                             key={index} className={"flex items-center py-6  gap-x-7 shadow-sm rounded-2xl"}>
                                             <div className={"h-[60px] w-[60px] flex rounded-[50%]"}>
-                                                <img src={item.icon} alt={item.alt}/>
+                                                <img loading={"lazy"} src={item.icon} alt={item.alt}/>
                                             </div>
                                             <div className={"max-w-[360px]"}>
                                                 <h3 className={"font-bold text-dark"}>{item.title}</h3>
