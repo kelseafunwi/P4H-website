@@ -1,5 +1,5 @@
-import search1 from '/search1.png';
-import search2 from '/search2.png';
+import search1 from '/images/home/search1.png';
+import search2 from '/images/home/search2.png';
 import {motion} from 'framer-motion'
 
 export default function Search () {

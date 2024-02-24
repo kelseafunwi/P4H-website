@@ -1,8 +1,8 @@
-import workWithUsImage from '/img-for-workers-why-work-with-us.png';
-import thumbsUpIcon from '/thumbsUpIcon.svg'
-import sellIcon from '/sellIcon.svg'
-import sell1Icon from '/sell1Icon.png';
-import imgWorkerPhoneIcon from '/img-for-workers-why-work-with-us-phone.png';
+import workWithUsImage from '/images/worker/why-work-with-us.png';
+import thumbsUpIcon from '/icons/thumbs-up.svg'
+import sellIcon from '/icons/sell.svg';
+import sell1Icon from '/icons/sell1.png';
+import hireScreenImage from '/images/features/hireScreen.png';
 import {motion} from 'framer-motion';
 
 export default function WorkWithUs () {
@@ -31,7 +31,7 @@ export default function WorkWithUs () {
                     <div className={"relative "}>
                         <img loading={"lazy"} src={workWithUsImage} className={"max-h-[780px]"} alt={"Work with us image"}/>
                         <div className={"absolute -left-[18%] -bottom-[20%] md:-bottom-[15%]"}>
-                            <img loading={"lazy"} className={"w-[51%]"} src={imgWorkerPhoneIcon} alt={"Worker Phone Icon"} />
+                            <img loading={"lazy"} className={"w-[51%]"} src={hireScreenImage} alt={"Worker Phone Icon"} />
                         </div>
                     </div>
 

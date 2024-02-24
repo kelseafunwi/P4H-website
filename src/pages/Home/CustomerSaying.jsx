@@ -1,10 +1,10 @@
-import homeTestimonial from '/homeTestimonial.png';
-import quoteIcon from '/quoteIcon.png'
+import testimonialImage from '/images/home/testimonial.png';
+import quoteIcon from '/icons/quote.png'
 
 export default function CustomerSaying () {
     return (
         <div className={" md:flex mb-5 text-white "}>
-            <img src={homeTestimonial} loading={"lazy"} alt={"Testimonial image"} className={"w-[80%] md:w-[40%] z-10"}/>
+            <img src={testimonialImage} loading={"lazy"} alt={"Testimonial image"} className={"w-[80%] md:w-[40%] z-10"}/>
             <div className={"flex flex-col items-center justify-center z-40 -ml-12 "}
                  style={{
                     backgroundImage: "url('/uniformImage.png')",

@@ -1,5 +1,5 @@
-import professionImage from '/professionalImage.png';
-import hero2Image from '/img-features-hero-2.png';
+import professionImage from '/images/features/professional.png';
+import hero2Image from '/images/features/hero2.png';
 
 export default function Hero () {
     return (

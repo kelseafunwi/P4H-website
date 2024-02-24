@@ -5,7 +5,7 @@ import {MobileMenu} from "./MobileMenu.jsx";
 import { navbarLinks } from "../../constants/constant.js";
 import { NavLink} from "react-router-dom";
 import {motion} from 'framer-motion'
-import checkmarkIcon from '/checkmarkIcon.png';
+import checkmarkIcon from '/icons/check-mark.png';
 
 
 export default function Navbar() {

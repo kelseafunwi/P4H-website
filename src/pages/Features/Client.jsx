@@ -1,4 +1,4 @@
-import featureWorkerImage from '/img-features-workers.png'
+import featureWorkerImage from '/images/features/features-worker.png'
 import {FunctionalCard} from "../../Components/FunctionalCard.jsx";
 import {motion} from 'framer-motion';
 

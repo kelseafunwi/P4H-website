@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
-import setAccountIcon from '/setAccountIcon.svg';
-import verifiedAccountIcon from '/verifiedAccountIcon.svg';
-import commercialIcon from '/commercialIcon.svg';
+import setAccountIcon from '/icons/set-account.svg';
+import verifiedAccountIcon from '/icons/verified-account.svg';
+import commercialIcon from '/icons/commercial.svg';
 
 export default function GetStarted () {
     return (

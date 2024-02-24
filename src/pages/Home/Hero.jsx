@@ -1,4 +1,4 @@
-import HeroImage from '/hero.png';
+import heroImage from '/images/home/hero.png';
 import {motion} from "framer-motion";
 import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
 
@@ -43,7 +43,7 @@ export default function Hero ()  {
                             duration: 1
                         }}
                         className={"hero-image-container mt-10 md:mt-0 relative flex items-center justify-end"}>
-                        <img loading={'lazy'} src={HeroImage} className={"max-w-[550px] relative"} alt={"Hero Image"}/>
+                        <img loading={'lazy'} src={heroImage} className={"max-w-[550px] relative"} alt={"Hero Image"}/>
                     </motion.div>
                 </div>
             </div>

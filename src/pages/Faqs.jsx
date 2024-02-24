@@ -1,6 +1,5 @@
-import Footer from "../Components/Footer.jsx";
 import Header from "./About/Header.jsx";
-import rightIcon from '/rightIcon.png'
+import rightIcon from '/icons/right.png'
 import { useState} from "react";
 import {categories, questionsAndAnswers} from "../constants/constant.js";
 import {ChevronDown, ChevronUp} from "lucide-react";

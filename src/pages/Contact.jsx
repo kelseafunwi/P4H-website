@@ -1,7 +1,7 @@
 import Header from "./About/Header.jsx";
-import locationIcon from '/icon-location.svg';
-import phoneIcon from '/icon-phone.svg';
-import sendEmailIcon from '/icon-send-email.svg';
+import locationIcon from '/icons/location.svg';
+import phoneIcon from '/icons/phone.svg';
+import sendEmailIcon from '/icons/send-email.svg';
 import {Map} from "../Components/Map.jsx";
 
 export default function Contact() {

@@ -1,6 +1,6 @@
-import facebook from '/socialIcons/facebook.png';
-import twitter from '/socialIcons/twitter.png';
-import youtube from '/socialIcons/youtube.png';
+import facebook from '/icons/facebook.png';
+import twitter from '/icons/twitter.png';
+import youtube from '/icons/youtube.png';
 import {AppStoreButton, PlayStoreButton} from "./GetButtons.jsx";
 import {Link} from "react-router-dom";
 

@@ -1,4 +1,4 @@
-import downloadHero from '/downloadHero.png';
+import downloadHero from '/images/home/downloadHero.png';
 import {AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
 import {motion} from 'framer-motion';
 

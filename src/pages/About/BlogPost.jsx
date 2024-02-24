@@ -1,9 +1,9 @@
 import {useParams} from "react-router-dom";
 import {motion} from "framer-motion";
-import blogMainImage from '/Blog/blog-detail-mainImg.png';
-import blog1 from "/Blog/img-about-blog-1.png";
-import blog2 from "/Blog/img-about-blog-2.png";
-import blog3 from "/Blog/img-about-blog-3.png";
+import blogMainImage from '/images/Blog/details.png';
+import blog1 from "/images/Blog/1.png";
+import blog2 from "/images/Blog/2.png";
+import blog3 from "/images/Blog/3.png";
 import {useEffect, useRef} from "react";
 import Comment from '../../Components/Comment.jsx';
 import axios  from 'axios'

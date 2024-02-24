@@ -1,16 +1,16 @@
 import Header from "./Header.jsx";
-import aboutBlogHero from '/aboutBlogHero.png';
-import searchIcon from '/searchIcon.png'
+import blogHeroImage from '/images/about/blog-hero.png';
+import searchIcon from '/icons/search.png'
 import {motion} from 'framer-motion'
-import blog1 from '/Blog/img-about-blog-1.png';
-import blog2 from '/Blog/img-about-blog-2.png';
-import blog3 from '/Blog/img-about-blog-3.png';
-import blog4 from '/Blog/img-about-blog-4.png';
-import blog5 from '/Blog/img-about-blog-5.png';
-import blog6 from '/Blog/img-about-blog-6.png';
-import blog7 from '/Blog/img-about-blog-7.png';
-import blog8 from '/Blog/img-about-blog-8.png';
-import blog9 from '/Blog/img-about-blog-9.png';
+import blog1 from '/images/Blog/1.png';
+import blog2 from '/images/Blog/2.png';
+import blog3 from '/images/Blog/3.png';
+import blog4 from '/images/Blog/4.png';
+import blog5 from '/images/Blog/5.png';
+import blog6 from '/images/Blog/6.png';
+import blog7 from '/images/Blog/7.png';
+import blog8 from '/images/Blog/8.png';
+import blog9 from '/images/Blog/9.png';
 import {Link} from "react-router-dom";
 
 const articles = [
@@ -91,7 +91,7 @@ export default function Blogs (){
                                 delay: 0.5
                             }}
                             className={"w-full items-start"}>
-                            <img loading={"lazy"} src={aboutBlogHero} className={"md:h-full"} alt={"Blogs Image"}/>
+                            <img loading={"lazy"} src={blogHeroImage} className={"md:h-full"} alt={"Blogs Image"}/>
                         </motion.div>
 
                         <div className={"flex items-center py-5"}>

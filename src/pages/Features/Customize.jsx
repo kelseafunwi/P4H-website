@@ -1,4 +1,4 @@
-import imgFeatureWorker2 from '/img-feature-worker-2.png';
+import imgFeatureWorker2 from '/images/features/feature-worker-2.png';
 import {FunctionalCard} from "../../Components/FunctionalCard.jsx";
 import {motion} from 'framer-motion';
 export default function Customize () {

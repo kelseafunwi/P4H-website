@@ -1,5 +1,5 @@
-import aboutImage from '/aboutImage.png';
-import aboutUsBlogImage from '/aboutUsBlogImage.png';
+import aboutImage from '/images/about/about.png';
+import blogHero2 from '/images/about/blog-hero2.png';
 import Header from "./Header.jsx";
 import {motion} from 'framer-motion'
 
@@ -134,19 +134,19 @@ export default function Us () {
                         <div className={"overflow-hidden flex justify-center"}>
                             <img loading={"lazy"} alt={"about image"}
                                  className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
-                                 src={aboutUsBlogImage}/>
+                                 src={blogHero2}/>
                         </div>
 
                         <div className={"overflow-hidden flex justify-center"}>
                             <img loading={"lazy"} alt={"about image"}
                                  className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
-                                 src={aboutUsBlogImage}/>
+                                 src={blogHero2}/>
                         </div>
 
                         <div className={"overflow-hidden flex justify-center"}>
                             <img loading={"lazy"} alt={"about image"}
                                  className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
-                                 src={aboutUsBlogImage}/>
+                                 src={blogHero2}/>
                         </div>
                     </div>
                 </div>

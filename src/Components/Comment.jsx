@@ -1,5 +1,5 @@
-import aboutBlogContact from "/aboutBlogContact.png";
-import replyIcon from "/icon-reply.svg";
+import ContactIcon from "/images/about/contact.png";
+import replyIcon from "/icons/reply.svg";
 import PropTypes from "prop-types";
 
 export default function Comment ({name, last_seen, body, mine}) {
@@ -7,7 +7,7 @@ export default function Comment ({name, last_seen, body, mine}) {
         <div className={` ${mine && 'w-[90%] ms-auto'} flex flex-col  gap-y-5 py-2`}>
             <div className={"flex justify-between"}>
                 <div className={"flex "}>
-                    <img className={"max-w-[45px]"} src={aboutBlogContact}
+                    <img className={"max-w-[45px]"} src={ContactIcon}
                          alt={"About Blog Contact"}/>
                     <div className={"ps-2 text-black2 flex flex-col justify-between"}>
                         <h1 className={" text-lg font-bold"}>{name}</h1>

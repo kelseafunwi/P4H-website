@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
-import workerHeroImage from '/img-for-workers-hero.png';
-import tick from '/ticks.png';
+import heroImage from '/images/worker/hero.png';
+import tick from '/icons/yellow-tick.png';
 
 export default function Hero  ()  {
     return (
@@ -43,7 +43,7 @@ export default function Hero  ()  {
                             duration: 1
                         }}
                         className={"relative flex items-center justify-end"}>
-                        <img loading={"lazy"} src={workerHeroImage} className={"h-[30%]"} alt={"Hero Image"}/>
+                        <img loading={"lazy"} src={heroImage} className={"h-[30%]"} alt={"Hero Image"}/>
                         <div className={"absolute md:-left-9  flex gap-y-2 flex-col bottom-0 md:bottom-10 bg-white py-4 px-5"}>
                             <div className={"text-dark gap-x-4 flex items-center text-[13px]"}>
                                 <span className={"text-dark"}>

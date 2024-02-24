@@ -1,4 +1,4 @@
-import heroImage from '/img-features-hero.png';
+import heroImage from '/images/features/hero.png';
 import {motion} from 'framer-motion'
 
 export default function Hero () {

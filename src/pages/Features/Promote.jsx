@@ -1,5 +1,5 @@
 import {FunctionalCard} from "../../Components/FunctionalCard.jsx";
-import featureWorker3 from '/img-features-worker-3.png';
+import featureWorker3 from '/images/features/feature-worker-3.png';
 import {motion} from 'framer-motion';
 
 export default function Promote() {

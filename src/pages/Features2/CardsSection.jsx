@@ -1,16 +1,16 @@
-import featurePortfolioIcon from '/featurePortfolioIcon.svg';
-import featuresUserIcon from '/featuresUserIcon.svg'
-import serviceIcon from '/serviceIcon.svg';
-import fandAndhireIcon from '/fandAndHireProfessionalsicon.svg';
-import sentIcon from '/sentIcon.svg';
-import keepTrackIcon from '/keepTrackIcon.svg';
-import manageNotificationIcon from '/manageNotificationIcon.svg';
+import contactIcon from '/icons/contact.svg';
+import peopleIcon from '/icons/people.svg'
+import serviceIcon from '/icons/service.svg';
+import hireProfessionals from '/icons/hire-professionals.svg';
+import sentIcon from '/icons/sent.svg';
+import keepTrackIcon from '/icons/keep-track.svg';
+import notificationIcon from '/public/icons/notification.svg';
 
 export default function CardsSection(){
 
     const cardList = [
         {
-            icon: featurePortfolioIcon,
+            icon: contactIcon,
             title: "Display a portfolio of your past work",
             body: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac."
         },
@@ -20,7 +20,7 @@ export default function CardsSection(){
             body: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac."
         },
         {
-            icon: fandAndhireIcon,
+            icon: hireProfessionals,
             title: "Add a list of services you offer",
             body: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac."
         },
@@ -35,7 +35,7 @@ export default function CardsSection(){
             body: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac."
         },
         {
-            icon: manageNotificationIcon,
+            icon: notificationIcon,
             title: "Manage Notifications , Get the Latest Activity Updates",
             body: "Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac."
         }

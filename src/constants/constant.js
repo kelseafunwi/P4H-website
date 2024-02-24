@@ -1,18 +1,33 @@
-import {Globe} from "lucide-react";
-import installIcon from '/downloadIcon.svg';
-import contactIcon from '/contactIcon.svg';
-import getHiredIcon from '/getHiredIcon.svg';
-import setupProfileIcon from '/setupProfileIcon.svg';
-import searchProfessionalIcon from '/searchProfileicon.svg';
-import chooseHireIcon from '/chooseHireIcon.svg';
-import team1 from '/Team/1.png';
-import team2 from '/Team/2.png';
-import team3 from '/Team/3.png';
-import team4 from '/Team/4.png';
-import team5 from '/Team/5.png';
-import team6 from '/Team/6.png';
-import team7 from '/Team/7.png';
-import team8 from '/Team/8.png';
+
+import installIcon from '/icons/download.svg';
+import contactIcon from '/icons/contact.svg';
+import getHiredIcon from '/icons/get-hired.svg';
+import setupProfileIcon from '/icons/setup-profile.svg';
+import searchProfessionalIcon from '/icons/search-profile.svg';
+import chooseHireIcon from '/icons/choose-hire.svg';
+
+import team1 from '/images/Team/1.png';
+import team2 from '/images/Team/2.png';
+import team3 from '/images/Team/3.png';
+import team4 from '/images/Team/4.png';
+import team5 from '/images/Team/5.png';
+import team6 from '/images/Team/6.png';
+import team7 from '/images/Team/7.png';
+import team8 from '/images/Team/8.png';
+
+import image1 from '/images/dummy/1.png';
+import image2 from '/images/dummy/2.png';
+import image3 from '/images/dummy/3.png';
+import image4 from '/images/dummy/4.png';
+import image5 from '/images/dummy/5.png';
+
+export const dummyIcons = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+]
 
 export const navbarLinks = [
     {
