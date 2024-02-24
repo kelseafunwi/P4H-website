@@ -2,7 +2,7 @@ import HeroImage from '/hero.png';
 import {motion} from "framer-motion";
 import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
 
-export const Hero = () => {
+export default function Hero ()  {
     return (
         <>
             <div className={"w-full  bg-primary flex justify-center h-fit text-white py-4  sm:py-11"}>

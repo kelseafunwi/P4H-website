@@ -1,7 +1,7 @@
-import {Footer} from "../Components/Footer.jsx";
-import {Header} from "./About/Header.jsx";
+import Footer from "../Components/Footer.jsx";
+import Header from "./About/Header.jsx";
 
-export const TermsOfService = () => {
+export default function TermsOfService () {
     return (
         <>
             <Header text={"Terms Of Service"} />

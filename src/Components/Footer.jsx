@@ -3,7 +3,7 @@ import twitter from '/socialIcons/twitter.png';
 import youtube from '/socialIcons/youtube.png';
 import {AppStoreButton, PlayStoreButton} from "./GetButtons.jsx";
 
-export const Footer = () => {
+export default function Footer() {
     return (
         <section className={"text-dark mt-5 mb-0"}>
 

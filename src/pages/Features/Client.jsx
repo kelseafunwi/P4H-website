@@ -2,7 +2,7 @@ import featureWorkerImage from '/img-features-workers.png'
 import {FunctionalCard} from "../../Components/FunctionalCard.jsx";
 import {motion} from 'framer-motion';
 
-export const Client = () => {
+export default function Client () {
 
     const cardList =  [
         {

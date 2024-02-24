@@ -6,7 +6,7 @@ import sentIcon from '/public/sentIcon.svg';
 import keepTrackIcon from '/public/keepTrackIcon.svg';
 import manageNotificationIcon from '/public/manageNotificationIcon.svg';
 
-export const CardsSection = () => {
+export default function CardsSection(){
 
     const cardList = [
         {

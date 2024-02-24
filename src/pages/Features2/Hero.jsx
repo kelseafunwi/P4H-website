@@ -1,7 +1,7 @@
 import professionImage from '/professionalImage.png';
 import hero2Image from '/img-features-hero-2.png';
 
-export const Hero = () => {
+export default function Hero () {
     return (
         <>
             <div

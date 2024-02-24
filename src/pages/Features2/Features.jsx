@@ -1,8 +1,8 @@
-import {Footer} from "../../Components/Footer.jsx";
-import {Hero} from './Hero.jsx';
-import {CardsSection} from "./CardsSection.jsx";
+import Footer from "../../Components/Footer.jsx";
+import Hero from './Hero.jsx';
+import CardsSection from "./CardsSection.jsx";
 
-export const Features = () => {
+export default function Features2 () {
     return (
         <div className={"bg-lightGray"}>
             <Hero />

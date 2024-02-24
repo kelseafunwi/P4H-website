@@ -3,7 +3,7 @@ import installIcon from '/downloadIcon.svg';
 import {motion} from 'framer-motion';
 import {workerRegistrationSteps, clientRegistrationSteps} from "../../constants/constant.js";
 
-export const HowItWorks = () => {
+export default function HowItWorks () {
     const WORKER = 'worker';
     const CLIENT = 'client';
 

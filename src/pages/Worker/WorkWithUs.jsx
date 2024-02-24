@@ -5,7 +5,7 @@ import sell1Icon from '/sell1Icon.png';
 import imgWorkerPhoneIcon from '/img-for-workers-why-work-with-us-phone.png';
 import {motion} from 'framer-motion';
 
-export const WorkWithUs = () => {
+export default function WorkWithUs () {
     const whyWorkWithUsArray = [
         {
             icon: thumbsUpIcon,

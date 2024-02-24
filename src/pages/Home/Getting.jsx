@@ -1,6 +1,6 @@
 import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
 
-export const Getting = () => {
+export default function Getting () {
     return (
         <div className={"py-6 my-7 flex items-center justify-center"}>
             <div className={"w-[90%] py-20 text-dark text-center shadow-lg bg-lightGray"}>

@@ -4,7 +4,7 @@ import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx"
 import workerHeroImage from '/img-for-workers-hero.png';
 import tick from '/ticks.png';
 
-export const Hero = () => {
+export default function Hero  ()  {
     return (
         <>
             <div className={"w-full pt-5  md:py-0 mb-2 bg-secondary flex justify-center h-fit text-white "}>

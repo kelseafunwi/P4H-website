@@ -2,7 +2,7 @@ import search1 from '/search1.png';
 import search2 from '/search2.png';
 import {motion} from 'framer-motion'
 
-export const Search = () => {
+export default function Search () {
     return (
         <>
             <div className={"w-full bg-white mt-2 flex justify-center items-center"}>

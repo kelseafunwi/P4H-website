@@ -1,10 +1,10 @@
-import {Footer} from "../../Components/Footer.jsx";
+import Footer from "../../Components/Footer.jsx";
 import aboutImage from '/aboutImage.png';
 import aboutUsBlogImage from '/aboutUsBlogImage.png';
-import {Header} from "./Header.jsx";
+import Header from "./Header.jsx";
 import {motion} from 'framer-motion'
 
-export const Us = () => {
+export default function Us () {
     return (
         <>
             <div>

@@ -1,7 +1,7 @@
 import featurePortfolioIcon from '/featurePortfolioIcon.svg';
 import featuresUserIcon from '/featuresUserIcon.svg'
 
-export const CardsSection = () => {
+export default function CardsSection () {
     return (
         <div className={"flex  bg-grey py-16 items-center justify-center"}>
             <div className={"md:w-[90%] lg:w-[75%] grid sm:px-5 grid-cols-1  gap-y-10 sm:grid-cols-2 gap-x-4"}>

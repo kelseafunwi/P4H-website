@@ -1,11 +1,11 @@
-import {Header} from "./About/Header.jsx";
-import {Footer} from "../Components/Footer.jsx";
+import Header from "./About/Header.jsx";
+import Footer from "../Components/Footer.jsx";
 import locationIcon from '/icon-location.svg';
 import phoneIcon from '/icon-phone.svg';
 import sendEmailIcon from '/icon-send-email.svg';
 import {Map} from "../Components/Map.jsx";
 
-export const Contact = () => {
+export default function Contact() {
 
     const submitContact = (event) => {
         event.preventDefault();

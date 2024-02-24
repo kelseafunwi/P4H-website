@@ -3,7 +3,7 @@ import setAccountIcon from '/setAccountIcon.svg';
 import verifiedAccountIcon from '/verifiedAccountIcon.svg';
 import commercialIcon from '/commercialIcon.svg';
 
-export const GetStarted = () => {
+export default function GetStarted () {
     return (
         <div className={"flex items-center py-8 bg-white justify-center"}>
             <div className={"w-[95%]"}>

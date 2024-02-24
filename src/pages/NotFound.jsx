@@ -1,11 +1,10 @@
-import {Header} from "./About/Header.jsx";
-import {Footer} from "../Components/Footer.jsx";
+import Header from "./About/Header.jsx";
+import Footer from "../Components/Footer.jsx";
 import {Link} from "react-router-dom";
 
-export const NotFound = () => {
+export default function NotFound () {
     return (
         <>
-
             <div className={"w-full flex items-center justify-center  bg-[url('/faqsBackground.jpg')] bg-center bg-primary3   py-10 "}>
                 <div className={"w-fit flex flex-col text-white"}>
                     <h4 className={"text-[300px] font-bold text-center text-white leading-[300px]"}>404</h4>

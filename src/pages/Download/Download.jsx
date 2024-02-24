@@ -1,7 +1,7 @@
-import {Footer} from "../../Components/Footer.jsx";
-import {Downloads} from "./Downloads.jsx";
+import Footer from "../../Components/Footer.jsx";
+import Downloads from "./Downloads.jsx";
 
-export const Download = () => {
+export default function Download () {
     return (
         <>
             <Downloads />

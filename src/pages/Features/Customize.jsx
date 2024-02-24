@@ -1,7 +1,7 @@
 import imgFeatureWorker2 from '/img-feature-worker-2.png';
 import {FunctionalCard} from "../../Components/FunctionalCard.jsx";
 import {motion} from 'framer-motion';
-export const Customize = () => {
+export default function Customize () {
 
     const cardList =  [
         {

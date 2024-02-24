@@ -4,8 +4,7 @@ import blogMainImage from '/Blog/blog-detail-mainImg.png';
 import blog1 from "/Blog/img-about-blog-1.png";
 import blog2 from "/Blog/img-about-blog-2.png";
 import blog3 from "/Blog/img-about-blog-3.png";
-import {Footer} from "../../Components/Footer.jsx";
-import {useEffect, useRef} from "react";
+import Footer from "../../Components/Footer.jsx";import {useEffect, useRef} from "react";
 import {Comment} from '../../Components/Comment.jsx';
 import axios  from 'axios'
 
@@ -30,7 +29,7 @@ const articles = [
     },
 ]
 
-export const BlogPost = () => {
+export default function BlogPost () {
 
     const nameRef = useRef(null);
     const emailRef = useRef(null);

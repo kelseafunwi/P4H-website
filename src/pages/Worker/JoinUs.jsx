@@ -4,7 +4,7 @@ import logo3 from '/dummy/logo-dummy3.png';
 import logo4 from '/dummy/logo-dummy4.png';
 import logo5 from '/dummy/logo-dummy5.png';
 
-export const JoinUs = () => {
+export default function JoinUs() {
     return (
         <div className={"flex items-center py-8  justify-center bg-grey"}>
             <div className={"w-[90%]"}>

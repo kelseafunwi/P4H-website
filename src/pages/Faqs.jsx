@@ -1,5 +1,5 @@
-import {Footer} from "../Components/Footer.jsx";
-import {Header} from "./About/Header.jsx";
+import Footer from "../Components/Footer.jsx";
+import Header from "./About/Header.jsx";
 import rightIcon from '/rightIcon.png'
 import { useState} from "react";
 import {categories, questionsAndAnswers} from "../constants/constant.js";
@@ -63,7 +63,7 @@ const FilterCategory = ({categoryString}) => {
     )
 }
 
-export const Faqs = () => {
+export default function Faqs () {
     const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
 
     return (

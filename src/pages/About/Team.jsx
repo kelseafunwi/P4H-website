@@ -1,10 +1,10 @@
-import {Header} from "./Header.jsx";
-import {Footer} from "../../Components/Footer.jsx";
+import Header from "./Header.jsx";
+import Footer from "../../Components/Footer.jsx";
 import {team} from '../../constants/constant.js'
 
 import {motion} from 'framer-motion';
 
-export const Team = () => {
+export default function Team() {
     return (
         <div>
             <Header text={"Meet The Team"} />

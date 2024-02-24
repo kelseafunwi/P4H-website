@@ -2,7 +2,7 @@ import downloadHero from '/downloadHero.png';
 import {AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
 import {motion} from 'framer-motion';
 
-export const Downloads = () => {
+export default function Downloads () {
     return (
         <div className={"w-[95%] "}>
             <div className={"grid grid-cols-1 md:grid-cols-2 justify-between items-stretch"}>

@@ -1,9 +1,8 @@
-import {Header} from "./Header.jsx";
+import Header from "./Header.jsx";
 import aboutBlogHero from '/aboutBlogHero.png';
 import searchIcon from '/searchIcon.png'
 import {motion} from 'framer-motion'
-import {Footer} from "../../Components/Footer.jsx";
-import blog1 from '/Blog/img-about-blog-1.png';
+import Footer from "../../Components/Footer.jsx";import blog1 from '/Blog/img-about-blog-1.png';
 import blog2 from '/Blog/img-about-blog-2.png';
 import blog3 from '/Blog/img-about-blog-3.png';
 import blog4 from '/Blog/img-about-blog-4.png';
@@ -71,7 +70,7 @@ const articles = [
     },
 ]
 
-export const Blogs = () => {
+export default function Blogs (){
     return (
         <>
             <Header text={"Our Blogs"} />

@@ -2,7 +2,7 @@ import homeTestimonial from '/homeTestimonial.png';
 import uniformImage from '/uniformImage.png'
 import quoteIcon from '/quoteIcon.png'
 
-export const CustomerSaying = () => {
+export default function CustomerSaying () {
     return (
         <div className={" md:flex mb-5 text-white "}>
             <img src={homeTestimonial} alt={"Testimonial image"} className={"w-[80%] md:w-[40%] z-10"}/>

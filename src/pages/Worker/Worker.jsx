@@ -1,10 +1,10 @@
-import {Hero} from './Hero.jsx';
-import {Footer} from "../../Components/Footer.jsx";
-import {GetStarted} from "./GetStarted.jsx";
-import {JoinUs} from "./JoinUs.jsx";
-import {WorkWithUs} from "./WorkWithUs.jsx";
+import Hero from './Hero.jsx';
+import Footer from "../../Components/Footer.jsx";
+import GetStarted from "./GetStarted.jsx";
+import JoinUs from "./JoinUs.jsx";
+import WorkWithUs from "./WorkWithUs.jsx";
 
-export const Worker = () => {
+export default function Worker ()  {
     return (
         <>
             <Hero />
