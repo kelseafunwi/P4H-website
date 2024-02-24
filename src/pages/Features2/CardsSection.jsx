@@ -2,9 +2,9 @@ import featurePortfolioIcon from '/featurePortfolioIcon.svg';
 import featuresUserIcon from '/featuresUserIcon.svg'
 import serviceIcon from '/serviceIcon.svg';
 import fandAndhireIcon from '/fandAndHireProfessionalsicon.svg';
-import sentIcon from '/public/sentIcon.svg';
-import keepTrackIcon from '/public/keepTrackIcon.svg';
-import manageNotificationIcon from '/public/manageNotificationIcon.svg';
+import sentIcon from '/sentIcon.svg';
+import keepTrackIcon from '/keepTrackIcon.svg';
+import manageNotificationIcon from '/manageNotificationIcon.svg';
 
 export default function CardsSection(){
 
