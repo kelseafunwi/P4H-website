@@ -2,73 +2,8 @@ import Header from "./Header.jsx";
 import blogHeroImage from '/images/about/blog-hero.png';
 import searchIcon from '/icons/search.png'
 import {motion} from 'framer-motion'
-import blog1 from '/images/Blog/1.png';
-import blog2 from '/images/Blog/2.png';
-import blog3 from '/images/Blog/3.png';
-import blog4 from '/images/Blog/4.png';
-import blog5 from '/images/Blog/5.png';
-import blog6 from '/images/Blog/6.png';
-import blog7 from '/images/Blog/7.png';
-import blog8 from '/images/Blog/8.png';
-import blog9 from '/images/Blog/9.png';
 import {Link} from "react-router-dom";
-
-const articles = [
-    {
-        image: blog1,
-        title: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-    {
-        image: blog2,
-        title: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-    {
-        image: blog3,
-        title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, to",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-    {
-        image: blog4,
-        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-    {
-        image: blog5,
-        title: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-    {
-        image: blog6,
-        title: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-    {
-        image: blog7,
-        title: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-    {
-        image: blog8,
-        title: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-    {
-        image: blog9,
-        title: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu",
-        date: "Jan 20, 2023",
-        name: "Bessie Cooper",
-    },
-]
+import {articles} from "../../constants/constant.js";
 
 export default function Blogs (){
     return (

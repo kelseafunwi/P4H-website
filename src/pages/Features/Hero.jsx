@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 export default function Hero () {
     return (
-        <div className={"md:px-16 py-5 flex flex-col md:flex-row items-center justify-center bg-cover bg-top lg:bg-bottom bg-[url('/featureHeroBg.svg')]"}>
+        <div className={"md:px-16 py-5 flex flex-col md:flex-row items-center justify-center bg-cover bg-top lg:bg-bottom bg-[url('/images/features/hero-background.svg')]"}>
             <motion.div
                 initial={{
                     scale: 0.7,
