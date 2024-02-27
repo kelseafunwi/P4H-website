@@ -11,7 +11,7 @@ export default {
       'secondary': '#FF9719',
     },
     fontFamily: {
-      'barlow': ['Barlow', 'sans-serif']
+      // 'barlow': ['Barlow', 'sans-serif']
     },
     backgroundColor:  {
       'primary' : '#026BCF',

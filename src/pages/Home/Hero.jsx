@@ -39,10 +39,20 @@ export default function Hero ()  {
                         scale: 1
                     }}
                     transition={{
-                        duration: 1
+                        duration: 0.6
                     }}
-                    className={ "hidden relative md:flex"}>
-                    <img loading={'lazy'} src={heroImage} className={"w-full"} alt={"Hero Image"}/>
+                    className={"hidden relative md:flex"}>
+                    <img loading={'lazy'} src={heroImage} className={"w-full z-10"} alt={"Hero Image"}/>
+                    <motion.div
+                        initial={{
+                            scale: 0,
+                        }}
+                        animate={{
+                            scale: 1
+                        }}
+                        className={"absolute w-[75%] left-[12%]  border-[1px] border-white aspect-square rounded-[50%]"}></motion.div>
+                    <div
+                        className={"absolute w-[90%] -top-[8%] left-[5%] border-[1px] border-white aspect-square rounded-[50%]"}></div>
                 </motion.div>
             </div>
         </div>
