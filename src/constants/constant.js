@@ -41,10 +41,6 @@ export const dummyIcons = [
 
 export const navbarLinks = [
     {
-        label: "Home",
-        link: "/",
-    },
-    {
         label: "For Workers",
         link: "/worker",
     },

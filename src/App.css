@@ -1,7 +1,61 @@
-@import url(https://fonts.google.com/specimen/Barlow);
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/*Font Barlow Styling*/
+.barlow-bold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.barlow-bold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.barlow-semibold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.barlow-semibold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.barlow-medium-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.barlow-medium {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.barlow-regular-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.barlow-regular {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 body {
     /*font-family: 'Barlow', serif;*/
+    background: #fff !important;
+    font-family: 'Barlow', sans-serif;
+    color: #212121 !important;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*Navigation bar section */
@@ -10,7 +64,7 @@ body {
 .active {
     color: #FF9719 !important;
     background: rgba(255, 255, 255, 0.64);
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 .active svg {
@@ -34,38 +88,13 @@ body {
     border-radius: 0 !important;
 }
 
-.hero-image-container img {
-    z-index:3;
-}
-
-@media (max-width: 574px) {
-    .hero-image-container::before,
-    .hero-image-container::after {
-        display: none;
-    }
-}
-
-.hero-image-container::before {
-    content: '';
-    position: absolute;
-    border: 2px solid #4FACE7;
-    border-radius: 50%;
-    height: 410px;
-    width: 370px;
-    left: 15%;
-}
-
-.hero-image-container::after {
-    content: '';
-    position: absolute;
-    border: 2px solid #4FACE7;
-    border-radius: 50%;
-    height: 503px;
-    width: 500px;
-    left: 4%;
-    overflow: visible;
-}
-
 .header-text:before {
     left: calc(50% - 36px);
+}
+
+/* Some Hero description */
+@media (min-width: 768px) {
+    .hero-section {
+        min-height: calc(90vh - 93px);
+    }
 }
