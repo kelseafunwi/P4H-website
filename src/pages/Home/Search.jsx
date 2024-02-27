@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 export default function Search () {
     return (
         <>
-            <div className={"w-full bg-white mt-2 flex justify-center items-center"}>
+            <div className={"w-full mt-5 lg:mt-20 flex justify-center items-center"}>
                 <div
                     className={"w-full md:w-11/12 overflow-hidden block md:flex items-center md:columns-2 justify-center"}>
                     <motion.div
@@ -44,9 +44,8 @@ export default function Search () {
                 </div>
             </div>
 
-            <div className={"w-full bg-white mt-2 flex justify-center items-center"}>
-                <div
-                    className={" w-full md:w-11/12 overflow-hidden flex flex-col md:flex-row items-center md:columns-2 justify-center"}>
+            <div className={"w-full lg:-mt-32 bg-white flex justify-center"}>
+                <div className={" w-full md:w-11/12 overflow-hidden flex flex-col md:flex-row items-center md:columns-2 justify-center"}>
 
                     <div className={"mt-6 md:mt-0 md:w-[500px] px-10 mb-10 md:mb-0 order-2 md:order-1"}>
                         <h3 className={"text-secondary font-bold"}>Feature</h3>

@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
-import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
 import heroImage from '/images/worker/hero.png';
 import tick from '/icons/yellow-tick.png';
+import {GetButton} from "../../Components/GetButtons.jsx";
 
 export default function Hero  ()  {
     return (
@@ -28,8 +28,8 @@ export default function Hero  ()  {
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
                         </p>
                         <div className={"flex items-center gap-x-2"}>
-                            <PlayStoreButton />
-                            <AppStoreButton />
+                            <GetButton platform={'android'} />
+                            <GetButton platform={'apple'} />
                         </div>
                     </motion.div>
                     <motion.div

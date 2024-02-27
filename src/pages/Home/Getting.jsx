@@ -1,4 +1,4 @@
-import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
+import {GetButton} from "../../Components/GetButtons.jsx";
 
 export default function Getting () {
     return (
@@ -13,8 +13,8 @@ export default function Getting () {
 
                 <div className={"flex justify-center items-center mt-6"}>
                     <div className={"flex items-center gap-x-5 mb-3"}>
-                        <PlayStoreButton/>
-                        <AppStoreButton/>
+                        <GetButton platform={'apple'} />
+                        <GetButton platform={'android'} />
                     </div>
                 </div>
             </div>

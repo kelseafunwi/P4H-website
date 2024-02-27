@@ -49,6 +49,10 @@
     font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Barlow', sans-serif !important;
+}
+
 body {
     /*font-family: 'Barlow', serif;*/
     background: #fff !important;

@@ -20,7 +20,7 @@ export const MainLayout = () => {
     return (
         <>
             <Navbar />
-            <div className={"mt-[87px] md:mt-[95px] overflow-hidden"}>
+            <div className={"mt-[87px] md:mt-[93px] overflow-hidden"}>
                 <Outlet />
                 <Footer />
             </div>

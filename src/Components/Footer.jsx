@@ -1,8 +1,8 @@
 import facebook from '/icons/facebook.png';
 import twitter from '/icons/twitter.png';
 import youtube from '/icons/youtube.png';
-import {AppStoreButton, PlayStoreButton} from "./GetButtons.jsx";
 import {Link} from "react-router-dom";
+import {GetButton} from "./GetButtons.jsx";
 
 export default function Footer() {
     return (
@@ -69,8 +69,8 @@ export default function Footer() {
                             className={"text-secondary"}>4</span>Home</h3>
 
                         <div className={"flex py-5 flex-col gap-y-4 md:items-center"}>
-                        <AppStoreButton />
-                            <PlayStoreButton />
+                            <GetButton platform={'apple'} />
+                            <GetButton platform={'android'} />
                         </div>
                     </div>
 

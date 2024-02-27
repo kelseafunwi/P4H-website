@@ -1,6 +1,6 @@
 import downloadHero from '/images/home/downloadHero.png';
-import {AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
 import {motion} from 'framer-motion';
+import {GetButton} from "../../Components/GetButtons.jsx";
 
 export default function Downloads () {
     return (
@@ -30,7 +30,7 @@ export default function Downloads () {
                                 <span className={"text-primary2"}>terms of service</span></a> and <a
                                 href={"/privacy-policy"}><span className={"text-primary2"}>privacy policy</span></a>
                             </p>
-                            <PlayStoreButton />
+                            <GetButton platform={'android'}/>
                         </div>
                     </motion.div>
                     <motion.div
@@ -55,7 +55,7 @@ export default function Downloads () {
                                 <span className={"text-primary2"}>terms of service</span></a> and <a
                                 href={"/privacy-policy"}><span className={"text-primary2"}>privacy policy</span></a>
                             </p>
-                            <AppStoreButton />
+                            <GetButton platform={'apple'} />
                         </div>
                     </motion.div>
 

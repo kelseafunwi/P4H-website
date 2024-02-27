@@ -1,12 +1,11 @@
 import heroImage from '/images/home/hero.png';
 import {motion} from "framer-motion";
-import { AppStoreButton, PlayStoreButton} from "../../Components/GetButtons.jsx";
-
+import {GetButton} from "../../Components/GetButtons.jsx";
 
 export default function Hero ()  {
     return (
-        <div className={"w-full  bg-primary flex h-fit text-white py-16  sm:py-11"}>
-            <div className={"ps-3 md:ps-10 md:flex hero-section overflow-hidden justify-between items-center gap-3"}>
+        <div className={"w-full bg-primary flex h-fit text-white py-16  sm:py-11"}>
+            <div className={"ps-3 md:ps-10 flex hero-section overflow-hidden justify-between items-center gap-3"}>
                 <motion.div
                     initial={{
                         y: 200,
@@ -27,8 +26,8 @@ export default function Hero ()  {
                         curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
                     </p>
                     <div className={"flex items-center gap-x-5 mb-3"}>
-                        <PlayStoreButton/>
-                        <AppStoreButton/>
+                        <GetButton platform={'apple'} />
+                        <GetButton platform={'android'} />
                     </div>
                 </motion.div>
                 <motion.div
@@ -42,7 +41,7 @@ export default function Hero ()  {
                         duration: 0.6
                     }}
                     className={"hidden relative md:flex"}>
-                    <img loading={'lazy'} src={heroImage} className={"w-full z-10"} alt={"Hero Image"}/>
+                    <img loading={'lazy'} src={heroImage} className={" z-10"} alt={"Hero Image"}/>
                     <motion.div
                         initial={{
                             scale: 0,
@@ -52,7 +51,7 @@ export default function Hero ()  {
                         }}
                         className={"absolute w-[75%] left-[12%]  border-[1px] border-white aspect-square rounded-[50%]"}></motion.div>
                     <div
-                        className={"absolute w-[90%] -top-[8%] left-[5%] border-[1px] border-white aspect-square rounded-[50%]"}></div>
+                        className={"absolute w-[93%] -top-[10%] left-[3%] border-[1px] border-white aspect-square rounded-[50%]"}></div>
                 </motion.div>
             </div>
         </div>
