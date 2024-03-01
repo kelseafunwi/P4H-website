@@ -32,10 +32,11 @@ export default function Search () {
                             {/*    orange part of the background */}
                         </div>
                     </motion.div>
+
                     <div className={"mt-6 md:mt-0 md:w-[500px] px-10 mb-10 md:mb-0"}>
-                        <h3 className={"text-secondary font-bold"}>Feature</h3>
-                        <h1 className={'font-bold text-dark text-3xl'}>Our Search Feature to Filter Professionals</h1>
-                        <p className={"font-normal mt-4 text-sm text-lightGray"}>
+                        <h3 className={"text-secondary"}>Feature</h3>
+                        <h1 className={'text-[33px]'}>Our Search Feature to Filter Professionals</h1>
+                        <p className={"mt-4"}>
                             Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
@@ -47,15 +48,15 @@ export default function Search () {
             <div className={"w-full lg:-mt-32 bg-white flex justify-center"}>
                 <div className={" w-full md:w-11/12 overflow-hidden flex flex-col md:flex-row items-center md:columns-2 justify-center"}>
 
-                    <div className={"mt-6 md:mt-0 md:w-[500px] px-10 mb-10 md:mb-0 order-2 md:order-1"}>
-                        <h3 className={"text-secondary font-bold"}>Feature</h3>
-                        <h1 className={'font-bold text-dark text-3xl'}>Our Search Feature to Filter Professionals</h1>
-                        <p className={"font-normal text-lightGray mt-4 text-sm"}>
+                    <div className={"mt-6 md:mt-32 md:w-[500px] px-10 mb-10 md:mb-0 order-2 md:order-1"}>
+                        <h3 className={"text-secondary"}>Feature</h3>
+                        <h1 className={'text-[33px]'}>Our Search Feature to Filter Professionals</h1>
+                        <p className={"mt-4"}>
                             Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
                         </p>
-                        <button className={"bg-primary text-white mt-8 py-4 rounded-2xl font-bold px-5 hover:opacity-90"}>
+                        <button className={"bg-primary outline-none text-white mt-8 py-4 rounded-md font-bold px-5 hover:bg-secondary"}>
                             Discover More Features
                         </button>
                     </div>
@@ -71,7 +72,7 @@ export default function Search () {
                             duration: 0.8
                         }}
                         className={"pl-5 relative w-fit flex justify-center items-center order-1 md:order-2"}>
-                        <img loading={"lazy"} src={search2} className={"w-7/12 md:w-10/12 z-30 relative"} alt={"Search item 1"}/>
+                        <img loading={"lazy"} src={search2} className={"w-7/12 md:w-full z-30 relative"} alt={"Search item 1"}/>
                         <div className={"absolute bg-primary rounded-3xl w-[30%] h-[60%] top-16 left-[30%] z-10"}>
                             {/*    Blue part of the background */}
                         </div>

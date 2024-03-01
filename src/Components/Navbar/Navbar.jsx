@@ -1,6 +1,6 @@
 import logoImage from '/logo.png';
 import {useEffect, useState} from "react";
-import {AlignJustify, ChevronDown, Globe, XIcon} from "lucide-react";
+import {AlignJustify, ChevronDown, ChevronUp, Globe, XIcon} from "lucide-react";
 import {MobileMenu} from "./MobileMenu.jsx";
 import { navbarLinks } from "../../constants/constant.js";
 import { NavLink} from "react-router-dom";
@@ -64,87 +64,89 @@ export default function Navbar() {
                         </div>
                     </motion.div>
                 }
-                <div className={"max-w-7xl md:px-5 lg:px-10 w-full"}>
-                    <nav className={"flex w-full justify-between items-center"}>
-                        <div>
-                            <a href={"/"} className={"flex items-center"}>
-                                {logoImage && <img
-                                    alt={"Logo image"} src={logoImage}
-                                    className={"md:h-[93px] h-[85px]"}
-                                />}
-                            </a>
-                        </div>
-                        <div className={"flex items-center"}>
+                <nav className={"max-w-7xl md:px-5 lg:px-10 flex w-full justify-between"}>
+                    <div>
+                        <a href={"/"}>
+                            {logoImage && <img
+                                alt={"Logo image"} src={logoImage}
+                                className={"md:h-[93px] h-[85px]"}
+                            />}
+                        </a>
+                    </div>
+                    <div className={"flex items-center"}>
+                        {
+                            !menuOpen &&
+                            <button onClick={toggleMenuState}
+                                    className={"flex items-center justify-center pe-4 lg:hidden"}>
+                                <AlignJustify size={32} color={'#026BCF'}/>
+                            </button>
+                        }
+                    </div>
+                    <div className={"hidden lg:flex items-center"}>
+                        <ul className={"flex items-center justify-between gap-x-1"}>
                             {
-                                !menuOpen &&
-                                <button onClick={toggleMenuState}
-                                        className={"flex items-center justify-center pe-4 lg:hidden"}>
-                                    <AlignJustify size={32} color={'#026BCF'}/>
-                                </button>
-                            }
-                        </div>
-                        <div className={"hidden lg:flex items-center"}>
-                            <ul className={"flex items-center justify-between gap-x-2"}>
-                                {
-                                    navbarLinks.map((item, index) => (
-                                        <motion.li
-                                            initial={{
-                                                y: 30,
-                                                opacity: 0.5
-                                            }}
-                                            animate={{
-                                                y: 0,
-                                                opacity: 1
-                                            }}
-                                            transition={{
-                                                duration: 0.2,
-                                                delay: 0.2 * index,
-                                            }}
-                                            key={index} className={"relative items-stretch link-item  px-2"}>
-                                            <NavLink to={item.link}
-                                               className={`relative  whitespace-nowrap flex items-center font-bold hover:text-secondary duration-75 font-barlow barlow-regular  p-0 text-[16px]  text-dark`}>
-                                                {item.eng && <Globe size={24} className={"pe-1"} />}
-                                                {item.label}
-                                                {
-                                                    item.dropdownMenu &&
-                                                    <ChevronDown size={35}  className={"px-2 text-black"}/>
-                                                }
-                                            </NavLink>
+                                navbarLinks.map((item, index) => (
+                                    <motion.li
+                                        initial={{
+                                            y: 30,
+                                            opacity: 0.5
+                                        }}
+                                        animate={{
+                                            y: 0,
+                                            opacity: 1
+                                        }}
+                                        transition={{
+                                            duration: 0.2,
+                                            delay: 0.2 * index,
+                                        }}
+                                        key={index} className={"relative items-stretch link-item px-[6px] py-[4px]"}>
+                                        <NavLink to={item.link}
+                                           className={`relative  whitespace-nowrap flex items-center font-bold hover:text-secondary duration-75 bold-lg `}>
+                                            {item.eng && <Globe size={24} />}
+                                            {item.label}
                                             {
                                                 item.dropdownMenu &&
-                                                <motion.div className={`dropdown left-0 absolute  px-4 top-[100%] bg-white py-4 w-[200px] z-[200] shadow-md overflow-hidden`}
-                                                            initial={{
-                                                                height: 0,
-                                                            }}
-                                                            animate={{
-                                                                height: 'fit-content'
-                                                            }}
-                                                >
-                                                    {
-                                                        item.dropdownMenu &&
-                                                        item.dropdownMenu.map((item, index) => (
-                                                            <NavLink to={item.link} key={index} className={"flex py-2 last-of-type:border-none text-sm px-2 border-b-2 border-b-dark text-dark hover:text-secondary"}>
-                                                                {item.label}
-                                                            </NavLink>
-                                                        ))
-                                                    }
-                                                </motion.div>
+                                                <ChevronDown size={35}  className={"px-2 text-black"}/>
                                             }
-                                        </motion.li>
-                                    ))
-                                }
-                                <li  className={"relative link-item  px-2"}>
-                                    <button onClick={() => setLanguageActive(!languageActive)}
-                                             className={`relative whitespace-nowrap flex items-center font-semibold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
-                                        <Globe size={24} className={"pe-1"} />
-                                        Eng
-                                        <ChevronDown size={35}  className={"ps-2 text-black"}/>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                                        </NavLink>
+                                        {
+                                            item.dropdownMenu &&
+                                            <motion.div className={`dropdown left-0 absolute  px-4 top-[100%] bg-white py-4 w-[200px] z-[200] shadow-md overflow-hidden`}
+                                                        initial={{
+                                                            height: 0,
+                                                        }}
+                                                        animate={{
+                                                            height: 'fit-content'
+                                                        }}
+                                            >
+                                                {
+                                                    item.dropdownMenu &&
+                                                    item.dropdownMenu.map((item, index) => (
+                                                        <NavLink to={item.link} key={index} className={"flex py-2 last-of-type:border-none text-sm px-2 border-b-2 border-b-dark text-dark hover:text-secondary"}>
+                                                            {item.label}
+                                                        </NavLink>
+                                                    ))
+                                                }
+                                            </motion.div>
+                                        }
+                                    </motion.li>
+                                ))
+                            }
+                            <li  className={"relative link-item  px-2"}>
+                                <button onClick={() => setLanguageActive(!languageActive)}
+                                         className={`relative whitespace-nowrap flex items-center font-semibold hover:text-secondary duration-75 font-barlow p-0 text-[16px] leading-7 text-dark`}>
+                                    <Globe size={24} className={"pe-1"} />
+                                    Eng
+                                    {
+                                        languageActive ?
+                                            <ChevronUp size={35}  className={"ps-2 text-black"}/> :
+                                            <ChevronDown size={35}  className={"ps-2 text-black"}/>
+                                    }
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </header>
             {
                 menuOpen &&

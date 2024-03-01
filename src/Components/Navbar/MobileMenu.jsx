@@ -9,17 +9,11 @@ export const MobileMenu = ({toggleMenuState}) => {
         <motion.div
             initial={{
                 width: 0,
-                rotate: '20deg'
             }}
             animate={{
-                width: 300,
-                rotate: '0deg'
+                width: 320,
             }}
-            exit={{
-                width: 0,
-                rotate: '20deg',
-            }}
-            className={" fixed lg:hidden top-0 bottom-0 text-white right-0 z-50 shadow-sm border-l-2 bg-primary w-[300px]"}>
+            className={" fixed lg:hidden top-0 bottom-0 text-white right-0 z-50 shadow-sm border-l-2 bg-primary"}>
             <div className={"absolute top-10 right-0"}>
                 <button onClick={toggleMenuState}
                         className={" flex items-center justify-center pe-4 lg:hidden"}>
