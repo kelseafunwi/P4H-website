@@ -1,13 +1,14 @@
 import downloadHero from '/images/home/downloadHero.png';
 import {motion} from 'framer-motion';
 import {GetButton} from "../../Components/GetButtons.jsx";
+import playStoreButton from '/icons/Google_Play_Store_badge_EN 1.png';
 
 export default function Downloads () {
     return (
         <div className={"w-[95%] "}>
             <div className={"grid grid-cols-1 md:grid-cols-2 justify-between items-stretch"}>
 
-                <div className={"order-2 md:order-1 mt-5 md:mt-0 items-stretch gap-y-4"}>
+                <div className={"order-2 md:order-1 mt-5 md:mt-0 gap-y-4"}>
                     <motion.div
                         initial={{
                             y: -100,
@@ -30,7 +31,10 @@ export default function Downloads () {
                                 <span className={"text-primary2"}>terms of service</span></a> and <a
                                 href={"/privacy-policy"}><span className={"text-primary2"}>privacy policy</span></a>
                             </p>
-                            <GetButton platform={'android'}/>
+                            <button
+                                className={"px-6"} onClick={() => console.log("Downloading the playstore")}>
+                                <img alt={"Playstore button"} src={playStoreButton} className={"w-full"} />
+                            </button>
                         </div>
                     </motion.div>
                     <motion.div
