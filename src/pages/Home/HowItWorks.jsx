@@ -44,7 +44,7 @@ export default function HowItWorks () {
                                     workerRegistrationSteps.map((step, index) => (
                                         <motion.div
                                             key={index}
-                                            className={"w-fit mx-auto mt-1 sm:mt-0 bg-white px-6 py-6 rounded-2xl"}
+                                            className={"w-fit mx-auto shadow-card-steps mt-1 sm:mt-0 bg-white px-6 py-6 rounded-2xl"}
                                             initial={{
                                                 scale: 0,
                                             }}
@@ -75,7 +75,7 @@ export default function HowItWorks () {
                                     clientRegistrationSteps.map((step, index) => (
                                         <motion.div
                                             key={index}
-                                            className={"w-fit mx-auto mt-1 sm:mt-0 bg-white px-6 py-6 rounded-2xl"}
+                                            className={"w-fit mx-auto shadow-card-steps mt-1 sm:mt-0 bg-white px-6 py-6 rounded-2xl"}
                                             initial={{
                                                 scale: 0,
                                             }}

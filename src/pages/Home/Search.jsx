@@ -5,9 +5,8 @@ import {motion} from 'framer-motion'
 export default function Search () {
     return (
         <>
-            <div className={"w-full mt-5 lg:mt-20 flex justify-center items-center"}>
-                <div
-                    className={"w-full md:w-11/12 overflow-hidden block md:flex items-center md:columns-2 justify-center"}>
+            <div className={"w-full mt-5 lg:mt-16 flex justify-center items-center"}>
+                <div className={"w-full md:w-11/12  flex flex-col md:flex-row items-center  justify-center"}>
                     <motion.div
                         initial={{
                             x: -200,
@@ -22,7 +21,7 @@ export default function Search () {
                         <img src={search1} loading={"lazy"} alt={"Search item 1"}/>
                     </motion.div>
 
-                    <div className={"mt-6 md:mt-0 md:w-[500px] px-2 md:px-10 mb-10 md:mb-0"}>
+                    <div className={"mt-6 md:mt-0 md:w-[550px] px-2 sm:px-10 mb-10 md:mb-0"}>
                         <div className={"text-secondary bold-lg"}>Feature</div>
                         <h3>Our Search Feature to Filter Professionals</h3>
                         <p className={"mt-2"}>
@@ -35,9 +34,9 @@ export default function Search () {
             </div>
 
             <div className={"w-full lg:-mt-32 bg-white flex justify-center"}>
-                <div className={" w-full md:w-11/12 overflow-hidden flex flex-col md:flex-row items-center md:columns-2 justify-center"}>
+                <div className={" w-full md:w-11/12 flex flex-col md:flex-row items-center justify-center"}>
 
-                    <div className={"mt-6 md:mt-32 md:w-[500px] px-2 md:px-10 mb-10 md:mb-0 order-2 md:order-1"}>
+                    <div className={"mt-6 md:mt-32 md:w-[550px] px-2 sm:px-10 mb-10 md:mb-0 order-2 md:order-1"}>
                         <div className={"text-secondary bold-lg"}>Feature</div>
                         <h3>Our Search Feature to Filter Professionals</h3>
                         <p className={"mt-2"}>

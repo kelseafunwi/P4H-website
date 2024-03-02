@@ -1,9 +1,8 @@
-import workWithUsImage from '/images/worker/why-work-with-us.png';
 import thumbsUpIcon from '/icons/thumbs-up.svg'
 import sellIcon from '/icons/sell.svg';
 import sell1Icon from '/icons/sell1.png';
-import hireScreenImage from '/images/features/hireScreen.png';
 import {motion} from 'framer-motion';
+import workWithUsImage from '/images/worker/workWithUs.png'
 
 export default function WorkWithUs () {
     const whyWorkWithUsArray = [
@@ -27,15 +26,12 @@ export default function WorkWithUs () {
     return (
         <div className={"flex items-center py-8 pb-16 justify-center"}>
             <div className={"py-5 sm:w-[90%]"}>
-                <div className={"grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-20 justify-between "}>
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-x-5 justify-between "}>
                     <div className={"relative "}>
                         <img loading={"lazy"} src={workWithUsImage} className={"max-h-[780px]"} alt={"Work with us image"}/>
-                        <div className={"absolute -left-[18%] -bottom-[20%] md:-bottom-[15%]"}>
-                            <img loading={"lazy"} className={"w-[51%]"} src={hireScreenImage} alt={"Worker Phone Icon"} />
-                        </div>
                     </div>
 
-                    <div className={"px-5 mt-12 md:mt-0 flex flex-col gap-y-3"}>
+                    <div className={"px-5 flex flex-col gap-y-3"}>
                         <h2 className={"text-dark"}>Why Work With Us?</h2>
                         <p className={"text-lightGray"}>Lorem ipsum dolor sit amet consectetur. A et ut viverra eget
                             erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis</p>
