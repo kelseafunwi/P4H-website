@@ -19,10 +19,10 @@ export default function Hero  ()  {
                             duration: 0.6,
                         }}
                         className={"ps-2 sm:ps-[13%] py-6 gap-y-4 flex flex-col max-w-[600px] justify-center"}>
-                        <h2 className={"font-bold text-4xl md:text-4xl leading-10"}>
+                        <h2 className={"font-bold text-white"}>
                             We Help You Find and Hire the right professionals
                         </h2>
-                        <p className={"text-sm"}>
+                        <p>
                             Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.

@@ -35,41 +35,51 @@ export default function WorkWithUs () {
                         </div>
                     </div>
 
-                    <div className={"px-5 mt-12 md:mt-0"}>
-                        <div className={"flex flex-col gap-y-3"}>
-                            <h1 className={"text-dark font-bold text-[38px] leading-[48px]"}>Why Work With Us?</h1>
-                            <p className={"text-lightGray"}>Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis</p>
+                    <div className={"px-5 mt-12 md:mt-0 flex flex-col gap-y-3"}>
+                        <h2 className={"text-dark"}>Why Work With Us?</h2>
+                        <p className={"text-lightGray"}>Lorem ipsum dolor sit amet consectetur. A et ut viverra eget
+                            erat arcu nullam. Arcu dignissim nisl turpis laoreet neque quis</p>
 
-                            <div className={"flex flex-col gap-y-6"}>
-                                {
-                                    whyWorkWithUsArray.map((item, index) => (
-                                        <motion.div
-                                            initial={{
-                                                x: 200,
+                        <div className={"flex flex-col justify-between gap-y-6"}>
+                            {
+                                whyWorkWithUsArray.map((item, index) => (
+                                    <motion.div
+                                        initial={{
+                                            x: 200,
+                                        }}
+                                        whileInView={{
+                                            x: 0
+                                        }}
+                                        transition={{
+                                            delay: index * 0.1,
+                                            transition: 0.5,
+                                        }}
+                                        viewport={{
+                                            once: true,
+                                        }}
+                                        key={index}
+                                        className={"flex items-center py-6 px-1 gap-x-7 why-work-with-us-shadow rounded-2xl"}>
+                                        <div
+                                            style={{
+                                                boxShadow: '0px 4px 60px 0px rgba(4, 134, 220, 0.1)',
                                             }}
-                                            whileInView={{
-                                                x: 0
-                                            }}
-                                            transition={{
-                                                delay: index * 0.1,
-                                                transition: 0.5,
-                                            }}
-                                            viewport={{
-                                                once: true,
-                                            }}
-                                            key={index} className={"flex items-center py-6  gap-x-7 shadow-sm rounded-2xl"}>
-                                            <div className={"h-[60px] w-[60px] flex rounded-[50%]"}>
-                                                <img loading={"lazy"} src={item.icon} alt={item.alt}/>
-                                            </div>
-                                            <div className={"max-w-[360px]"}>
-                                                <h3 className={"font-bold text-dark"}>{item.title}</h3>
-                                                <p className={"text-lightGray text-[14px]"}>{item.paragraph}</p>
-                                            </div>
-                                        </motion.div>
-                                    ))
-                                }
-                            </div>
+                                            className={"flex rounded-[50%]"}>
+                                            <img className={"w-[80px]"} loading={"lazy"} src={item.icon}
+                                                 alt={item.alt}/>
+                                        </div>
+                                        <div className={"max-w-[360px]"}>
+                                            <h5 className={"font-bold text-dark"}>{item.title}</h5>
+                                            <p className={"text-lightGray"}>{item.paragraph}</p>
+                                        </div>
+                                    </motion.div>
+                                ))
+                            }
                         </div>
+
+                        <button
+                            className={"w-full flex items-center bg-primary2 rounded-md my-3 py-2 hover:opacity-65 justify-center text-center text-white font-bold"}>
+                            Get Started
+                        </button>
                     </div>
                 </div>
             </div>

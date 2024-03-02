@@ -1,5 +1,5 @@
-import search1 from '/images/home/search1.png';
-import search2 from '/images/home/search2.png';
+import search1 from '/images/home/search1.svg';
+import search2 from '/images/home/search2.svg';
 import {motion} from 'framer-motion'
 
 export default function Search () {
@@ -18,19 +18,8 @@ export default function Search () {
                         transition={{
                             duration: 0.8
                         }}
-                        className={"pl-5 relative w-fit flex justify-center items-center"}>
-                        <img src={search1} loading={"lazy"} className={"w-7/12 md:w-10/12 z-30 relative"} alt={"Search item 1"}/>
-                        <div className={"absolute bg-primary rounded-3xl w-[40%] h-[18%] bottom-16 left-0 z-10"}>
-                            {/*    Blue part of the background */}
-                        </div>
-                        <div
-                            className={"absolute bg-grey rounded-3xl top-[12%] left-[8%] w-[50%] h-[70%] bottom-36 z-10"}>
-                            {/*    Grey part of the background */}
-                        </div>
-                        <div
-                            className={"absolute bg-secondary rounded-3xl right-0 w-[40%] sm:w-[60%] h-[40%] top-0 z-10"}>
-                            {/*    orange part of the background */}
-                        </div>
+                        className={"pl-5 w-fit flex justify-center items-center"}>
+                        <img src={search1} loading={"lazy"} alt={"Search item 1"}/>
                     </motion.div>
 
                     <div className={"mt-6 md:mt-0 md:w-[500px] px-2 md:px-10 mb-10 md:mb-0"}>
@@ -71,15 +60,8 @@ export default function Search () {
                         transition={{
                             duration: 0.8
                         }}
-                        className={"pl-5 relative w-fit flex justify-center items-center order-1 md:order-2"}>
-                        <img loading={"lazy"} src={search2} className={"w-7/12 md:w-full z-30 relative"} alt={"Search item 1"}/>
-                        <div className={"absolute bg-primary rounded-3xl w-[30%] h-[60%] top-16 left-[30%] z-10"}>
-                            {/*    Blue part of the background */}
-                        </div>
-                        <div
-                            className={"absolute bg-secondary rounded-3xl right-[30%] w-[20%] sm:w-[30%] h-[40%] top-[40%] z-10"}>
-                            {/*    orange part of the background */}
-                        </div>
+                        className={"w-fit flex justify-center items-center order-1 md:order-2"}>
+                        <img loading={"lazy"} src={search2} alt={"Search item 1"}/>
                     </motion.div>
                 </div>
             </div>

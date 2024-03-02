@@ -113,6 +113,13 @@ h6 {
     line-height:24px;
 }
 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px !important;
+        line-height: normal;
+    }
+}
+
 .heading-lg {
     font-size: 32px;
     line-height: 38px;
@@ -254,4 +261,12 @@ h2:before {
 }
 .getting-shadow {
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15) !important;
+}
+
+.getstarted-shadow {
+    box-shadow: 0px 4px 60px 0px rgba(4, 134, 220, 0.1);
+}
+
+.why-work-with-us-shadow {
+    box-shadow: 0px 4px 60px 0px rgba(4, 134, 220, 0.1);
 }
