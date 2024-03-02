@@ -33,10 +33,10 @@ export default function Search () {
                         </div>
                     </motion.div>
 
-                    <div className={"mt-6 md:mt-0 md:w-[500px] px-10 mb-10 md:mb-0"}>
-                        <h3 className={"text-secondary"}>Feature</h3>
-                        <h1 className={'text-[33px]'}>Our Search Feature to Filter Professionals</h1>
-                        <p className={"mt-4"}>
+                    <div className={"mt-6 md:mt-0 md:w-[500px] px-2 md:px-10 mb-10 md:mb-0"}>
+                        <div className={"text-secondary bold-lg"}>Feature</div>
+                        <h3>Our Search Feature to Filter Professionals</h3>
+                        <p className={"mt-2"}>
                             Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
@@ -48,15 +48,15 @@ export default function Search () {
             <div className={"w-full lg:-mt-32 bg-white flex justify-center"}>
                 <div className={" w-full md:w-11/12 overflow-hidden flex flex-col md:flex-row items-center md:columns-2 justify-center"}>
 
-                    <div className={"mt-6 md:mt-32 md:w-[500px] px-10 mb-10 md:mb-0 order-2 md:order-1"}>
-                        <h3 className={"text-secondary"}>Feature</h3>
-                        <h1 className={'text-[33px]'}>Our Search Feature to Filter Professionals</h1>
-                        <p className={"mt-4"}>
+                    <div className={"mt-6 md:mt-32 md:w-[500px] px-2 md:px-10 mb-10 md:mb-0 order-2 md:order-1"}>
+                        <div className={"text-secondary bold-lg"}>Feature</div>
+                        <h3>Our Search Feature to Filter Professionals</h3>
+                        <p className={"mt-2"}>
                             Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu
                             dignissim nisl turpis laoreet neque quis. Mauris blandit maecenas augue donec tristique
                             curabitur amet purus nisl. Dis libero sagittis quam ut mattis rutrum auctor hac.
                         </p>
-                        <button className={"bg-primary outline-none text-white mt-8 py-4 rounded-md font-bold px-5 hover:bg-secondary"}>
+                        <button className={"bg-primary outline-none text-white mt-8 py-2 rounded-md font-bold px-5 hover:bg-secondary"}>
                             Discover More Features
                         </button>
                     </div>

@@ -4,7 +4,7 @@ import quoteIcon from '/icons/quote.png'
 export default function CustomerSaying () {
     return (
         <div className={" md:flex mb-5 text-white "}>
-            <img src={testimonialImage} loading={"lazy"} alt={"Testimonial image"} className={"w-[80%] md:w-[40%] z-10"}/>
+            <img src={testimonialImage} loading={"lazy"} alt={"Testimonial image"} className={"w-full sm:w-[80%] md:w-[40%] z-10"}/>
             <div className={"flex flex-col items-center justify-center z-40 -ml-12 "}
                  style={{
                     backgroundImage: "url('/images/home/uniform-background.png')",
@@ -12,9 +12,9 @@ export default function CustomerSaying () {
                 }}
             >
                 <div className={"w-[80%] md:w-[60%] ps-4 md:ps-0 py-10 md:py-6"}>
-                    <h1 className={"text-[40px] leading-[48px] text-start relative before:absolute before:bg-secondary before:left-[0] before:w-[72px] before:h-1 before:-bottom-3"}>What
+                    <h2 className={"text-start text-white relative before:absolute before:bg-secondary before:left-[0] before:w-[72px] before:h-1 before:-bottom-3"}>What
                         Our Customers Saying
-                    </h1>
+                    </h2>
                     <p className={"pt-7 font-normal text-[22ox] text-white italic"}>
                         Pulvinar faucibus augue nibh in purus tempus et volutpat blandit. Enim diam risus praesent
                         placerat et urna volutpat. Tortor tempor mus ut bibendum neque ultricies a netus tellus.
@@ -30,8 +30,8 @@ export default function CustomerSaying () {
 
                     <div className={"pt-5 flex justify-between items-center gap-x-5"}>
                         <div>
-                            <h3>Amanda Breitenberg</h3>
-                            <h5 className={"text-secondary text-lg  font-semibold"}>Hermann - Ratke</h5>
+                            <p className={"text-white"}>Amanda Breitenberg</p>
+                            <div className={"text-secondary bold-md  font-semibold"}>Hermann - Ratke</div>
                         </div>
                         <div>
                             <img loading={"lazy"} src={quoteIcon} alt={"Quote Icon"} width={80} />

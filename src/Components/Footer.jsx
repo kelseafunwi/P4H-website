@@ -9,38 +9,38 @@ export default function Footer() {
         <section className={"text-dark mt-5 mb-0"}>
 
             <div className={"flex border-t-[1px] border-white2 items-center justify-center"}>
-                <div className={'w-[85%] gap-x-4  grid sm:grid-cols-2 md:grid-cols-4'}>
+                <div className={'w-[85%] gap-x-4 gap-y-3  grid sm:grid-cols-2 md:grid-cols-4'}>
 
-                    <div className={"md:px-5 py-5"}>
-                        <h3 className={"text-primary2 text-lg font-bold"}>Pro<span className={"text-secondary"}>4</span>Home</h3>
+                    <div className={"md:px-5 pt-5"}>
+                        <h6 className={"text-primary2"}>Pro<span className={"text-secondary"}>4</span>Home</h6>
 
-                        <p className={"py-3 text-lightDark"}>
+                        <p className={"pt-3 text-lightDark"}>
                             Lorem ipsum dolor sit amet consectetur. Sit ac feugiat lectus ac habitant ullamcorper neque
                             lacus nulla. Risus euismod tellus fermentum malesuada auctor id morbi vitae. Pellentesque
                             elit
                         </p>
                     </div>
 
-                    <div className={"md:px-6 py-5 md:border-s-[1px] border-white2"}>
-                        <h3 className={"text-primary2 text-lg font-bold"}>ABOUT US</h3>
+                    <div className={"md:px-6 pt-5 md:border-s-[1px] border-white2"}>
+                        <h6 className={"text-primary2"}>ABOUT US</h6>
 
-                        <div className={"flex flex-col mt-3  gap-y-3"}>
-                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/about/us"}>About Pro4Home</Link>
-                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/about/team"}>Our Team</Link>
-                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/terms-of-service"}>Terms of Use</Link>
-                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/about"}>Privacy Policy</Link>
+                        <div className={"flex flex-col mt-3   gap-y-3"}>
+                            <Link className={"text-lightDark regular-lg hover:font-semibold text-sm"} to={"/about/us"}>About Pro4Home</Link>
+                            <Link className={"text-lightDark regular-lg hover:font-semibold text-sm"} to={"/about/team"}>Our Team</Link>
+                            <Link className={"text-lightDark regular-lg hover:font-semibold text-sm"} to={"/terms-of-service"}>Terms of Use</Link>
+                            <Link className={"text-lightDark regular-lg hover:font-semibold text-sm"} to={"/about"}>Privacy Policy</Link>
                         </div>
                     </div>
 
                     <div className={"md:px-6 py-5 md:border-s-[1px] border-white2"}>
-                        <h3 className={"text-primary2 text-lg font-bold"}>Support</h3>
+                        <h6 className={"text-primary2"}>Support</h6>
 
                         <div className={"flex flex-col mt-3  gap-y-3"}>
-                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/faqs"}>FAQ</Link>
-                            <Link className={"text-lightDark hover:font-semibold text-sm"} to={"/contact"}>Contact</Link>
+                            <Link className={"text-lightDark regular-lg hover:font-semibold text-sm"} to={"/faqs"}>FAQ</Link>
+                            <Link className={"text-lightDark regular-lg hover:font-semibold text-sm"} to={"/contact"}>Contact</Link>
                         </div>
 
-                        <h3 className={"text-primary2 mt-3 text-lg font-bold"}>Connect with Us</h3>
+                        <h6 className={"text-primary2 mt-3"}>Connect with Us</h6>
 
                         <div className={"mt-4 flex gap-x-4"}>
                             <a href={"facebook.com"}>
@@ -65,8 +65,8 @@ export default function Footer() {
                     </div>
 
                     <div className={"md:px-6 md:py-5 md:border-s-[1px] border-white2"}>
-                        <h3 className={"text-primary2 text-nowrap text-lg font-bold"}>Download Pro<span
-                            className={"text-secondary"}>4</span>Home</h3>
+                        <h6 className={"text-primary2 text-nowrap"}>Download Pro<span
+                            className={"text-secondary"}>4</span>Home</h6>
 
                         <div className={"flex py-5 flex-col gap-y-4 md:items-center"}>
                             <GetButton platform={'apple'} />

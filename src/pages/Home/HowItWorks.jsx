@@ -10,10 +10,10 @@ export default function HowItWorks () {
 
     return (
         <div className={"flex items-center justify-center"}>
-            <div className={"w-full justify-center md:w-[97%] bg-white  my-7 mt-7 flex flex-col items-center"}>
-                <h1 className={"w-fit text-[40px]  leading-[48px] relative text-dark font-bold before:absolute before:bg-secondary before:w-[72px] before:h-1"}>
+            <div className={"w-full justify-center md:w-[97%]  my-7 flex flex-col items-center"}>
+                <h2 className={"w-fit relative text-dark before:absolute before:bg-secondary before:w-[72px] before:h-1"}>
                     How it Works
-                </h1>
+                </h2>
 
                 <p className={"text-center mt-8 text-[16px] max-w-[480px] text-lightGray"}>
                     Lorem ipsum dolor sit amet consectetur. A et ut viverra eget erat arcu nullam. Arcu dignissim nisl
@@ -60,7 +60,7 @@ export default function HowItWorks () {
                                         >
                                             <img loading={"lazy"} src={step.icon} alt={"install icon"}/>
                                             <p className={"text-dark font-bold  mt-2"}>Step {step.number}</p>
-                                            <h5 className={" mt-3 md:text-2xl text-dark text-nowrap"}>{step.title}</h5>
+                                            <h5 className={" mt-3  text-dark text-nowrap"}>{step.title}</h5>
                                             <p className={"pt-2 text-lightGray max-w-sm"}>{step.paragraph}</p>
                                         </motion.div>
                                     ))
@@ -91,7 +91,7 @@ export default function HowItWorks () {
                                         >
                                             <img loading={"lazy"} src={step.icon} alt={"install icon"}/>
                                             <p className={"text-dark font-bold  mt-2"}>Step {step.number}</p>
-                                            <h5 className={" mt-3 md:text-2xl text-dark text-nowrap"}>{step.title}</h5>
+                                            <h5 className={" mt-3 text-dark text-nowrap"}>{step.title}</h5>
                                             <p className={"pt-2 text-lightGray max-w-sm"}>{step.paragraph}</p>
                                         </motion.div>
                                     ))

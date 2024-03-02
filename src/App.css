@@ -1,101 +1,101 @@
 /*Apply the necessary configuration for the Barlow font face */
 @font-face {
     font-family: "Barlow";
-    src: url("/public/font/Barlow-Regular.ttf") format('truetype');
+    src: url("/font/Barlow-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Barlow";
-    src: url("/public/font/Barlow-Bold.ttf") format('truetype');
+    src: url("/font/Barlow-Bold.ttf") format('truetype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Barlow";
-    src: url("/public/font/Barlow-Italic.ttf") format('truetype');
+    src: url("/Barlow-Italic.ttf") format('truetype');
     font-style: italic;
 }
 
 @font-face {
     font-family: "Barlow";
-    src: url("/public/font/Barlow-Medium.ttf") format('truetype');
+    src: url("/font/Barlow-Medium.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Barlow";
-    src: url("/public/font/Barlow-Italic.ttf") format('truetype');
+    src: url("/font/Barlow-Italic.ttf") format('truetype');
     font-style: italic;
 }
 
 /*CSS configuration of the website*/
 .barlow-bold-italic {
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", serif;
     font-weight: 700;
     font-style: italic;
 }
 
 .barlow-bold {
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", serif;
     font-weight: 700;
     font-style: normal;
 }
 
 .barlow-semibold-italic {
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", serif;
     font-weight: 600;
     font-style: italic;
 }
 
 .barlow-semibold {
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", serif;
     font-weight: 600;
     font-style: normal;
 }
 
 .barlow-medium-italic {
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", serif;
     font-weight: 500;
     font-style: italic;
 }
 
 .barlow-medium {
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", serif;
     font-weight: 500;
     font-style: normal;
 }
 
 .barlow-regular-italic {
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", serif;
     font-weight: 400;
     font-style: italic;
 }
 
 .barlow-regular, p {
-    font-family: "Barlow", sans-serif !important;
+    font-family: "Barlow", serif !important;
     font-weight: 400;
     font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', serif !important;
     font-style: normal;
     font-weight: bold !important;
     color: #212121;
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 48px !important;
+    line-height: 52px !important;
 }
 
 h2 {
     font-size: 40px !important;
-    line-height: 48px;
+    line-height: 48px !important;
 }
 
 h3 {
-    font-size: 33px;
-    line-height: 40px;
+    font-size: 33px !important;
+    line-height: 40px !important;
 }
 
 h4 {
@@ -104,8 +104,13 @@ h4 {
 }
 
 h5 {
-    font-size: 23px;
-    line-height: 32px;
+    font-size: 23px !important;
+    line-height: 32px !important;
+}
+
+h6 {
+    font-size: 20px !important;
+    line-height:24px;
 }
 
 .heading-lg {
@@ -165,7 +170,7 @@ h5 {
 
 .bold-md {
     font-size: 14px;
-    line-height: 48px;
+    line-height: 24px !important;
 }
 
 .bold-sm {
@@ -174,9 +179,8 @@ h5 {
 }
 
 .regular-lg {
-    font-size: 16px;
-    /*line-height: 48px;*/
-    line-height: 27px;
+    font-size: 16px !important;
+    line-height: 27px !important;
 }
 
 
@@ -200,7 +204,7 @@ p, button {
 body {
     /*font-family: 'Barlow', serif;*/
     background: #fff !important;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', serif;
     color: #212121 !important;
     font-weight: 400;
     font-style: normal;
@@ -233,7 +237,7 @@ body {
     border-radius: 0 !important;
 }
 
-h1:before {
+h2:before {
     left: calc(50% - 36px);
     bottom: -10px;
 }
@@ -247,4 +251,7 @@ h1:before {
     .hero-section {
         min-height: calc(90vh - 93px);
     }
+}
+.getting-shadow {
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15) !important;
 }
