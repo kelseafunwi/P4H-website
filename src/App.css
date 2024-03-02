@@ -83,47 +83,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #212121;
 }
 
-h1 {
-    font-size: 48px !important;
-    line-height: 52px !important;
-}
+/*Writing the default font-sizes and tags for the different tags.*/
 
-h2 {
-    font-size: 40px !important;
-    line-height: 48px !important;
-}
-
-h3 {
-    font-size: 33px !important;
-    line-height: 40px !important;
-}
-
-h4 {
-    font-size: 28px;
-    line-height: 24px;
-}
-
-h5 {
-    font-size: 23px !important;
-    line-height: 32px !important;
-}
-
-h6 {
-    font-size: 20px !important;
-    line-height:24px;
-}
-
-@media (max-width: 500px) {
-    h1 {
-        font-size: 30px !important;
-        line-height: normal;
-    }
-
-    h2 {
-        font-size: 30px !important;
-        line-height: normal !important;
-    }
-}
 
 .heading-lg {
     font-size: 32px;
@@ -209,9 +170,8 @@ h6 {
 
 p, button {
     line-height: 27px !important;
-    font-size: 16px;
+    font-size: 16px !important;
 }
-
 
 body {
     /*font-family: 'Barlow', serif;*/
@@ -220,6 +180,50 @@ body {
     color: #212121 !important;
     font-weight: 400;
     font-style: normal;
+}
+
+h1 {
+    font-size: 48px !important;
+    line-height: 52px !important;
+}
+
+h2 {
+    font-size: 40px !important;
+    line-height: 48px !important;
+}
+
+h3 {
+    font-size: 33px !important;
+    line-height: 40px !important;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 24px;
+}
+
+h5 {
+    font-size: 23px !important;
+    line-height: 32px !important;
+}
+
+h6 {
+    font-size: 20px !important;
+    line-height:24px;
+}
+/*  Making the default things i set to be responsive by tweaking the sizes on
+different screen points. */
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px !important;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 30px !important;
+        line-height: normal !important;
+    }
 }
 
 /*Navigation bar styling */
@@ -264,6 +268,8 @@ h2:before {
         min-height: calc(90vh - 93px);
     }
 }
+
+/* Taking care of the shadows from this point.*/
 .getting-shadow {
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15) !important;
 }
