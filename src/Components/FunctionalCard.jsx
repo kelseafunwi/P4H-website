@@ -17,10 +17,11 @@ export const FunctionalCard = ({title, header, list, styling, appendHeader}) => 
 
     return (
         <div className={"px-5 lg:px-0 md:min-h-[400px] lg:max-w-[430px]"}>
-            <span className={`ms-3 rounded-3xl font-bold text-primary2 px-2 bg-grey`}>{title}</span>
-            <h1 className={`mt-0 mb-3 text-[30px] md:text-[40px] font-bold ${styling === 'light' ? 'text-white' : 'text-dark'} md:leading-[48px]`}>{header} {
+            <div className={`w-fit ms-3 rounded-3xl bold-sm font-bold text-primary2 px-2 py-[5px] ${styling === 'light' ? 'bg-white' : ' bg-grey'}`}>{title}</div>
+
+            <h2 className={`mt-0 mb-3 ${styling === 'light' ? 'text-white' : 'text-dark'}`}>{header} {
                 appendHeader && appendHeader
-            }</h1>
+            }</h2>
 
             {
                 list.map((item, index) => (
@@ -41,14 +42,14 @@ export const FunctionalCard = ({title, header, list, styling, appendHeader}) => 
                                             )
 
                                     }
-                                    <span className={`${styling === 'light' ? 'text-white' : 'text-dark'} font-bold text-[18px] `}>{item.title}</span>
+                                    <h6 className={`${styling === 'light' ? 'text-white' : 'text-dark'}`}>{item.title}</h6>
                                 </div>
                                 {
                                     index === listActiveIndex &&
                                     <motion.p
                                         initial={{ height: 0, opacity: 0}}
                                         animate={{ height: 'fit-content', opacity: 1}}
-                                        className={`${styling === 'light' ? 'text-white' : 'text-dark'} text-[16px] overflow-hidden`}>
+                                        className={`${styling === 'light' ? 'text-white' : 'text-dark'} overflow-hidden`}>
                                         {item.body}
                                     </motion.p>
                                 }

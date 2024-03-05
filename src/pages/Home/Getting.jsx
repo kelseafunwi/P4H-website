@@ -4,7 +4,7 @@ export default function Getting () {
     return (
         <div className={"py-6 my-7 flex items-center justify-center"}>
             <div className={"w-[90%] py-20 text-dark text-center getting-shadow bg-lightGray"}>
-                <h1 className={"font-bold text-4xl"}>
+                <h1 >
                     Get <span className={"text-primary2"}>Pro</span><span className={"text-secondary"}>4</span><span className={"text-primary2"}>Home</span> App Now
                 </h1>
                 <p className={"text-xs  mt-2"}>

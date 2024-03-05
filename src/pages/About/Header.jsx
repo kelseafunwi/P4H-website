@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 export default function Header ({text}) {
     return (
         <div className={" py-20 flex justify-center before:bg-secondary2 bg-grey"}>
-            <motion.h1 className={"header-text relative w-fit text-center text-dark font-bold text-4xl before:absolute before:bg-secondary before:w-[72px] before:h-1 before:-bottom-3   "}
+            <motion.h2 className={"header-text relative w-fit text-center text-dark before:absolute before:bg-secondary before:w-[72px] before:h-1 before:-bottom-3   "}
                 initial={{
                     y: 200,
                 }}
@@ -16,7 +16,7 @@ export default function Header ({text}) {
                        }}
             >
                 {text}
-            </motion.h1>
+            </motion.h2>
         </div>
     )
 }

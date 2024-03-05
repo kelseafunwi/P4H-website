@@ -19,7 +19,7 @@ export default function Customize () {
     ]
 
     return (
-        <div className={"flex bg-primary2 lg:bg-white bg-[url('/customizeBackground.png')]  items-center justify-center py-14"}>
+        <div className={"flex bg-primary2 lg:bg-white bg-[url('/images/features/customizeBackground.png')]  items-center justify-center py-14"}>
             <div className={"grid grid-cols-1 lg:grid-cols-2 items-center justify-center"}>
                 <motion.div
                     initial={{

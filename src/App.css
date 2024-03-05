@@ -147,8 +147,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bold-sm {
-    font-size: 12px;
-    line-height: 48px;
+    font-size: 12px !important;
+    line-height: 18px !important;
 }
 
 .regular-lg {
@@ -198,8 +198,8 @@ h3 {
 }
 
 h4 {
-    font-size: 28px;
-    line-height: 24px;
+    font-size: 28px !important;
+    line-height: 32px !important;
 }
 
 h5 {
@@ -209,7 +209,7 @@ h5 {
 
 h6 {
     font-size: 20px !important;
-    line-height:24px;
+    line-height:24px !important;
 }
 /*  Making the default things i set to be responsive by tweaking the sizes on
 different screen points. */
@@ -271,7 +271,7 @@ h2:before {
 
 /* Taking care of the shadows from this point.*/
 .getting-shadow {
-    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.15);
 }
 
 .getstarted-shadow {
@@ -284,4 +284,12 @@ h2:before {
 
 .shadow-card-steps {
     box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.1) ;
+}
+
+.feature-card-shadow {
+    box-shadow: 0px 4px 60px 0px rgba(4, 136, 221, 0.22);
+}
+
+.about-us-card-shadow {
+    box-shadow: 0px 4px 60px 0px rgba(4, 136, 221, 0.22);
 }

@@ -15,7 +15,7 @@ export default function Client () {
         },
     ]
     return (
-        <div className={"grid px-5 grid-cols-1 md:grid-cols-2 bg-lightGray gap-x-4"}>
+        <div className={"grid px-5 grid-cols-1 md:grid-cols-2 bg-lightGray gap-x-4 lg:-mt-16"}>
 
             <motion.div
                 initial={{
@@ -27,12 +27,11 @@ export default function Client () {
                 transition={{
                     duration: 0.7
                 }}
-                className={"flex flex-col py-8 items-center justify-center gap-y-5"}>
+                className={"flex flex-col py-5 items-center justify-center gap-y-5"}>
                <FunctionalCard
                    title={"Workers"}
                    header={"Clients Find You on Pro4Home"}
                    list={cardList}
-                   appendHeader={<span className='text-secondary'>Make more Money</span>}
                />
             </motion.div>
 

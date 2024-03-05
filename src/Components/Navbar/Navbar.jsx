@@ -83,7 +83,7 @@ export default function Navbar() {
                         }
                     </div>
                     <div className={"hidden lg:flex items-center"}>
-                        <ul className={"flex items-center justify-between gap-x-1"}>
+                        <ul className={"flex items-center justify-between gap-x-4"}>
                             {
                                 navbarLinks.map((item, index) => (
                                     <motion.li
