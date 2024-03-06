@@ -52,12 +52,13 @@ export default function Navbar() {
                             </h1>
 
                             <div className={"grid my-5 grid-cols-2 gap-x-5"}>
-                                <button onClick={() => setCurrentLanguage(ENGLISH)} className={"flex items-center bg-white py-3 px-2 gap-x-2 hover:opacity-80 text-primary2 font-bold"}>
-                                    <img src={checkmarkIcon} alt={"check mark icon"}/>
+                                <button onClick={() => setCurrentLanguage(ENGLISH)} className={`flex items-center  ${currentLanguage === ENGLISH ? 'bg-white text-primary2' : 'bg-primary5 text-white' } py-3 px-2 gap-x-2 hover:opacity-80 font-bold`}>
+                                    {currentLanguage === ENGLISH && <img src={checkmarkIcon} alt={"check mark icon"}/>}
                                     English
                                 </button>
 
-                                <button onClick={() => setCurrentLanguage(FRENCH)} className={"flex items-center py-3 px-4 gap-x-2 hover:opacity-80 font-bold bg-primary5 text-white"}>
+                                <button onClick={() => setCurrentLanguage(FRENCH)} className={`flex items-center py-3 px-4 gap-x-2 hover:opacity-80 font-bold ${currentLanguage === FRENCH ? 'bg-white text-primary2' : 'bg-primary5 text-white' }`}>
+                                    {currentLanguage === FRENCH && <img src={checkmarkIcon} alt={"check mark icon"}/>}
                                     Francais
                                 </button>
                             </div>

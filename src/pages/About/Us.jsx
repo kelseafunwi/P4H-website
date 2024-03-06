@@ -1,13 +1,13 @@
 import aboutImage from '/images/about/about.png';
-import blogHero2 from '/images/about/blog-hero2.png';
 import Header from "./Header.jsx";
 import {motion} from 'framer-motion'
+import {ArrowRight} from "lucide-react";
 
 export default function Us () {
     return (
         <>
             <div>
-                <Header text={"About Us"} />
+                <Header text={"About Us"}/>
 
                 <div className={"md:py-10 md:px-16 w-full md:flex justify-center"}>
                     <div className={"grid md:grid-rows-2 lg:w-[40%] md:border-r-2 border-r-dark"}>
@@ -125,30 +125,36 @@ export default function Us () {
                 </div>
             </div>
 
+            <div className={"px-2 md:px-16 grid sm:grid-cols-2 gap-y-3 md:grid-cols-3 gap-x-4 py-10"}>
+                <div
+                    className={"bg-cover bg-left relative dark-background-color rounded-xl hover:scale-105 bg-no-repeat bg-[url(/images/about/us-blog.jpeg)]"}>
+                    <div className={"ps-8 relative text-white py-8"}>
+                        <h4 className={"text-white "}>Blog</h4>
+                        <a href={"#"} className={"font-bold pt-4 flex items-center gap-x-10"}>Visit Our Blog <ArrowRight
+                            size={30}/></a>
+                    </div>
+                </div>
 
-            <div className={"flex my-3 items-center py-10 justify-center w-full"}>
-                <div className={"md:max-w-5xl w-full md:flex justify-center"}>
-                    <div className={"grid sm:grid-cols-2 gap-y-3 md:grid-cols-3 gap-x-4"}>
-                        <div className={"overflow-hidden flex justify-center"}>
-                            <img loading={"lazy"} alt={"about image"}
-                                 className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
-                                 src={blogHero2}/>
-                        </div>
+                <div
+                    className={"bg-cover bg-left relative dark-background-color rounded-xl hover:scale-105 bg-no-repeat bg-[url(/images/about/us-contact.jpeg)]"}>
+                    <div className={"ps-8 relative text-white py-8"}>
+                        <h4 className={"text-white "}>Contact</h4>
+                        <a href={"#"} className={"font-bold pt-4 flex items-center gap-x-10"}>Get in Touch with Us <ArrowRight
+                            size={30}/></a>
+                    </div>
+                </div>
 
-                        <div className={"overflow-hidden flex justify-center"}>
-                            <img loading={"lazy"} alt={"about image"}
-                                 className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
-                                 src={blogHero2}/>
-                        </div>
-
-                        <div className={"overflow-hidden flex justify-center"}>
-                            <img loading={"lazy"} alt={"about image"}
-                                 className={"w-[80%] sm:w-full hover:scale-105 duration-75 hover:cursor-pointer"}
-                                 src={blogHero2}/>
-                        </div>
+                <div
+                    className={"bg-cover bg-left relative dark-background-color rounded-xl hover:scale-105 bg-no-repeat bg-[url(/images/about/us-team.jpeg)]"}>
+                    <div className={"ps-8 relative text-white py-8"}>
+                        <h4 className={"text-white "}>The Team</h4>
+                        <a href={"#"} className={"font-bold pt-4 flex items-center gap-x-10"}>Meet the Experts <ArrowRight
+                            size={30}/></a>
                     </div>
                 </div>
             </div>
+
+
         </>
     )
 }

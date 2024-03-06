@@ -38,15 +38,15 @@ export default function Blogs (){
                                     x: 0
                                 }}
                                 className={"px-5 flex flex-col gap-y-2 max-w-4xl"}>
-                                <div className={"w-fit px-3 font-bold text-primary rounded-3xl bg-grey"}>
+                                <div className={"w-fit px-3 bold-sm font-bold text-primary rounded-3xl bg-grey"}>
                                     category
                                 </div>
 
-                                <h1 className={"text-lightGray text-[30px] leading-[40px] font-bold"}>
+                                <h3 className={"text-lightGray"}>
                                     Lorem ipsum dolor sit amet consectetur. A sem blandit mi pellentesque neque
-                                </h1>
+                                </h3>
 
-                                <p className={"text-lightGray text-[16px]"}>
+                                <p className={"text-lightGray"}>
                                     auris pharetra eget viverra feugiat eu quisque vestibulum. Vehicula euismod at amet
                                     varius euismod quis dignissim. Tortor eget aliquet massa mi nulla ut. Sodales morbi
                                     platea dignissim tellus molestie
@@ -65,10 +65,10 @@ export default function Blogs (){
 
                     <div className={"w-full my-16"}>
                         <div className={"flex items-center justify-between"}>
-                            <h1 className={"w-fit text-dark font-bold text-[33px]"}>All Articles</h1>
+                            <h2 className={"w-fit text-dark"}>All Articles</h2>
 
                             <div className={"pe-2 flex items-center border-dark border-[1px] "}>
-                                <input type={"text"} className={"py-2 px-3 font-bold text-lightGray text-[14px] focus-visible:outline-0  "} placeholder={"Search articles here......"}/>
+                                <input type={"text"} className={"py-2 px-3 barlow-regular font-bold text-lightGray label-lg focus-visible:outline-0  "} placeholder={"Search articles here......"}/>
                                 <img loading={"lazy"} src={searchIcon} alt={"Search Icon"} />
                             </div>
                         </div>
@@ -94,18 +94,18 @@ export default function Blogs (){
                                             <img loading={"lazy"} className={"scale-95  hover:scale-100 duration-200"}
                                                  src={article.image} alt={"Article Image"}/>
                                             <div className={"px-5 py-4 flex flex-col gap-y-2"}>
-                                                <h1 className={"font-bold text-xl text-lightGray"}>
+                                                <h5 className={"font-bold text-xl text-lightGray"}>
                                                     {article.title}
-                                                </h1>
+                                                </h5>
 
                                                 <div>
-                                                    <span className={"text-lightGray text-[16px] pe-4"}>
+                                                    <span className={"text-lightGray regular-lg  pe-4"}>
                                                         {article.date}
                                                         <span className={"ps-2"}>
                                                               |
                                                         </span>
                                                     </span> By:
-                                                        <span className={'ps-1 text-primary2'}>
+                                                        <span className={'ps-1 regular-lg text-primary2'}>
                                                         {article.name}
                                                     </span>
                                                 </div>

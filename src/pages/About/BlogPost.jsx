@@ -76,9 +76,9 @@ export default function BlogPost () {
                                 }}
                                 className={"px-5 flex text-center flex-col gap-y-2 max-w-lg"}>
 
-                                <h1 className={"text-lightGray  text-[30px] leading-[40px] font-bold"}>
+                                <h2 className={"text-lightGray  text-[30px] leading-[40px] font-bold"}>
                                     Lorem ipsum dolor sit amet consectetur. A sem blandit mi pellentesque neque
-                                </h1>
+                                </h2>
 
                                 <div>
                                     <span className={"text-lightGray text-[16px] pe-4"}>
@@ -123,17 +123,17 @@ export default function BlogPost () {
                         </div>
 
                         <div className={"bg-grey px-16 py-10"}>
-                            <h1 className={"italic text-black2 text-2xl font-bold"}>
+                            <div className={"italic heading-sm font-bold text-black2 "}>
                                 Lorem ipsum dolor sit amet consectetur. Porttitor aliquam tempor tellus sit volutpat.
-                            </h1>
+                            </div>
 
-                            <h5 className={"text-primary font-bold text-[16px] pt-3"}>by Asha Gray</h5>
+                            <p className={"text-primary font-bold pt-3"}>by Asha Gray</p>
                         </div>
 
                         <div className={"py-7"}>
-                            <h1 className={"font-bold text-black2 text-2xl"}>
+                            <h4 className={"text-black2 "}>
                                 Comments (15)
-                            </h1>
+                            </h4>
 
                             <div className={"flex py-10 flex-col gap-y-6"}>  {/* contains all of the comments  */}
 
@@ -174,43 +174,45 @@ export default function BlogPost () {
 
                             <form onSubmit={(e) => submitComment(e)}>
                                 <div
-                                    className={"md:px-16 my-16 py-10 flex flex-col gap-y-3 border-t-[1px] border-dark"}> {/* Form box begins here */}
-                                    <h1 className={"text-dark font-[900] text-[28px]"}>Leave a Comment</h1>
+                                    className={"md:mx-12 my-16 py-16 flex flex-col gap-y-10 border-t-[1px] border-b-[1px] border-dark"}> {/* Form box begins here */}
+                                    <div className={"text-dark heading-3 font-lato-bolder"}>Leave a Comment</div>
 
-                                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-3"}>
-                                        <div className={"flex flex-col"}>
-                                            <h4 className={"font-bold text-[16px] text-dark"}>
-                                                Name
-                                            </h4>
-                                            <div>
-                                                <input
-                                                    ref={nameRef}
-                                                    type={"text"}
-                                                    className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
+                                    <div className={"flex flex-col gap-y-5"}>
+                                        <div className={"grid grid-cols-1 md:grid-cols-2 gap-3"}>
+                                            <div className={"flex flex-col"}>
+                                                <label className={"font-bold  text-dark"}>
+                                                    Name
+                                                </label>
+                                                <div>
+                                                    <input
+                                                        ref={nameRef}
+                                                        type={"text"}
+                                                        className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
+                                                </div>
+                                            </div>
+
+                                            <div className={"flex flex-col"}>
+                                                <label className={"font-bold  text-dark"}>
+                                                    Email
+                                                </label>
+                                                <div>
+                                                    <input
+                                                        ref={emailRef}
+                                                        type={"email"}
+                                                        className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <div className={"flex flex-col"}>
-                                            <h4 className={"font-bold text-[16px] text-dark"}>
-                                                Email
-                                            </h4>
+                                            <label className={"font-bold  text-dark"}>
+                                                Comment
+                                            </label>
                                             <div>
-                                                <input
-                                                    ref={emailRef}
-                                                    type={"email"}
-                                                    className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className={"flex flex-col"}>
-                                        <h4 className={"font-bold text-[16px] text-dark"}>
-                                            Comment
-                                        </h4>
-                                        <div>
                                         <textarea
                                             ref={bodyRef}
                                             className={"border-[1px] focus-visible:outline-0 border-dark rounded-md w-full py-2 px-3"}/>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -225,8 +227,8 @@ export default function BlogPost () {
                             </form>
 
                             <div className={"w-full my-16"}>
-                                <div className={"flex items-center justify-between"}>
-                                    <h1 className={"w-fit text-dark font-bold text-[33px]"}>All Articles</h1>
+                                <div className={"flex items-center py-3 justify-between"}>
+                                    <div className={"w-fit text-dark font-lato-bolder heading-3"}>Related Articles</div>
 
                                     <div className={"pe-2 flex items-center"}>
                                         <a className={"text-primary2 font-bold text-end text-[16px]"} href={"#"}>See
@@ -251,16 +253,16 @@ export default function BlogPost () {
                                                     once: true,
                                                 }}
                                                 key={index}>
-                                                <a href={`/about/blog/${index}`}>
-                                                    <img loading={"lazy"} className={"scale-95  hover:scale-100 duration-200"}
+                                            <a href={`/about/blog/${index}`}>
+                                                    <img loading={"lazy"} className={" duration-200"}
                                                          src={article.image} alt={"Article Image"}/>
                                                     <div className={"px-5 py-4 flex flex-col gap-y-2"}>
-                                                        <h1 className={"font-bold text-xl text-lightGray"}>
+                                                        <h5 className={"font-bold text-lightGray"}>
                                                             {article.title}
-                                                        </h1>
+                                                        </h5>
 
                                                         <div>
-                                                    <span className={"text-lightGray text-[16px] pe-4"}>
+                                                    <span className={"text-lightGray pe-4"}>
                                                         {article.date}
                                                         <span className={"ps-2"}>
                                                               |

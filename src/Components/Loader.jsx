@@ -1,7 +1,7 @@
-export default function Loader() {
+export const Loader = () => {
     return (
-        <div className={"flex items-center justify-center"}>
-            Loading the javascript.
+        <div>
+            Loading ....
         </div>
     )
 }

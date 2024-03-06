@@ -1,19 +1,24 @@
-import Getting from "../Home/Getting.jsx";
-import Hero from './Hero.jsx';
-import Client from "./Client.jsx";
-import Customize from "./Customize.jsx";
-import Promote from "./Promote.jsx";
-import CardsSection from "./CardsSection.jsx";
+import {Suspense ,lazy} from "react";
+import {Loader} from "../../Components/Loader.jsx";
+
+const Getting =  lazy(() => import('../Home/Getting.jsx'));
+const Hero =  lazy(() => import('./Hero.jsx'));
+const Client =  lazy(() => import('./Client.jsx'));
+const Customize =  lazy(() => import('./Customize.jsx'));
+const Promote =  lazy(() => import('./Promote.jsx'));
+const CardsSection =  lazy(() => import('./CardsSection.jsx'));
 
 export default function Features (){
     return (
         <div className={"bg-lightGray"}>
-            <Hero />
-            <Client />
-            <Customize />
-            <Promote />
-            <CardsSection />
-            <Getting />
+            <Suspense fallback={<Loader />}>
+                <Hero />
+                <Client />
+                <Customize />
+                <Promote />
+                <CardsSection />
+                <Getting />
+            </Suspense>
         </div>
     )
 }

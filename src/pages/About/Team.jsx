@@ -29,9 +29,9 @@ export default function Team() {
                                         <motion.img  loading={"lazy"} initial={{scale: 0}}  whileInView={{scale: 1}} transition={{duration: 0.8}} viewport={{once: true}} src={member.image} className={"py-5"} alt={"About Team 1"}/>
                                     </div>
 
-                                    <h1 className={"text-dark text-nowrap font-bold text-lg"}>{member.name}</h1>
+                                    <h6  className={"text-dark text-nowrap font-bold text-lg"}>{member.name}</h6>
 
-                                    <h3 className={"text-primary3 py-2 text-[16px]"}>{member.position}</h3>
+                                    <p className={"text-primary3 py-2 text-[16px]"}>{member.position}</p>
                                 </motion.div>
                             ))
                         }

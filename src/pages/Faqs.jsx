@@ -10,15 +10,12 @@ const QADisplay = ({item}) => {
     const [active, setActive] = useState(false);
 
     return (
-        <div
+        <div className={"gap-y-1 cursor-pointer flex flex-col"}
              onClick={() => {
                 setActive(!active)
-             }}
-             className={"gap-y-1 cursor-pointer flex flex-col"}>
-            <div
-                className={`flex items-center  shadow-sm  shadow-primary2 rounded-t-md  justify-between px-4  ${active ? 'bg-primary2 text-white' : 'text-lightGray bg-white'}`}>
-                <div
-                    className={`py-4   my-2 w-full  font-bold text-[16px]`}>
+             }}>
+            <div className={`flex items-center  question-shadow rounded-t-md  justify-between px-4  ${active ? 'bg-primary2 text-white' : 'text-lightGray bg-white my-3'}`}>
+                <div className={`py-4 my-2 w-full  font-bold text-[16px]`}>
                     {item.question}
                 </div>
 
@@ -73,7 +70,7 @@ export default function Faqs () {
                 <div className={"md:flex gap-x-5 lg:px-20 w-full"}> {/* Container Element */}
                     <div className={"w-full  md:w-4/12 flex flex-col gap-y-5 "}> {/* Left Section */}
                         <div
-                            className={"order-2 md:order-1 rounded-xl bg-cover bg-left-bottom bg-[url('/faqsBackground.jpg')] px-10 py-10"}>
+                            className={"order-2 md:order-1 rounded-xl bg-cover bg-left-bottom bg-[url('/images/faqs/faqsBackground.jpg')] px-10 py-10"}>
                             {
                                 categories.map((category, index) => (
                                     <div key={index}
@@ -88,7 +85,7 @@ export default function Faqs () {
                                 ))
                             }
                         </div>
-                        <div className={"order-1 md:order-2 w-full rounded-xl bg-cover bg-left-bottom bg-[url('/faqBackground2.jpg')]"}>
+                        <div className={"order-1 md:order-2 w-full rounded-xl bg-cover bg-left-bottom bg-[url('/images/faqs/faqBackground2.jpg')]"}>
                             <div className={"bg-white w-fit mx-2 md:mx-10 my-10 py-10 px-4"}>
                                 <h1 className={"font-bold text-dark text-3xl"}>Do you have More Questions?</h1>
 

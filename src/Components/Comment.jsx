@@ -10,8 +10,8 @@ export default function Comment ({name, last_seen, body, mine}) {
                     <img className={"max-w-[45px]"} src={ContactIcon}
                          alt={"About Blog Contact"}/>
                     <div className={"ps-2 text-black2 flex flex-col justify-between"}>
-                        <h1 className={" text-lg font-bold"}>{name}</h1>
-                        <h5 className={"w-fit text-center font-bold text-xs opacity-70"}>{last_seen}</h5>
+                        <p className={" text-lg font-bold"}>{name}</p>
+                        <div className={"w-fit text-center font-bold bold-sm opacity-70"}>{last_seen}</div>
                     </div>
                 </div>
                 <div>

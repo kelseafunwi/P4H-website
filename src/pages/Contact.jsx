@@ -23,11 +23,11 @@ export default function Contact() {
                                 <img loading={"lazy"} src={locationIcon} alt={"Location Icon "}/>
                             </div>
 
-                            <h1 className={"font-bold text-dark text-[27px]"}>
+                            <div className={"font-bold text-dark heading-3"}>
                                 Our Address
-                            </h1>
+                            </div>
 
-                            <p className={"text-dark font-[16px]"}>
+                            <p className={"text-dark"}>
                                 Carrefour Yoro Joss, Bonamoussadi
                                 Douala, Cameroon
                             </p>
@@ -39,11 +39,11 @@ export default function Contact() {
                                 <img loading={'lazy'} src={sendEmailIcon} alt={"Location Icon "}/>
                             </div>
 
-                            <h1 className={"font-bold text-dark text-[27px]"}>
+                            <div className={"font-bold text-dark heading-3"}>
                                 Call Us
-                            </h1>
+                            </div>
 
-                            <p className={"text-dark font-[16px]"}>
+                            <p className={"text-dark"}>
                                 +237 987 889 874 <br/>
                                 +237 658 985 899
                             </p>
@@ -55,11 +55,11 @@ export default function Contact() {
                                 <img loading={"lazy"} src={phoneIcon} alt={"Location Icon "}/>
                             </div>
 
-                            <h1 className={"font-bold text-dark text-[27px]"}>
+                            <div className={"font-bold text-dark heading-3"}>
                                 Write
-                            </h1>
+                            </div>
 
-                            <p className={"text-dark font-[16px]"}>
+                            <p className={"text-dark"}>
                                 info@pro4home.com
                                 support@pro4home.com
                             </p>
@@ -70,30 +70,30 @@ export default function Contact() {
 
             <form onSubmit={(event) => submitContact(event)}>
                 <div className={"py-10 bg-primary flex flex-col items-center justify-center text-2xl gap-x-5 gap-y-10"}>
-                    <div className={" font-bold text-lightGray2 "}>
+                    <h2 className={" font-bold text-lightGray2 "}>
                         Any question? Send us message
-                    </div>
+                    </h2>
 
                     <div className={"flex flex-col gap-y-3 w-[95%] lg:w-[70%]"}>
 
                         <div className={"items-center grid grid-cols-1 md:grid-cols-2 gap-x-4"}>
                             <div className={"flex flex-col text-white"}>
-                                <label className={"text-[16px] leading-6 font-bold"}>Name*</label>
+                                <label>Name*</label>
                                 <input className={" text-[16px] px-4 focus-visible:outline-0 py-2 bg-primary4 w-full"}/>
                             </div>
                             <div className={"flex flex-col text-white"}>
-                                <label className={"  text-[16px] leading-6 font-bold"}>Email*</label>
+                                <label>Email*</label>
                                 <input className={"text-[16px] px-4 py-2 focus-visible:outline-0 bg-primary4 w-full"}/>
                             </div>
                         </div>
 
                         <div className={"flex flex-col text-white"}>
-                            <label className={"text-[16px] leading-6 font-bold"}>Subject</label>
+                            <label>Subject</label>
                             <input className={" text-[16px] px-4 py-2 focus-visible:outline-0 bg-primary4 w-full"}/>
                         </div>
 
                         <div className={"flex flex-col text-white"}>
-                            <label className={"text-[16px] leading-6 font-bold"}>Message*</label>
+                            <label>Message*</label>
                             <textarea className={" text-[16px] px-4 py-2 focus-visible:outline-0 bg-primary4 w-full"}>
 
                         </textarea>

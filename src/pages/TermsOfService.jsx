@@ -1,4 +1,3 @@
-import Footer from "../Components/Footer.jsx";
 import Header from "./About/Header.jsx";
 
 export default function TermsOfService () {
@@ -9,24 +8,24 @@ export default function TermsOfService () {
             <div className={"flex  items-center justify-center w-full py-10"}>
                 <div className={"w-[95%] flex flex-col lg:flex-row gap-x-5"}>
                     <div className={"min-w-[350px] px-4 py-3"}>
-                        <h1 className={"text-primary2 cursor-pointer my-2 border-b-[1px] border-y-dark font-bold text-[16px] px-2 py-4 w-full"}>
+                        <div className={"text-primary2 bold-lg font-bold cursor-pointer my-2 border-b-[1px] border-y-dark px-2 py-4 w-full"}>
                             Your Agreement
-                        </h1>
+                        </div>
 
-                        <h1 className={"text-black cursor-pointer my-2 border-b-[1px] border-y-dark text-[16px] px-2 py-4 w-full"}>
+                        <div className={"text-black cursor-pointer my-2 border-b-[1px] border-y-dark text-[16px] px-2 py-4 w-full"}>
                             Change of Terms of Use
-                        </h1>
+                        </div>
 
-                        <h1 className={"text-black my-2 cursor-pointer border-b-[1px] border-y-dark text-[16px] px-2 py-4 w-full"}>
+                        <div className={"text-black my-2 cursor-pointer border-b-[1px] border-y-dark text-[16px] px-2 py-4 w-full"}>
                             Access and Use of the Services
-                        </h1>
+                        </div>
                     </div>
 
                     <div className={"text-lightGray"}>
                         <div className={"px-3 py-2"}>
-                            <h1 className={"text-lightGray font-bold"}>
+                            <h6 className={"text-lightGray font-bold"}>
                                 1. Your Agreement
-                            </h1>
+                            </h6>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -39,9 +38,9 @@ export default function TermsOfService () {
                         </div>
 
                         <div className={"px-3 py-2"}>
-                            <h1 className={"text-lightGray font-bold"}>
+                            <h6 className={"text-lightGray font-bold"}>
                                 2. Change of Terms of Use
-                            </h1>
+                            </h6>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -54,9 +53,9 @@ export default function TermsOfService () {
                         </div>
 
                         <div className={"px-3 py-2"}>
-                            <h1 className={"text-lightGray font-bold"}>
+                            <h6 className={"text-lightGray font-bold"}>
                                 3. Access and Use of the Services
-                            </h1>
+                            </h6>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown

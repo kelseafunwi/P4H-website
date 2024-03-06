@@ -6,7 +6,7 @@ export default function Header ({text}) {
         <div className={" py-20 flex justify-center before:bg-secondary2 bg-grey"}>
             <motion.h2 className={"header-text relative w-fit text-center text-dark before:absolute before:bg-secondary before:w-[72px] before:h-1 before:-bottom-3   "}
                 initial={{
-                    y: 200,
+                    y: 80,
                 }}
                        animate={{
                            y: 0
