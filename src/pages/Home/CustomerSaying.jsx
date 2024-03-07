@@ -5,8 +5,9 @@ export default function CustomerSaying () {
     return (
         <div className={" md:flex mb-5 text-white "}>
             <img src={testimonialImage} loading={"lazy"} alt={"Testimonial image"} className={"w-full sm:w-[80%] md:w-[40%] z-10"}/>
-            <div className={"flex flex-col items-center justify-center z-40 -ml-12 "}
+            <div className={"flex flex-col items-center  justify-center z-40 -ml-12 "}
                  style={{
+                     backgroundPosition: 'top',
                     backgroundImage: "url('/images/home/uniform-background.png')",
                      backgroundSize: 'cover',
                 }}
