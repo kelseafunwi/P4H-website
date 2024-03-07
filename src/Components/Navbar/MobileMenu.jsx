@@ -13,6 +13,9 @@ export const MobileMenu = ({toggleMenuState}) => {
             animate={{
                 width: 320,
             }}
+            exit={{
+                width: 0
+            }}
             className={" fixed lg:hidden top-0 bottom-0 text-white right-0 z-50 shadow-sm border-l-2 bg-primary"}>
             <div className={"absolute top-10 right-0"}>
                 <button onClick={toggleMenuState}

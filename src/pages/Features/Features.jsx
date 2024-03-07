@@ -1,5 +1,6 @@
 import {Suspense ,lazy} from "react";
 import {Loader} from "../../Components/Loader.jsx";
+import {AnimatePresence} from "framer-motion";
 
 const Getting =  lazy(() => import('../Home/Getting.jsx'));
 const Hero =  lazy(() => import('./Hero.jsx'));
@@ -11,14 +12,16 @@ const CardsSection =  lazy(() => import('./CardsSection.jsx'));
 export default function Features (){
     return (
         <div className={"bg-lightGray"}>
-            <Suspense fallback={<Loader />}>
-                <Hero />
-                <Client />
-                <Customize />
-                <Promote />
-                <CardsSection />
-                <Getting />
-            </Suspense>
+            <AnimatePresence>
+                <Suspense fallback={<Loader />}>
+                    <Hero />
+                    <Client />
+                    <Customize />
+                    <Promote />
+                    <CardsSection />
+                    <Getting />
+                </Suspense>
+            </AnimatePresence>
         </div>
     )
 }

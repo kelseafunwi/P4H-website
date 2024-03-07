@@ -3,7 +3,7 @@ import rightIcon from '/icons/right.png'
 import { useState} from "react";
 import {categories, questionsAndAnswers} from "../constants/constant.js";
 import {ChevronDown, ChevronUp} from "lucide-react";
-import {motion} from 'framer-motion';
+import {AnimatePresence, motion} from 'framer-motion';
 import PropTypes from "prop-types";
 
 const QADisplay = ({item}) => {
@@ -27,19 +27,24 @@ const QADisplay = ({item}) => {
                     }
                 </div>
             </div>
-            {
-                active &&
-                <motion.p
-                    initial={{
-                        height: 0,
-                    }}
-                    animate={{
-                        height: 'fit-content',
-                    }}
-                    className={"px-5 py-5 text-lightGray text-[16px] overflow-hidden"}>
-                    {item.answer}
-                </motion.p>
-            }
+            <AnimatePresence>
+                {
+                    active &&
+                    <motion.p
+                        initial={{
+                            height: 0,
+                        }}
+                        animate={{
+                            height: 'fit-content',
+                        }}
+                        exit={{
+                            height: 0,
+                        }}
+                        className={"px-5 py-5 text-lightGray text-[16px] overflow-hidden"}>
+                        {item.answer}
+                    </motion.p>
+                }
+            </AnimatePresence>
         </div>
     )
 }
@@ -93,9 +98,9 @@ export default function Faqs () {
                                     Lorem ipsum dolor sit amet consectetur. Felis gravida id sodales vitae volutpat non eu egestas. Ac faucibus et adipiscing quis enim tempor scelerisque.
                                 </p>
 
-                                <button className={"text-white text-center font-bold text-lg bg-secondary hover:opacity-40 w-full rounded-md py-4"}>
+                                <a href={"/contact"} className={"block  text-white text-center font-bold text-lg bg-secondary hover:opacity-40 w-full rounded-md py-4"}>
                                     Button
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

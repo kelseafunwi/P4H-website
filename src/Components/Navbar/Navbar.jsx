@@ -4,7 +4,7 @@ import {AlignJustify, ChevronDown, ChevronUp, Globe, XIcon} from "lucide-react";
 import {MobileMenu} from "./MobileMenu.jsx";
 import { navbarLinks } from "../../constants/constant.js";
 import { NavLink} from "react-router-dom";
-import {motion} from 'framer-motion'
+import {AnimatePresence, motion} from 'framer-motion'
 import checkmarkIcon from '/icons/check-mark.png';
 
 
@@ -149,10 +149,12 @@ export default function Navbar() {
                     </div>
                 </nav>
             </header>
-            {
-                menuOpen &&
-                <MobileMenu toggleMenuState={toggleMenuState} />
-            }
+            <AnimatePresence>
+                {
+                    menuOpen &&
+                    <MobileMenu toggleMenuState={toggleMenuState} />
+                }
+            </AnimatePresence>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import {useState} from "react";
-import {motion} from 'framer-motion';
+import {AnimatePresence, motion} from 'framer-motion';
 import {MinusIcon, PlusIcon} from 'lucide-react'
 
 export const FunctionalCard = ({title, header, list, styling, appendHeader}) => {
@@ -44,15 +44,18 @@ export const FunctionalCard = ({title, header, list, styling, appendHeader}) => 
                                     }
                                     <h6 className={`${styling === 'light' ? 'text-white' : 'text-dark'}`}>{item.title}</h6>
                                 </div>
-                                {
-                                    index === listActiveIndex &&
-                                    <motion.p
-                                        initial={{ height: 0, opacity: 0}}
-                                        animate={{ height: 'fit-content', opacity: 1}}
-                                        className={`${styling === 'light' ? 'text-white' : 'text-dark'} overflow-hidden`}>
-                                        {item.body}
-                                    </motion.p>
-                                }
+                               <AnimatePresence>
+                                   {
+                                       index === listActiveIndex &&
+                                       <motion.p
+                                           initial={{ height: 0, opacity: 0}}
+                                           animate={{ height: 'fit-content', opacity: 1}}
+                                           exit={{ height: 0, opacity: 0}}
+                                           className={`${styling === 'light' ? 'text-white' : 'text-dark'} overflow-hidden`}>
+                                           {item.body}
+                                       </motion.p>
+                                   }
+                               </AnimatePresence>
                             </div>
                         </div>
                     </div>
